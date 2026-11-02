@@ -294,5 +294,5 @@ export function main() {
   }
 }
 
-// Unter Vitest nur importieren, sonst (vite-node) direkt ausführen.
-if (!process.env.VITEST) main();
+// Nur ausführen, wenn dieses Skript direkt gestartet wurde (nicht beim Import, nicht unter Vitest).
+if (!process.env.VITEST && process.argv.some((arg) => arg.replace(/\\/g, "/").endsWith("build-players.ts"))) main();
