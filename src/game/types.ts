@@ -24,3 +24,10 @@ export interface NbaTeam {
   name: string;
   net: number;
 }
+
+export interface TradeOffer {
+  player: Player;
+  injured: boolean;
+}
+
+export type TradeDecision = null | { outId: string; offer: TradeOffer };

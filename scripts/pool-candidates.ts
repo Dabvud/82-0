@@ -1,6 +1,4 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import { resolve } from "node:path";
-import { pathToFileURL } from "node:url";
 import { normalizeName } from "../src/model/names";
 import { seasonRaw } from "../src/model/normalize";
 import { pickPeak, strengthsFromRaw } from "../src/model/rating";
