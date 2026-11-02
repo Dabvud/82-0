@@ -5,6 +5,7 @@ import { PlayerCard } from "../components/PlayerCard";
 import { SlotBar } from "../components/SlotBar";
 import { formatMoney } from "../format";
 import { isAffordable } from "../game/draft";
+import { canAdd } from "../game/slots";
 import type { Session } from "../game/session";
 import type { Player, Tier } from "../game/types";
 
@@ -14,10 +15,12 @@ interface Props {
   settings: Settings;
   onPick: (player: Player) => void;
   onExit: () => void;
+  onRefresh: () => void;
 }
 
 const TIERS: Tier[] = [1, 2, 3, 4, 5];
 const LOCKED_REASON = "Danach reicht das Budget nicht mehr für die restlichen Plätze";
+const NO_SLOT_REASON = "Für diese Position ist kein Platz mehr frei";
 const millions = new Intl.NumberFormat("de-DE", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 
 /** Kurzname für die Kachel: „A. Davis“ – Initiale gegen gleiche Nachnamen, Zusätze wie „Jr.“ bleiben weg. */
@@ -26,11 +29,13 @@ function shortName(name: string): string {
   return parts.length > 1 ? `${parts[0][0]}. ${parts.slice(1).join(" ")}` : name;
 }
 
-export function DraftScreen({ session, data, settings, onPick, onExit }: Props) {
+export function DraftScreen({ session, data, settings, onPick, onExit, onRefresh }: Props) {
   const [open, setOpen] = useState<Player | null>(null);
   const { picks, offers } = session.draft;
   const spent = picks.reduce((sum, p) => sum + p.price, 0);
-  const affordable = (p: Player) => isAffordable(p, picks, data.pool, data.budget);
+  // Grund, warum eine Kachel gerade nicht wählbar ist (undefined = wählbar).
+  const blocker = (p: Player) => !canAdd(picks, p) ? NO_SLOT_REASON
+    : isAffordable(p, picks, data.pool, data.budget) ? undefined : LOCKED_REASON;
 
   return (
     <>
@@ -48,11 +53,12 @@ export function DraftScreen({ session, data, settings, onPick, onExit }: Props) 
           <div key={tier} className="matrix__row" role="row">
             <span className="matrix__tier" role="rowheader">T{tier}</span>
             {offers[tier].map((p) => {
-              const ok = affordable(p);
+              const reason = blocker(p);
+              const ok = !reason;
               return (
                 <span key={p.id} role="cell" className="matrix__cell">
                   <button type="button" className={ok ? "tile" : "tile tile--locked"} onClick={() => setOpen(p)}
-                    aria-label={`${p.name}, ${p.positions.join("/")}, ${formatMoney(p.price)}${ok ? "" : ", zu teuer"}`}>
+                    aria-label={`${p.name}, ${p.positions.join("/")}, ${formatMoney(p.price)}${ok ? "" : reason === NO_SLOT_REASON ? ", kein freier Platz" : ", zu teuer"}`}>
                     <span className="tile__name">{shortName(p.name)}</span>
                     <span className="tile__pos">{p.positions.join("/")}</span>
                     <span className="tile__price">{millions.format(p.price / 1_000_000)}</span>
@@ -64,11 +70,14 @@ export function DraftScreen({ session, data, settings, onPick, onExit }: Props) 
         ))}
       </div>
       <p className="muted matrix__hint">Preise in Mio. $. Tippe auf einen Spieler für Details.</p>
+      <button type="button" className="btn btn--quiet btn--small" disabled={session.draft.refreshedAt !== null} onClick={onRefresh}>
+        {session.draft.refreshedAt === null ? "Matrix neu ziehen (1× pro Run)" : "Schon neu gezogen"}
+      </button>
 
       {open && (
         <div className="sheet-backdrop" onClick={() => setOpen(null)}>
           <div className="sheet" role="dialog" aria-modal="true" aria-label={open.name} onClick={(e) => e.stopPropagation()}>
-            <PlayerCard player={open} disabledReason={affordable(open) ? undefined : LOCKED_REASON}
+            <PlayerCard player={open} disabledReason={blocker(open)}
               onPick={(p) => { setOpen(null); onPick(p); }} />
             <button type="button" className="btn btn--quiet" onClick={() => setOpen(null)}>Schließen</button>
           </div>

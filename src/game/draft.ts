@@ -7,6 +7,8 @@ export interface DraftState {
   picks: Player[];
   round: number;
   offers: Record<Tier, Player[]>;
+  /** Pick-Anzahl, bei der die Matrix neu gezogen wurde (einmal pro Run), sonst null. */
+  refreshedAt: number | null;
 }
 
 const tiers: Tier[] = [1, 2, 3, 4, 5];
@@ -104,21 +106,28 @@ export function drawOffers(pool: Player[], picks: Player[], seed: string, budget
     }
   }
 
-  if (!tiers.some((tier) => offers[tier].some((p) => isAffordable(p, picks, pool, budget)))) {
-    const cheapest = [...eligible].sort((a, b) => a.price - b.price).find((p) => isAffordable(p, picks, pool, budget));
-    if (cheapest) {
-      // Der Rettungsplatz liegt immer in Tier 5, auch wenn der Spieler aus einem anderen Tier stammt.
-      offers[5].splice(Math.max(0, offers[5].length - 1), 1, cheapest);
-    }
-  }
-  return offers;
+  return withRescue(offers, picks, pool, budget);
+}
+
+/** Notregel: Ist keine Kachel wählbar, ersetzt der billigste passende Spieler eine gesperrte Kachel in Tier 5. */
+function withRescue(offers: Record<Tier, Player[]>, picks: Player[], pool: Player[], budget: number): Record<Tier, Player[]> {
+  if (picks.length >= CONFIG.playersPerTeam) return offers;
+  if (tiers.some((tier) => offers[tier].some((p) => isAffordable(p, picks, pool, budget)))) return offers;
+  const shown = new Set(tiers.flatMap((tier) => offers[tier].map((p) => p.id)));
+  const cheapest = [...pool].sort((a, b) => a.price - b.price)
+    .find((p) => !shown.has(p.id) && isAffordable(p, picks, pool, budget));
+  if (!cheapest) return offers;
+  const row = [...offers[5]];
+  // Der Rettungsplatz liegt immer in Tier 5, auch wenn der Spieler aus einem anderen Tier stammt.
+  row.splice(Math.max(0, row.length - 1), row.length >= CONFIG.draft.offersPerTier ? 1 : 0, cheapest);
+  return { ...offers, 5: row };
 }
 
 export function startDraft(pool: Player[], seed: string, budget: number): DraftState {
-  return { picks: [], round: 1, offers: drawOffers(pool, [], seed, budget) };
+  return { picks: [], round: 1, offers: drawOffers(pool, [], seed, budget), refreshedAt: null };
 }
 
-export function pickPlayer(state: DraftState, p: Player, pool: Player[], seed: string, budget: number): DraftState {
+export function pickPlayer(state: DraftState, p: Player, pool: Player[], _seed: string, budget: number): DraftState {
   if (state.picks.length >= CONFIG.playersPerTeam) throw new Error("Der Draft ist bereits vollständig.");
   // Der Pool ist maßgeblich; vom Aufrufer veränderte Kartenpreise werden nicht übernommen.
   const player = pool.find((candidate) => candidate.id === p.id);
@@ -130,6 +139,19 @@ export function pickPlayer(state: DraftState, p: Player, pool: Player[], seed: s
   return {
     picks,
     round: Math.min(picks.length + 1, CONFIG.playersPerTeam),
-    offers: drawOffers(pool, picks, seed, budget),
+    // Die Matrix bleibt stehen: nur der gewählte Spieler verschwindet.
+    offers: withRescue(removeFromOffers(state.offers, player.id), picks, pool, budget),
+    refreshedAt: state.refreshedAt,
   };
+}
+
+function removeFromOffers(offers: Record<Tier, Player[]>, id: string): Record<Tier, Player[]> {
+  return Object.fromEntries(tiers.map((tier) => [tier, offers[tier].filter((p) => p.id !== id)])) as Record<Tier, Player[]>;
+}
+
+/** Einmal pro Run: die komplette Matrix für die noch freien Plätze neu ziehen. */
+export function refreshOffers(state: DraftState, pool: Player[], seed: string, budget: number): DraftState {
+  if (state.refreshedAt !== null) throw new Error("Neu ziehen geht nur einmal pro Run.");
+  if (state.picks.length >= CONFIG.playersPerTeam) throw new Error("Der Draft ist bereits vollständig.");
+  return { ...state, offers: drawOffers(pool, state.picks, seed + "|neu", budget), refreshedAt: state.picks.length };
 }

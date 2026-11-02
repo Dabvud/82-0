@@ -15,7 +15,7 @@ const settings = { deadline: true, bankruptcy: true };
 describe("DraftScreen", () => {
   it("zeigt alle Angebote als Matrix: fünf Tier-Zeilen mit je höchstens fünf Kacheln, ohne Gesamtstärke", () => {
     const session = newSession("free", new Date("2026-11-02T10:00:00Z"), data.pool, data.budget);
-    render(<DraftScreen session={session} data={data} settings={settings} onPick={() => {}} onExit={() => {}} />);
+    render(<DraftScreen session={session} data={data} settings={settings} onPick={() => {}} onExit={() => {}} onRefresh={() => {}} />);
     const rows = screen.getAllByRole("row");
     expect(rows.map((r) => within(r).getByRole("rowheader").textContent)).toEqual(["T1", "T2", "T3", "T4", "T5"]);
     rows.forEach((row, i) => {
@@ -31,7 +31,7 @@ describe("DraftScreen", () => {
   it("öffnet per Antippen die Detailkarte und meldet den gewählten Spieler nach oben", () => {
     const session = newSession("free", new Date("2026-11-02T10:00:00Z"), data.pool, data.budget);
     const onPick = vi.fn();
-    render(<DraftScreen session={session} data={data} settings={settings} onPick={onPick} onExit={() => {}} />);
+    render(<DraftScreen session={session} data={data} settings={settings} onPick={onPick} onExit={() => {}} onRefresh={() => {}} />);
     const card = session.draft.offers[5][0];
     fireEvent.click(screen.getByRole("button", { name: new RegExp(card.name) }));
     const dialog = screen.getByRole("dialog", { name: card.name });
@@ -40,10 +40,34 @@ describe("DraftScreen", () => {
     expect(onPick).toHaveBeenCalledWith(card);
   });
 
+  it("bietet das Neuziehen genau einmal an", () => {
+    const session = newSession("free", new Date("2026-11-02T10:00:00Z"), data.pool, data.budget);
+    const onRefresh = vi.fn();
+    const { rerender } = render(<DraftScreen session={session} data={data} settings={settings} onPick={() => {}} onExit={() => {}} onRefresh={onRefresh} />);
+    fireEvent.click(screen.getByRole("button", { name: /Matrix neu ziehen/ }));
+    expect(onRefresh).toHaveBeenCalledTimes(1);
+    const used = { ...session, draft: { ...session.draft, refreshedAt: 0 } };
+    rerender(<DraftScreen session={used} data={data} settings={settings} onPick={() => {}} onExit={() => {}} onRefresh={onRefresh} />);
+    expect(screen.getByRole("button", { name: /Schon neu gezogen/ })).toBeDisabled();
+  });
+
+  it("graut Spieler ohne freien Platz aus und nennt den Grund", () => {
+    const base = newSession("free", new Date("2026-11-02T10:00:00Z"), data.pool, data.budget);
+    const centers = data.pool.filter((p) => p.positions.length === 1 && p.positions[0] === "C");
+    const shownCenter = Object.values(base.draft.offers).flat().find((p) => p.positions.length === 1 && p.positions[0] === "C")!;
+    const otherCenter = centers.find((c) => c.id !== shownCenter.id)!;
+    const session = { ...base, draft: { ...base.draft, picks: [otherCenter] } };
+    render(<DraftScreen session={session} data={data} settings={settings} onPick={() => {}} onExit={() => {}} onRefresh={() => {}} />);
+    const tile = screen.getByRole("button", { name: new RegExp(shownCenter.name) });
+    expect(tile.getAttribute("aria-label")).toContain("kein freier Platz");
+    fireEvent.click(tile);
+    expect(within(screen.getByRole("dialog")).getByText("Für diese Position ist kein Platz mehr frei")).toBeInTheDocument();
+  });
+
   it("markiert unbezahlbare Kacheln und sperrt sie in der Detailkarte mit Begründung", () => {
     const session = newSession("free", new Date("2026-11-02T10:00:00Z"), data.pool, data.budget);
     const poor = { ...data, budget: 40_000_000 };
-    render(<DraftScreen session={session} data={poor} settings={settings} onPick={() => {}} onExit={() => {}} />);
+    render(<DraftScreen session={session} data={poor} settings={settings} onPick={() => {}} onExit={() => {}} onRefresh={() => {}} />);
     const locked = session.draft.offers[1].filter((p) => !isAffordable(p, [], poor.pool, poor.budget));
     expect(locked.length).toBeGreaterThan(0);
     const tile = screen.getByRole("button", { name: new RegExp(locked[0].name) });

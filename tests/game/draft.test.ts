@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { drawOffers, isAffordable, minCostToComplete, pickPlayer, startDraft } from "../../src/game/draft";
+import { drawOffers, isAffordable, minCostToComplete, pickPlayer, refreshOffers, startDraft } from "../../src/game/draft";
 import { assignSlots, canAdd } from "../../src/game/slots";
 import { hash, makeRng, pick, shuffle } from "../../src/game/rng";
 import type { Player, Pos, Tier } from "../../src/game/types";
@@ -136,17 +136,32 @@ describe("Tier-Angebote", () => {
 });
 
 describe("Draft-Zustand", () => {
-  it("beginnt in Runde 1, zieht neu und verändert vorherige Zustände nicht", () => {
+  it("behält die Matrix über den Draft: nach einem Pick verschwindet nur der gewählte Spieler", () => {
     const state = startDraft(FIXTURE_POOL, "zustand", FIXTURE_BUDGET);
     const before = structuredClone(state);
     expect(state.picks).toEqual([]);
     expect(state.round).toBe(1);
+    expect(state.refreshedAt).toBeNull();
     const p = Object.values(state.offers).flat().find((card) => isAffordable(card, state.picks, FIXTURE_POOL, FIXTURE_BUDGET))!;
     const next = pickPlayer(state, p, FIXTURE_POOL, "zustand", FIXTURE_BUDGET);
     expect(next.picks).toEqual([p]);
     expect(next.round).toBe(2);
-    expect(next.offers).toEqual(drawOffers(FIXTURE_POOL, [p], "zustand", FIXTURE_BUDGET));
+    const remove = (o: typeof state.offers) => Object.fromEntries(Object.entries(o).map(([t, list]) => [t, list.filter((c) => c.id !== p.id)]));
+    expect(next.offers).toEqual(remove(state.offers));
     expect(state).toEqual(before);
+  });
+
+  it("erlaubt genau einmal pro Run, die Matrix neu zu ziehen", () => {
+    const state = startDraft(FIXTURE_POOL, "neu", FIXTURE_BUDGET);
+    const p = Object.values(state.offers).flat().find((card) => isAffordable(card, [], FIXTURE_POOL, FIXTURE_BUDGET))!;
+    const afterPick = pickPlayer(state, p, FIXTURE_POOL, "neu", FIXTURE_BUDGET);
+    const refreshed = refreshOffers(afterPick, FIXTURE_POOL, "neu", FIXTURE_BUDGET);
+    expect(refreshed.refreshedAt).toBe(1);
+    expect(refreshed.picks).toEqual(afterPick.picks);
+    expect(refreshed.offers).toEqual(refreshOffers(afterPick, FIXTURE_POOL, "neu", FIXTURE_BUDGET).offers);
+    expect(refreshed.offers).not.toEqual(afterPick.offers);
+    expect(Object.values(refreshed.offers).flat().every((c) => canAdd(refreshed.picks, c))).toBe(true);
+    expect(() => refreshOffers(refreshed, FIXTURE_POOL, "neu", FIXTURE_BUDGET)).toThrow(/einmal/);
   });
 
   it("weist nicht angebotene und unbezahlbare Picks ab", () => {
@@ -166,10 +181,12 @@ describe("Draft-Massentests", () => {
       const seed = `${strategy}-${draft}`;
       const rng = makeRng(hash(`auswahl-${seed}`));
       let state = startDraft(FIXTURE_POOL, seed, FIXTURE_BUDGET);
+      // Jeder zweite Draft nutzt das einmalige Neuziehen in einer zufälligen Runde.
+      const refreshRound = draft % 2 === 0 ? 1 + Math.floor(rng() * 5) : 0;
       for (let round = 1; round <= 5; round++) {
+        if (round === refreshRound) state = refreshOffers(state, FIXTURE_POOL, seed, FIXTURE_BUDGET);
         const cards = Object.values(state.offers).flat();
-        if (state.round !== round || Object.values(state.offers).some((offer) => offer.length > 5)
-          || cards.some((p) => !canAdd(state.picks, p))) {
+        if (state.round !== round || Object.values(state.offers).some((offer) => offer.length > 5)) {
           throw new Error(`Ungültige Angebote: ${seed}, Runde ${round}`);
         }
         const affordable = cards.filter((p) => isAffordable(p, state.picks, FIXTURE_POOL, FIXTURE_BUDGET));
@@ -185,7 +202,7 @@ describe("Draft-Massentests", () => {
         || Object.values(slots).filter((pos) => pos === "G").length !== 2
         || Object.values(slots).filter((pos) => pos === "F").length !== 2
         || Object.values(slots).filter((pos) => pos === "C").length !== 1
-        || total > FIXTURE_BUDGET || Object.values(state.offers).some((offer) => offer.length !== 0)) {
+        || total > FIXTURE_BUDGET) {
         throw new Error(`Ungültiges Endergebnis: ${seed}, Preis ${total}`);
       }
       maxCost = Math.max(maxCost, total);

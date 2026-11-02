@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import type { GameData, Settings } from "./app-data";
 import InstallHelp from "./components/InstallHelp";
 import { puzzleNumber } from "./game/daily";
-import { pickPlayer } from "./game/draft";
+import { pickPlayer, refreshOffers } from "./game/draft";
 import { playSeason } from "./game/season";
 import type { SeasonLog } from "./game/season";
 import { newSession, seedKeyFor } from "./game/session";
@@ -72,6 +72,11 @@ export default function App({ data }: { data: GameData }) {
     update({ ...session, draft, phase: draft.picks.length === 5 ? "squad" : "draft" });
   }
 
+  function refresh() {
+    if (!session || session.draft.refreshedAt !== null) return;
+    update({ ...session, draft: refreshOffers(session.draft, data.pool, session.runSeed, data.budget) });
+  }
+
   function startSeason() {
     if (!session) return;
     update({ ...session, phase: "season", trade: settings.deadline ? "pending" : undefined });
@@ -105,7 +110,7 @@ export default function App({ data }: { data: GameData }) {
   } else if (view === "game" && session) {
     const lineup = session.draft.picks;
     if (session.phase === "draft") {
-      content = <DraftScreen session={session} data={data} settings={settings} onPick={pick} onExit={home} />;
+      content = <DraftScreen session={session} data={data} settings={settings} onPick={pick} onExit={home} onRefresh={refresh} />;
     } else if (session.phase === "squad") {
       content = <SquadScreen lineup={lineup} data={data} settings={settings} onStart={startSeason} />;
     } else if (session.phase === "season" || session.phase === "deadline") {

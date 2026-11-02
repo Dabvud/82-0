@@ -1,6 +1,6 @@
 import { CONFIG } from "./config";
 import { berlinDate, isCalendarDate } from "./game/daily";
-import { pickPlayer, startDraft } from "./game/draft";
+import { pickPlayer, refreshOffers, startDraft } from "./game/draft";
 import { newSession, seedKeyFor } from "./game/session";
 import type { Session } from "./game/session";
 import { emptyStats } from "./game/stats";
@@ -52,7 +52,7 @@ export function saveDaily(session: Session): void {
     ? { outId: session.trade.outId, inId: session.trade.offer.player.id, injured: session.trade.offer.injured }
     : session.trade;
   write(KEYS.daily, { mode: session.mode, date: session.date, runSeed: session.runSeed,
-    picks: session.draft.picks.map(player => player.id), phase: session.phase, trade });
+    picks: session.draft.picks.map(player => player.id), refreshedAt: session.draft.refreshedAt, phase: session.phase, trade });
 }
 
 export function loadDaily(now: Date, pool: Player[], budget: number): Session | null {
@@ -61,12 +61,17 @@ export function loadDaily(now: Date, pool: Player[], budget: number): Session | 
     || value.runSeed !== value.date || !Array.isArray(value.picks) || value.picks.length > CONFIG.playersPerTeam
     || typeof value.phase !== "string" || !["draft", "squad", "season", "deadline", "result"].includes(value.phase)) return null;
   try {
+    // Das einmalige Neuziehen wird an derselben Stelle nachgespielt (fehlt bei alten Ständen → nie).
+    const refreshedAt = value.refreshedAt === undefined ? null : value.refreshedAt;
+    if (refreshedAt !== null && !isInteger(refreshedAt, 0, value.picks.length)) return null;
     let draft = startDraft(pool, value.runSeed, budget);
-    for (const id of value.picks) {
+    value.picks.forEach((id: unknown, index: number) => {
+      if (refreshedAt === index) draft = refreshOffers(draft, pool, value.runSeed as string, budget);
       const player = typeof id === "string" ? pool.find(candidate => candidate.id === id) : undefined;
-      if (!player) return null;
-      draft = pickPlayer(draft, player, pool, value.runSeed, budget);
-    }
+      if (!player) throw new Error("Unbekannte Spieler-ID im Speicher.");
+      draft = pickPlayer(draft, player, pool, value.runSeed as string, budget);
+    });
+    if (refreshedAt === value.picks.length) draft = refreshOffers(draft, pool, value.runSeed as string, budget);
     const phase = value.phase as Session["phase"];
     if (phase !== "draft" && draft.picks.length !== CONFIG.playersPerTeam) return null;
     const session: Session = { mode: "daily", date: value.date, runSeed: value.runSeed, draft, phase, trade: undefined };

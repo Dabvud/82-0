@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { isAffordable, pickPlayer } from "../src/game/draft";
+import { isAffordable, pickPlayer, refreshOffers } from "../src/game/draft";
 import { newSession, seedKeyFor } from "../src/game/session";
 import type { Session } from "../src/game/session";
 import { playSeason } from "../src/game/season";
@@ -31,11 +31,24 @@ describe("Tagesrätsel-Speicher", () => {
     saveDaily(session);
     const raw = JSON.parse(localStorage.getItem(dailyKey)!);
     expect(raw).toEqual({ mode: "daily", date: "2026-11-02", runSeed: session.runSeed,
-      picks: session.draft.picks.map(p => p.id), phase: "deadline", trade: "pending" });
+      picks: session.draft.picks.map(p => p.id), refreshedAt: null, phase: "deadline", trade: "pending" });
     const restored = loadDaily(now, FIXTURE_POOL, FIXTURE_BUDGET)!;
     expect(restored).toEqual(session);
     expect(season(restored)).toEqual(season(session));
     expect(season(restored).games).toHaveLength(50);
+  });
+
+  it("erhält ein einmaliges Neuziehen samt Matrix nach dem Neuladen", () => {
+    const session = newSession("daily", now, FIXTURE_POOL, FIXTURE_BUDGET);
+    const first = Object.values(session.draft.offers).flat().find(p => isAffordable(p, [], FIXTURE_POOL, FIXTURE_BUDGET))!;
+    session.draft = pickPlayer(session.draft, first, FIXTURE_POOL, session.runSeed, FIXTURE_BUDGET);
+    session.draft = refreshOffers(session.draft, FIXTURE_POOL, session.runSeed, FIXTURE_BUDGET);
+    const second = Object.values(session.draft.offers).flat().find(p => isAffordable(p, session.draft.picks, FIXTURE_POOL, FIXTURE_BUDGET))!;
+    session.draft = pickPlayer(session.draft, second, FIXTURE_POOL, session.runSeed, FIXTURE_BUDGET);
+    saveDaily(session);
+    const loaded = loadDaily(now, FIXTURE_POOL, FIXTURE_BUDGET)!;
+    expect(loaded).toEqual(session);
+    expect(loaded.draft.refreshedAt).toBe(1);
   });
 
   it("erhält nach jedem Pick Angebote und Reihenfolge", () => {
