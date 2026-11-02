@@ -3,9 +3,9 @@ import { berlinDate, msUntilNextPuzzle, puzzleNumber } from "../../src/game/dail
 
 describe("Tagesrätsel", () => {
   it.each([
-    ["2026-10-25T23:30:00Z", 1], ["2026-10-25T22:59:00Z", 1],
-    ["2026-10-27T10:00:00Z", 2], ["2027-03-28T21:30:00Z", 154],
-    ["2027-03-28T22:30:00Z", 155],
+    ["2026-11-01T23:30:00Z", 1], ["2026-11-01T22:59:00Z", 1],
+    ["2026-11-03T10:00:00Z", 2], ["2027-03-28T21:30:00Z", 147],
+    ["2027-03-28T22:30:00Z", 148],
   ])("berechnet die Rätselnummer für %s", (date, n) => {
     expect(puzzleNumber(new Date(date))).toBe(n);
   });

@@ -1,4 +1,4 @@
-export const LAUNCH_DATE = "2026-10-26";
+export const LAUNCH_DATE = "2026-11-02";
 const DAY_MS = 24 * 60 * 60 * 1000;
 
 export function isCalendarDate(value: unknown): value is string {
