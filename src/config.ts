@@ -5,6 +5,11 @@ export const CONFIG = {
   minGames: 35,
   peakSeasons: 3,
   playersPerTeam: 5,
+  draft: {
+    slots: { G: 2, F: 2, C: 1 },
+    offersPerTier: 5,
+    completionCandidatesPerPosition: 6,
+  },
   twoPointValue: 2,
   shooterWeights: { threePoint: 0.75, freeThrow: 0.25 },
   turnoverPenalty: 0.5,
