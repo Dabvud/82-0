@@ -33,12 +33,14 @@ interface Props {
   label: string;
   minDigits?: number;
   className?: string;
+  /** Nur Zierde, wenn ein umgebendes Element den Text schon vorliest. */
+  decorative?: boolean;
 }
 
-export function SegmentDisplay({ value, label, minDigits = 0, className }: Props) {
+export function SegmentDisplay({ value, label, minDigits = 0, className, decorative = false }: Props) {
   const chars = value.padStart(minDigits, " ").split("");
   return (
-    <span className={["segments", className].filter(Boolean).join(" ")} role="img" aria-label={label}>
+    <span className={["segments", className].filter(Boolean).join(" ")} {...(decorative ? { "aria-hidden": true } : { role: "img", "aria-label": label })}>
       {chars.map((char, index) => {
         const lit = new Set(GLYPHS[char] ?? []);
         return (

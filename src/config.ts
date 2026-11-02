@@ -69,4 +69,5 @@ export const CONFIG = {
   overpaidMargin: 8,
   budgetPct: 1.40,
   luxuryPct: 1.20,
+  ui: { tickerMs: 9000 },
 } as const;
