@@ -40,7 +40,7 @@ export function ResultScreen({ log, lineup, puzzleNo, now, onAgain, onHome }: Pr
       <p className="verdict">{tierLabel(log.wins)}</p>
       <p className="share-text">{text}</p>
       <div className="stack">
-        <button type="button" className="btn btn--main" onClick={async () => setStatus(SHARE_STATUS[await shareResult(text)])}>
+        <button type="button" className="btn btn--quiet" onClick={async () => setStatus(SHARE_STATUS[await shareResult(text)])}>
           Ergebnis teilen
         </button>
         {status && <p className="muted" role="status">{status}</p>}

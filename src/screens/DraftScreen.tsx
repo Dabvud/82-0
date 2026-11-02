@@ -24,7 +24,6 @@ interface Props {
 const TIERS: Tier[] = [1, 2, 3, 4, 5];
 const LOCKED_REASON = "Danach reicht das Budget nicht mehr für die restlichen Plätze";
 const NO_SLOT_REASON = "Für diese Position ist kein Platz mehr frei";
-const millions = new Intl.NumberFormat("de-DE", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 
 /** Kurzname für die Kachel: „A. Davis“ – Initiale gegen gleiche Nachnamen, Zusätze wie „Jr.“ bleiben weg. */
 function shortName(name: string): string {
@@ -70,7 +69,7 @@ export function DraftScreen({ session, data, settings, onPick, onExit, onRefresh
                     aria-label={`${p.name}, ${p.positions.join("/")}, ${formatMoney(p.price)}${ok ? "" : reason === NO_SLOT_REASON ? ", kein freier Platz" : ", zu teuer"}`}>
                     <span className="tile__name">{shortName(p.name)}</span>
                     <span className="tile__pos">{p.positions.join("/")}</span>
-                    <span className="tile__price">{millions.format(p.price / 1_000_000)}</span>
+                    <span className="tile__price">{formatMoney(p.price)}</span>
                   </button>
                 </span>
               );
@@ -78,7 +77,7 @@ export function DraftScreen({ session, data, settings, onPick, onExit, onRefresh
           </div>
         ))}
       </div>
-      <p className="muted matrix__hint">Preise in Mio. $. Tippe auf einen Spieler für Details.</p>
+      <p className="muted matrix__hint">Tippe auf einen Spieler für Details oder zieh ihn auf einen Platz.</p>
       <button type="button" className="btn btn--quiet btn--small" disabled={session.draft.refreshedAt !== null} onClick={onRefresh}>
         {session.draft.refreshedAt === null ? "Matrix neu ziehen (1× pro Run)" : "Schon neu gezogen"}
       </button>
