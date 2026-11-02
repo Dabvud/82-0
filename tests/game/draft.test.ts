@@ -158,9 +158,11 @@ describe("Draft-Zustand", () => {
 });
 
 describe("Draft-Massentests", () => {
-  it.each(["zufällig", "gierig"] as const)("beendet 5 000 Drafts ohne Sackgasse: %s", (strategy) => {
+  it.each(["zufällig", "gierig"] as const)("beendet 5 000 Drafts ohne Sackgasse: %s", async (strategy) => {
     let maxCost = 0;
     for (let draft = 0; draft < 5000; draft++) {
+      // Kurz abgeben, damit der Vitest-Worker bei der langen Schleife erreichbar bleibt.
+      if (draft % 200 === 0) await new Promise((resolve) => setTimeout(resolve, 0));
       const seed = `${strategy}-${draft}`;
       const rng = makeRng(hash(`auswahl-${seed}`));
       let state = startDraft(FIXTURE_POOL, seed, FIXTURE_BUDGET);
