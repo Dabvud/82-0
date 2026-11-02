@@ -69,6 +69,8 @@ export function TickerScreen({ lineup, seedKey, data, settings, initialDecision,
   const wins = visible.filter((g) => g.win).length;
   const losses = visible.length - wins;
   const finished = shown >= GAMES && log.status === "done";
+  const lastLoss = [...visible].reverse().find((g) => !g.win);
+  const teamName = (abbr: string) => data.teams.find((team) => team.abbr === abbr)?.name ?? abbr;
 
   function decide(next: TradeDecision) {
     setDecision(next);
@@ -86,6 +88,10 @@ export function TickerScreen({ lineup, seedKey, data, settings, initialDecision,
         <div className="ticker__meta"><span>Spiel {Math.min(shown, GAMES)} von {GAMES}</span></div>
         <div className="ticker__progress" aria-hidden="true"><span style={{ width: `${(shown / GAMES) * 100}%` }} /></div>
       </div>
+
+      {lastLoss && (
+        <p className="ticker__loss" aria-live="polite">❌ Spiel {lastLoss.game}: Niederlage gegen {teamName(lastLoss.opp)}</p>
+      )}
 
       {banner && !pause && <p className="event">{banner}</p>}
 

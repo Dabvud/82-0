@@ -4,12 +4,14 @@ import { msUntilNextPuzzle } from "../game/daily";
 import { tierLabel } from "../game/season";
 import type { SeasonLog } from "../game/season";
 import { shareText } from "../game/share";
-import type { Player } from "../game/types";
+import type { NbaTeam, Player } from "../game/types";
 import { shareResult } from "../share";
 
 interface Props {
   log: SeasonLog;
   lineup: Player[];
+  /** Für die Namen der Teams, die dich geschlagen haben. */
+  teams?: NbaTeam[];
   /** Rätselnummer im Tagesrätsel, sonst null. */
   puzzleNo: number | null;
   now: Date;
@@ -24,7 +26,9 @@ function countdown(ms: number): string {
 
 const SHARE_STATUS = { shared: "Geteilt.", copied: "In die Zwischenablage kopiert.", cancelled: null, failed: "Teilen hat nicht geklappt." } as const;
 
-export function ResultScreen({ log, lineup, puzzleNo, now, onAgain, onHome }: Props) {
+export function ResultScreen({ log, lineup, teams = [], puzzleNo, now, onAgain, onHome }: Props) {
+  const losses = log.games.filter((g) => !g.win);
+  const teamName = (abbr: string) => teams.find((team) => team.abbr === abbr)?.name ?? abbr;
   const text = shareText(puzzleNo, log, lineup);
   const [status, setStatus] = useState<string | null>(null);
   const [clock, setClock] = useState(now);
@@ -38,6 +42,14 @@ export function ResultScreen({ log, lineup, puzzleNo, now, onAgain, onHome }: Pr
     <>
       <Scoreboard wins={log.wins} losses={log.losses} />
       <p className="verdict">{tierLabel(log.wins)}</p>
+      {losses.length > 0 && (
+        <section className="losses">
+          <h3>Geschlagen von</h3>
+          <ul aria-label="Niederlagen">
+            {losses.map((g) => <li key={g.game}>Spiel {g.game}: {teamName(g.opp)}</li>)}
+          </ul>
+        </section>
+      )}
       <p className="share-text">{text}</p>
       <div className="stack">
         <button type="button" className="btn btn--quiet" onClick={async () => setStatus(SHARE_STATUS[await shareResult(text)])}>

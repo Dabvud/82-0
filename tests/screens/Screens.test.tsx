@@ -103,13 +103,12 @@ describe("TickerScreen", () => {
     makePlayer({ id: "c1", positions: ["C"], name: "Center Eins" }),
   ];
 
-  it("zählt nur die Bilanz hoch und zeigt keine Spielergebnisse", () => {
+  it("zählt die Bilanz hoch und zeigt keine Spielergebnisse wie 118:104", () => {
     render(<TickerScreen lineup={lineup} seedKey="t" data={data} settings={{ deadline: false, bankruptcy: false }} onDone={() => {}} />);
     act(() => { vi.advanceTimersByTime(1500); });
     const board = screen.getByRole("img", { name: /Bilanz/ });
     expect(board).toBeInTheDocument();
     expect(screen.queryByText(/:\d/)).not.toBeInTheDocument();
-    expect(screen.queryByText(/gegen/)).not.toBeInTheDocument();
   });
 
   it("springt mit Vorspulen ans Ende und meldet das Saisonergebnis", () => {
@@ -155,5 +154,37 @@ describe("ResultScreen", () => {
     expect(screen.getByText("Warriors-Rekord geknackt")).toBeInTheDocument();
     expect(screen.getByText(/82-0 #12 · 75-7 🏆/)).toBeInTheDocument();
     expect(screen.getByText(/Nächstes Rätsel in/)).toBeInTheDocument();
+  });
+
+  it("listet die Teams, die dich geschlagen haben, mit Spielnummer", () => {
+    const log: SeasonLog = { games: [
+      { game: 1, opp: FIXTURE_TEAMS[0].abbr, home: true, win: true },
+      { game: 2, opp: FIXTURE_TEAMS[1].abbr, home: false, win: false },
+      { game: 3, opp: FIXTURE_TEAMS[2].abbr, home: true, win: false },
+    ], events: [], wins: 80, losses: 2, status: "done" };
+    render(<ResultScreen log={log} lineup={FIXTURE_POOL.slice(0, 5)} teams={FIXTURE_TEAMS} puzzleNo={null} now={new Date()} onAgain={() => {}} onHome={() => {}} />);
+    const list = screen.getByRole("list", { name: "Niederlagen" });
+    expect(list).toHaveTextContent(`Spiel 2: ${FIXTURE_TEAMS[1].name}`);
+    expect(list).toHaveTextContent(`Spiel 3: ${FIXTURE_TEAMS[2].name}`);
+  });
+});
+
+describe("Niederlagen im Ticker", () => {
+  it("nennt nach dem Vorspulen das Team der letzten Niederlage", () => {
+    const lineup = FIXTURE_POOL.filter((p) => p.tier === 5).slice(0, 0);
+    void lineup;
+    const five = [
+      makePlayer({ id: "g1", positions: ["G"], strength: 20 }), makePlayer({ id: "g2", positions: ["G"], strength: 20 }),
+      makePlayer({ id: "f1", positions: ["F"], strength: 20 }), makePlayer({ id: "f2", positions: ["F"], strength: 20 }),
+      makePlayer({ id: "c1", positions: ["C"], strength: 20 }),
+    ];
+    const onDone = vi.fn();
+    render(<TickerScreen lineup={five} seedKey="verlierer" data={data} settings={{ deadline: false, bankruptcy: false }} onDone={onDone} />);
+    fireEvent.click(screen.getByRole("button", { name: "Vorspulen" }));
+    fireEvent.click(screen.getByRole("button", { name: "Zum Ergebnis" }));
+    const log: SeasonLog = onDone.mock.calls[0][0];
+    const last = [...log.games].reverse().find((g) => !g.win)!;
+    const team = FIXTURE_TEAMS.find((t) => t.abbr === last.opp)!;
+    expect(screen.getByText(`❌ Spiel ${last.game}: Niederlage gegen ${team.name}`)).toBeInTheDocument();
   });
 });

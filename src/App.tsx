@@ -123,7 +123,7 @@ export default function App({ data }: { data: GameData }) {
         initialDecision={session.trade === "pending" ? undefined : session.trade ?? undefined}
         onDecision={decide} onDone={finish} />;
     } else {
-      content = <ResultScreen log={seasonLog(session, data, settings)} lineup={lineup}
+      content = <ResultScreen log={seasonLog(session, data, settings)} lineup={lineup} teams={data.teams}
         puzzleNo={session.mode === "daily" ? puzzleNumber(new Date()) : null} now={new Date()}
         onAgain={() => open("free")} onHome={home} />;
     }
