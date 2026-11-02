@@ -56,7 +56,7 @@ export const CONFIG = {
     seasonGames: 82,
     deadlineAfterGame: 50,
     homeAdv: 1.5,
-    scale: 7,
+    scale: 6,
     tiers: { playoffs: 60, contender: 70, record: 74, perfection: 82 },
   },
   twoPointValue: 2,

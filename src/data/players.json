@@ -180,7 +180,7 @@
       "blk": 8.856230031948881
     },
     "strength": 91.40894568690096,
-    "tier": 1,
+    "tier": 2,
     "price": 37520000,
     "priceSource": "contract",
     "contract": {
@@ -405,7 +405,7 @@
       "blk": 73.6964856230032
     },
     "strength": 88.24600638977635,
-    "tier": 1,
+    "tier": 2,
     "price": 49480000,
     "priceSource": "contract",
     "contract": {
@@ -469,7 +469,7 @@
       "blk": 14.391373801916933
     },
     "strength": 86.03194888178913,
-    "tier": 1,
+    "tier": 2,
     "price": 56690000,
     "priceSource": "contract",
     "contract": {
@@ -599,7 +599,7 @@
       "blk": 94.2555910543131
     },
     "strength": 91.09265175718849,
-    "tier": 1,
+    "tier": 2,
     "price": 56190000,
     "priceSource": "tier",
     "contract": null,
@@ -661,7 +661,7 @@
       "blk": 92.99041533546325
     },
     "strength": 87.9297124600639,
-    "tier": 1,
+    "tier": 2,
     "price": 49480000,
     "priceSource": "contract",
     "contract": {
@@ -1143,7 +1143,7 @@
       "blk": 27.201277955271568
     },
     "strength": 90.77635782747605,
-    "tier": 1,
+    "tier": 2,
     "price": 49480000,
     "priceSource": "contract",
     "contract": {
@@ -1239,7 +1239,7 @@
       "blk": 24.038338658146962
     },
     "strength": 85.08306709265175,
-    "tier": 1,
+    "tier": 2,
     "price": 49480000,
     "priceSource": "contract",
     "contract": {
@@ -1431,7 +1431,7 @@
       "blk": 64.84025559105432
     },
     "strength": 89.19488817891374,
-    "tier": 1,
+    "tier": 2,
     "price": 43660000,
     "priceSource": "contract",
     "contract": {
@@ -1463,7 +1463,7 @@
       "blk": 34.79233226837061
     },
     "strength": 80.65495207667732,
-    "tier": 1,
+    "tier": 2,
     "price": 57730000,
     "priceSource": "contract",
     "contract": {
@@ -1528,7 +1528,7 @@
       "blk": 82.23642172523962
     },
     "strength": 83.50159744408946,
-    "tier": 1,
+    "tier": 2,
     "price": 57730000,
     "priceSource": "contract",
     "contract": {
@@ -1653,7 +1653,7 @@
       "blk": 92.04153354632588
     },
     "strength": 74.01277955271566,
-    "tier": 2,
+    "tier": 1,
     "price": 51860000,
     "priceSource": "contract",
     "contract": {
@@ -1750,7 +1750,7 @@
       "blk": 96.78594249201278
     },
     "strength": 85.39936102236422,
-    "tier": 1,
+    "tier": 2,
     "price": 57730000,
     "priceSource": "contract",
     "contract": {
@@ -1975,7 +1975,7 @@
       "blk": 96.46964856230032
     },
     "strength": 84.13418530351439,
-    "tier": 1,
+    "tier": 2,
     "price": 49480000,
     "priceSource": "contract",
     "contract": {
@@ -2104,7 +2104,7 @@
       "blk": 88.24600638977635
     },
     "strength": 81.28753993610223,
-    "tier": 1,
+    "tier": 2,
     "price": 49480000,
     "priceSource": "contract",
     "contract": {
@@ -2326,7 +2326,7 @@
       "blk": 40.80191693290735
     },
     "strength": 80.33865814696486,
-    "tier": 1,
+    "tier": 2,
     "price": 43660000,
     "priceSource": "contract",
     "contract": {
@@ -2521,7 +2521,7 @@
       "blk": 93.62300319488817
     },
     "strength": 83.185303514377,
-    "tier": 1,
+    "tier": 2,
     "price": 52700000,
     "priceSource": "tier",
     "contract": null,
@@ -3063,7 +3063,7 @@
       "blk": 94.57188498402556
     },
     "strength": 82.55271565495207,
-    "tier": 1,
+    "tier": 2,
     "price": 52420000,
     "priceSource": "tier",
     "contract": null,
@@ -3092,7 +3092,7 @@
       "blk": 53.453674121405754
     },
     "strength": 80.97124600638978,
-    "tier": 1,
+    "tier": 2,
     "price": 49480000,
     "priceSource": "contract",
     "contract": {
@@ -3124,7 +3124,7 @@
       "blk": 38.587859424920126
     },
     "strength": 82.86900958466454,
-    "tier": 1,
+    "tier": 2,
     "price": 52560000,
     "priceSource": "tier",
     "contract": null,
@@ -3666,7 +3666,7 @@
       "blk": 20.559105431309906
     },
     "strength": 82.23642172523962,
-    "tier": 1,
+    "tier": 2,
     "price": 52280000,
     "priceSource": "tier",
     "contract": null,
@@ -3727,7 +3727,7 @@
       "blk": 85.08306709265175
     },
     "strength": 92.35782747603834,
-    "tier": 1,
+    "tier": 2,
     "price": 33430000,
     "priceSource": "contract",
     "contract": {
@@ -3791,7 +3791,7 @@
       "blk": 69.58466453674122
     },
     "strength": 93.62300319488817,
-    "tier": 1,
+    "tier": 2,
     "price": 57310000,
     "priceSource": "tier",
     "contract": null,
@@ -4792,7 +4792,7 @@
       "blk": 74.96166134185303
     },
     "strength": 87.61341853035144,
-    "tier": 1,
+    "tier": 2,
     "price": 38070000,
     "priceSource": "contract",
     "contract": {
@@ -5983,7 +5983,7 @@
       "blk": 45.86261980830671
     },
     "strength": 85.71565495207668,
-    "tier": 1,
+    "tier": 2,
     "price": 53820000,
     "priceSource": "tier",
     "contract": null,
@@ -6462,7 +6462,7 @@
       "blk": 4.111821086261981
     },
     "strength": 86.66453674121406,
-    "tier": 1,
+    "tier": 2,
     "price": 54240000,
     "priceSource": "tier",
     "contract": null,
@@ -8220,7 +8220,7 @@
       "blk": 76.54313099041534
     },
     "strength": 88.56230031948881,
-    "tier": 1,
+    "tier": 2,
     "price": 55080000,
     "priceSource": "tier",
     "contract": null,
