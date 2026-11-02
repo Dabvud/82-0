@@ -3,6 +3,7 @@ import type { GameData, Settings } from "../app-data";
 import { BudgetBar } from "../components/BudgetBar";
 import { PlayerCard } from "../components/PlayerCard";
 import { SlotBar } from "../components/SlotBar";
+import { formatMoney } from "../format";
 import { isAffordable } from "../game/draft";
 import type { Session } from "../game/session";
 import type { Player, Tier } from "../game/types";
@@ -16,19 +17,20 @@ interface Props {
 }
 
 const TIERS: Tier[] = [1, 2, 3, 4, 5];
-const TIER_HINT: Record<Tier, string> = {
-  1: "Die Besten der Besten",
-  2: "Stars",
-  3: "Starke Starter",
-  4: "Solide Rollenspieler",
-  5: "Ergänzungsspieler",
-};
+const LOCKED_REASON = "Danach reicht das Budget nicht mehr für die restlichen Plätze";
+const millions = new Intl.NumberFormat("de-DE", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+
+/** Kurzname für die Kachel: „A. Davis“ – Initiale gegen gleiche Nachnamen, Zusätze wie „Jr.“ bleiben weg. */
+function shortName(name: string): string {
+  const parts = name.split(/\s+/).filter((part) => !/^(Jr\.?|Sr\.?|II|III|IV)$/i.test(part));
+  return parts.length > 1 ? `${parts[0][0]}. ${parts.slice(1).join(" ")}` : name;
+}
 
 export function DraftScreen({ session, data, settings, onPick, onExit }: Props) {
-  const [tier, setTier] = useState<Tier>(1);
+  const [open, setOpen] = useState<Player | null>(null);
   const { picks, offers } = session.draft;
   const spent = picks.reduce((sum, p) => sum + p.price, 0);
-  const cards = offers[tier];
+  const affordable = (p: Player) => isAffordable(p, picks, data.pool, data.budget);
 
   return (
     <>
@@ -41,24 +43,37 @@ export function DraftScreen({ session, data, settings, onPick, onExit }: Props) 
         <SlotBar picks={picks} />
       </div>
 
-      <div className="tiers" role="tablist" aria-label="Tiers">
-        {TIERS.map((t) => (
-          <button key={t} type="button" role="tab" id={`tab-${t}`} aria-controls="tier-panel"
-            aria-selected={t === tier} className="tiers__tab" onClick={() => setTier(t)}>
-            T{t}
-          </button>
+      <div className="matrix" role="table" aria-label="Angebote dieser Runde">
+        {TIERS.map((tier) => (
+          <div key={tier} className="matrix__row" role="row">
+            <span className="matrix__tier" role="rowheader">T{tier}</span>
+            {offers[tier].map((p) => {
+              const ok = affordable(p);
+              return (
+                <span key={p.id} role="cell" className="matrix__cell">
+                  <button type="button" className={ok ? "tile" : "tile tile--locked"} onClick={() => setOpen(p)}
+                    aria-label={`${p.name}, ${p.positions.join("/")}, ${formatMoney(p.price)}${ok ? "" : ", zu teuer"}`}>
+                    <span className="tile__name">{shortName(p.name)}</span>
+                    <span className="tile__pos">{p.positions.join("/")}</span>
+                    <span className="tile__price">{millions.format(p.price / 1_000_000)}</span>
+                  </button>
+                </span>
+              );
+            })}
+          </div>
         ))}
       </div>
-      <p className="tiers__hint">{TIER_HINT[tier]}</p>
+      <p className="muted matrix__hint">Preise in Mio. $. Tippe auf einen Spieler für Details.</p>
 
-      <div className="cards" role="tabpanel" id="tier-panel" aria-labelledby={`tab-${tier}`}>
-        {cards.length === 0 && <p className="muted">In diesem Tier passt gerade niemand auf deine freien Plätze.</p>}
-        {cards.map((player) => (
-          <PlayerCard key={player.id} player={player} onPick={onPick}
-            disabledReason={isAffordable(player, picks, data.pool, data.budget)
-              ? undefined : "Danach reicht das Budget nicht mehr für die restlichen Plätze"} />
-        ))}
-      </div>
+      {open && (
+        <div className="sheet-backdrop" onClick={() => setOpen(null)}>
+          <div className="sheet" role="dialog" aria-modal="true" aria-label={open.name} onClick={(e) => e.stopPropagation()}>
+            <PlayerCard player={open} disabledReason={affordable(open) ? undefined : LOCKED_REASON}
+              onPick={(p) => { setOpen(null); onPick(p); }} />
+            <button type="button" className="btn btn--quiet" onClick={() => setOpen(null)}>Schließen</button>
+          </div>
+        </div>
+      )}
     </>
   );
 }

@@ -13,38 +13,45 @@ const data: GameData = { pool: FIXTURE_POOL, teams: FIXTURE_TEAMS, budget: FIXTU
 const settings = { deadline: true, bankruptcy: true };
 
 describe("DraftScreen", () => {
-  it("zeigt fünf Tier-Reiter mit je höchstens fünf Karten ohne Gesamtstärke", () => {
+  it("zeigt alle Angebote als Matrix: fünf Tier-Zeilen mit je höchstens fünf Kacheln, ohne Gesamtstärke", () => {
     const session = newSession("free", new Date("2026-11-02T10:00:00Z"), data.pool, data.budget);
     render(<DraftScreen session={session} data={data} settings={settings} onPick={() => {}} onExit={() => {}} />);
-    const tabs = screen.getAllByRole("tab");
-    expect(tabs.map((t) => t.textContent)).toEqual(["T1", "T2", "T3", "T4", "T5"]);
-    for (const tab of tabs) {
-      fireEvent.click(tab);
-      const panel = screen.getByRole("tabpanel");
-      expect(within(panel).getAllByRole("article").length).toBeLessThanOrEqual(5);
-      expect(within(panel).queryByText(/Stärke/)).not.toBeInTheDocument();
-    }
+    const rows = screen.getAllByRole("row");
+    expect(rows.map((r) => within(r).getByRole("rowheader").textContent)).toEqual(["T1", "T2", "T3", "T4", "T5"]);
+    rows.forEach((row, i) => {
+      const tier = (i + 1) as 1 | 2 | 3 | 4 | 5;
+      const labels = within(row).queryAllByRole("button").map((b) => b.getAttribute("aria-label") ?? "");
+      expect(labels).toHaveLength(session.draft.offers[tier].length);
+      session.draft.offers[tier].forEach((p, j) => expect(labels[j]).toContain(p.name));
+      expect(labels.length).toBeLessThanOrEqual(5);
+    });
+    expect(screen.queryByText(/Stärke/)).not.toBeInTheDocument();
   });
 
-  it("sperrt Karten, die das Budget sprengen würden, mit Begründung", () => {
-    const session = newSession("free", new Date("2026-11-02T10:00:00Z"), data.pool, data.budget);
-    const poor = { ...data, budget: 40_000_000 };
-    render(<DraftScreen session={session} data={poor} settings={settings} onPick={() => {}} onExit={() => {}} />);
-    fireEvent.click(screen.getByRole("tab", { name: "T1" }));
-    const locked = session.draft.offers[1].filter((p) => !isAffordable(p, [], poor.pool, poor.budget));
-    expect(locked.length).toBeGreaterThan(0);
-    expect(screen.getByRole("button", { name: `${locked[0].name} verpflichten` })).toBeDisabled();
-    expect(screen.getAllByText("Danach reicht das Budget nicht mehr für die restlichen Plätze").length).toBeGreaterThan(0);
-  });
-
-  it("meldet den gewählten Spieler nach oben", () => {
+  it("öffnet per Antippen die Detailkarte und meldet den gewählten Spieler nach oben", () => {
     const session = newSession("free", new Date("2026-11-02T10:00:00Z"), data.pool, data.budget);
     const onPick = vi.fn();
     render(<DraftScreen session={session} data={data} settings={settings} onPick={onPick} onExit={() => {}} />);
-    fireEvent.click(screen.getByRole("tab", { name: "T5" }));
     const card = session.draft.offers[5][0];
-    fireEvent.click(screen.getByRole("button", { name: `${card.name} verpflichten` }));
+    fireEvent.click(screen.getByRole("button", { name: new RegExp(card.name) }));
+    const dialog = screen.getByRole("dialog", { name: card.name });
+    expect(within(dialog).getAllByRole("meter")).toHaveLength(5);
+    fireEvent.click(within(dialog).getByRole("button", { name: `${card.name} verpflichten` }));
     expect(onPick).toHaveBeenCalledWith(card);
+  });
+
+  it("markiert unbezahlbare Kacheln und sperrt sie in der Detailkarte mit Begründung", () => {
+    const session = newSession("free", new Date("2026-11-02T10:00:00Z"), data.pool, data.budget);
+    const poor = { ...data, budget: 40_000_000 };
+    render(<DraftScreen session={session} data={poor} settings={settings} onPick={() => {}} onExit={() => {}} />);
+    const locked = session.draft.offers[1].filter((p) => !isAffordable(p, [], poor.pool, poor.budget));
+    expect(locked.length).toBeGreaterThan(0);
+    const tile = screen.getByRole("button", { name: new RegExp(locked[0].name) });
+    expect(tile.getAttribute("aria-label")).toContain("zu teuer");
+    fireEvent.click(tile);
+    const dialog = screen.getByRole("dialog", { name: locked[0].name });
+    expect(within(dialog).getByRole("button", { name: `${locked[0].name} verpflichten` })).toBeDisabled();
+    expect(within(dialog).getByText("Danach reicht das Budget nicht mehr für die restlichen Plätze")).toBeInTheDocument();
   });
 });
 

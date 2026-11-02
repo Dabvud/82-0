@@ -7,11 +7,15 @@ import { FIXTURE_BUDGET, FIXTURE_LUXURY_LINE, FIXTURE_POOL, FIXTURE_TEAMS } from
 const data: GameData = { pool: FIXTURE_POOL, teams: FIXTURE_TEAMS, budget: FIXTURE_BUDGET, luxuryLine: FIXTURE_LUXURY_LINE };
 
 function pickAffordableCard() {
-  for (const tab of screen.getAllByRole("tab").reverse()) {
-    fireEvent.click(tab);
-    const button = within(screen.getByRole("tabpanel")).queryAllByRole("button", { name: /verpflichten/ })
-      .find((b) => !(b as HTMLButtonElement).disabled);
-    if (button) { fireEvent.click(button); return; }
+  // Kacheln der Matrix von unten (billig) nach oben durchprobieren.
+  const tiles = screen.getAllByRole("row").flatMap((row) => within(row).queryAllByRole("button")).reverse();
+  for (const tile of tiles) {
+    if (tile.getAttribute("aria-label")?.includes("zu teuer")) continue;
+    fireEvent.click(tile);
+    const dialog = screen.getByRole("dialog");
+    const pick = within(dialog).getByRole("button", { name: /verpflichten/ }) as HTMLButtonElement;
+    if (!pick.disabled) { fireEvent.click(pick); return; }
+    fireEvent.click(within(dialog).getByRole("button", { name: "Schließen" }));
   }
   throw new Error("Keine bezahlbare Karte");
 }
