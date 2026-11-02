@@ -20,8 +20,8 @@ export function seasonRaw(line: SeasonLine, lg: LeagueAvg): RawCats {
 
   return {
     shooter: CONFIG.shooterWeights.threePoint * threes + CONFIG.shooterWeights.freeThrow * eft,
-    finisher: (CONFIG.twoPointValue * line.x2p + line.ftm)
-      / ((CONFIG.twoPointValue * lg.x2p + lg.ftm) / CONFIG.playersPerTeam)
+    finisher: (CONFIG.twoPointValue * value("x2p") + value("ftm"))
+      / ((CONFIG.twoPointValue * value("x2p", lg) + value("ftm", lg)) / CONFIG.playersPerTeam)
       * e2 ** CONFIG.effExponent,
     playmaking: rel("ast") - CONFIG.turnoverPenalty * rel("tov"),
     oreb: rel("orb"),

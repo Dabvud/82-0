@@ -7,12 +7,12 @@ const league: LeagueAvg = {
   ftm: 20, fta: 25, ftPct: 0.8, ast: 25, tov: 15,
   orb: 10, drb: 30, trb: 40, stl: 10, blk: 5,
 };
-const average: SeasonLine = {
+const average = {
   season: 2001, g: 82, x2p: 6, x2pPct: 0.5, x3p: 2, x3pPct: 0.35,
   ftm: 4, fta: 5, ftPct: 0.8, ast: 5, tov: 3,
   orb: 2, drb: 6, trb: 8, stl: 2, blk: 1,
   allDef1: false, allDef2: false,
-};
+} satisfies SeasonLine;
 
 describe("Saison-Normalisierung", () => {
   it("normalisiert einen Liga-Durchschnittsspieler", () => {
@@ -42,6 +42,10 @@ describe("Saison-Normalisierung", () => {
     const normalize = () => seasonRaw({ ...average, stl: null }, league);
     expect(normalize).toThrow(/stl/);
     expect(normalize).toThrow(/2001/);
+  });
+
+  it.each(["x2p", "ftm", "ast"] as const)("weist fehlendes %s mit Feld und Saison zurück", (field) => {
+    expect(() => seasonRaw({ ...average, [field]: null }, league)).toThrow(new RegExp(`${field}.*2001`));
   });
 
   it("wertet Spieler ohne Dreier nur über die Freiwurfquote, auch ohne Liga-Dreierwerte", () => {
