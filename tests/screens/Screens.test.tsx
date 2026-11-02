@@ -10,6 +10,8 @@ import { TickerScreen } from "../../src/screens/TickerScreen";
 import { FIXTURE_BUDGET, FIXTURE_LUXURY_LINE, FIXTURE_POOL, FIXTURE_TEAMS, makePlayer } from "../helpers/fixtures";
 
 const data: GameData = { pool: FIXTURE_POOL, teams: FIXTURE_TEAMS, budget: FIXTURE_BUDGET, luxuryLine: FIXTURE_LUXURY_LINE };
+// Kachel-Name beginnt mit dem Spielernamen, gefolgt von einem Komma (sonst passt „Spieler 1-1“ auch auf „Spieler 1-10“).
+const nameStart = (name: string) => new RegExp("^" + name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ",");
 const settings = { deadline: true, bankruptcy: true };
 
 describe("DraftScreen", () => {
@@ -33,7 +35,7 @@ describe("DraftScreen", () => {
     const onPick = vi.fn();
     render(<DraftScreen session={session} data={data} settings={settings} onPick={onPick} onExit={() => {}} onRefresh={() => {}} />);
     const card = session.draft.offers[5][0];
-    fireEvent.click(screen.getByRole("button", { name: new RegExp(card.name) }));
+    fireEvent.click(screen.getByRole("button", { name: nameStart(card.name) }));
     const dialog = screen.getByRole("dialog", { name: card.name });
     expect(within(dialog).getAllByRole("meter")).toHaveLength(5);
     fireEvent.click(within(dialog).getByRole("button", { name: `${card.name} verpflichten` }));
@@ -47,7 +49,7 @@ describe("DraftScreen", () => {
     const card = Object.values(session.draft.offers).flat().find((p) => p.positions.includes("C") && isAffordable(p, [], data.pool, data.budget))!;
     const slot = screen.getByRole("button", { name: /^C: frei/ });
     vi.spyOn(document, "elementFromPoint").mockReturnValue(slot);
-    const tile = screen.getByRole("button", { name: new RegExp(card.name) });
+    const tile = screen.getByRole("button", { name: nameStart(card.name) });
     fireEvent.pointerDown(tile, { pointerType: "mouse", clientX: 5, clientY: 300, button: 0 });
     fireEvent.pointerMove(window, { pointerType: "mouse", clientX: 5, clientY: 50 });
     fireEvent.pointerUp(window, { pointerType: "mouse", clientX: 5, clientY: 50 });
@@ -73,7 +75,7 @@ describe("DraftScreen", () => {
     const otherCenter = centers.find((c) => c.id !== shownCenter.id)!;
     const session = { ...base, draft: { ...base.draft, picks: [otherCenter] } };
     render(<DraftScreen session={session} data={data} settings={settings} onPick={() => {}} onExit={() => {}} onRefresh={() => {}} />);
-    const tile = screen.getByRole("button", { name: new RegExp(shownCenter.name) });
+    const tile = screen.getByRole("button", { name: nameStart(shownCenter.name) });
     expect(tile.getAttribute("aria-label")).toContain("kein freier Platz");
     fireEvent.click(tile);
     expect(within(screen.getByRole("dialog")).getByText("Für diese Position ist kein Platz mehr frei")).toBeInTheDocument();
@@ -85,7 +87,7 @@ describe("DraftScreen", () => {
     render(<DraftScreen session={session} data={poor} settings={settings} onPick={() => {}} onExit={() => {}} onRefresh={() => {}} />);
     const locked = session.draft.offers[1].filter((p) => !isAffordable(p, [], poor.pool, poor.budget));
     expect(locked.length).toBeGreaterThan(0);
-    const tile = screen.getByRole("button", { name: new RegExp(locked[0].name) });
+    const tile = screen.getByRole("button", { name: nameStart(locked[0].name) });
     expect(tile.getAttribute("aria-label")).toContain("zu teuer");
     fireEvent.click(tile);
     const dialog = screen.getByRole("dialog", { name: locked[0].name });
