@@ -47,6 +47,8 @@ export const CONFIG = {
     drebScale: 0.05,
     eliteDefenseMin: 75,
     strongReboundMin: 75,
+    // Talent: (mittlere Stärke − 50) × talentScale fließt ins Net Rating.
+    talentScale: 0.3,
   },
   sim: {
     teamCount: 30,
@@ -54,7 +56,7 @@ export const CONFIG = {
     seasonGames: 82,
     deadlineAfterGame: 50,
     homeAdv: 1.5,
-    scale: 4,
+    scale: 7,
     tiers: { playoffs: 60, contender: 70, record: 74, perfection: 82 },
   },
   twoPointValue: 2,

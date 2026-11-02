@@ -1,3 +1,4 @@
+import { CONFIG } from "../../src/config";
 import { describe, expect, it } from "vitest";
 import { playSeason, tierLabel } from "../../src/game/season";
 import type { GameResult, SeasonInput } from "../../src/game/season";
@@ -22,7 +23,8 @@ function input(overrides: Partial<SeasonInput> = {}): SeasonInput {
 function expectedWin(game: GameResult, players: Player[], seedKey: string): boolean {
   const net = teamRating(players).net;
   const oppNet = FIXTURE_TEAMS.find((team) => team.abbr === game.opp)!.net;
-  const chance = 1 / (1 + Math.exp(-(net - oppNet + (game.home ? 1.5 : -1.5)) / 4));
+  const home = game.home ? CONFIG.sim.homeAdv : -CONFIG.sim.homeAdv;
+  const chance = 1 / (1 + Math.exp(-(net - oppNet + home) / CONFIG.sim.scale));
   return makeRng(hash(`${seedKey}|g${game.game}`))() < chance;
 }
 
@@ -117,10 +119,10 @@ describe("Saison-Engine", () => {
     expect(FIXTURE_TEAMS).toEqual(teamsBefore);
   });
 
-  it("gewinnt mit 40 Punkten Vorsprung praktisch alles und mit 40 Punkten Rückstand praktisch nichts", async () => {
+  it("gewinnt mit 70 Punkten Vorsprung praktisch alles und mit 70 Punkten Rückstand praktisch nichts", async () => {
     const net = teamRating(lineup).net;
-    const weakOpponents = FIXTURE_TEAMS.map((team) => ({ ...team, net: net - 40 }));
-    const strongOpponents = FIXTURE_TEAMS.map((team) => ({ ...team, net: net + 40 }));
+    const weakOpponents = FIXTURE_TEAMS.map((team) => ({ ...team, net: net - 70 }));
+    const strongOpponents = FIXTURE_TEAMS.map((team) => ({ ...team, net: net + 70 }));
     for (let index = 0; index < 1000; index++) {
       if (index % 200 === 0) await new Promise((resolve) => setTimeout(resolve, 0));
       const season = input({ seedKey: `extrem-${index}` });

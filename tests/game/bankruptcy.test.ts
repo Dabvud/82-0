@@ -178,7 +178,7 @@ describe("Pleite in der Saison", () => {
 
   it("verwendet den echten Plan und wartet bei Niederlagen auf die geplante Siegzahl", () => {
     const season = input({ seedKey: "quote-0" });
-    const teams = FIXTURE_TEAMS.map((team) => ({ ...team, net: teamModule.teamRating(lineup).net - 8 }));
+    const teams = FIXTURE_TEAMS.map((team) => ({ ...team, net: teamModule.teamRating(lineup).net - 25 }));
     // Ein fester Treffer wird unter den deterministischen Plänen gesucht.
     for (let index = 0; !bankruptcyPlan(season.seedKey).happens || bankruptcyPlan(season.seedKey).atWins > 65; index++) {
       season.seedKey = `quote-${index + 1}`;

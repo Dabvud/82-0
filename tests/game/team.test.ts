@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { teamRating } from "../../src/game/team";
+import { CONFIG } from "../../src/config";
 import { hash, makeRng, shuffle } from "../../src/game/rng";
 import type { Categories, Player } from "../../src/game/types";
 import { FIXTURE_POOL, makePlayer } from "../helpers/fixtures";
@@ -16,7 +17,8 @@ describe("Teamstärke und Passung", () => {
     const rating = teamRating(five());
     expect(rating.off).toBeCloseTo(3.25, 12);
     expect(rating.def).toBe(0);
-    expect(rating.net).toBeCloseTo(3.25, 12);
+    // Talent: Stärke 60 der Fixture-Spieler liegt 10 über der Basis 50.
+    expect(rating.net).toBeCloseTo(3.25 + 10 * CONFIG.team.talentScale, 12);
     expect(rating.notes.filter((note) => note.kind === "warn")).toEqual([]);
   });
 
@@ -34,7 +36,7 @@ describe("Teamstärke und Passung", () => {
     }));
     const scoring = (90 + 80 + 70 * 0.7 + 60 * 0.45 + 50 * 0.3) / 3.45;
     const playmaking = 90 * 0.6 + 80 * 0.25 + 40 * 0.15;
-    expect(teamRating(players).net).toBeCloseTo((scoring - 50) * 0.25 + (playmaking - 50) * 0.1, 12);
+    expect(teamRating(players).net).toBeCloseTo((scoring - 50) * 0.25 + (playmaking - 50) * 0.1 + teamRating(players).talent, 12);
   });
 
   it("reduziert Finishing bei weniger als zwei Werfern und meldet die Spacing-Grenzen", () => {
@@ -54,11 +56,11 @@ describe("Teamstärke und Passung", () => {
   it("zieht fehlendes Playmaking und fehlende Rim Protection genau an den Schwellen ab", () => {
     const players = five({ playmaking: 59, blk: 69 });
     const rating = teamRating(players);
-    expect(rating.net).toBeCloseTo(rating.off + rating.def - 4 - 3, 12);
+    expect(rating.net).toBeCloseTo(rating.off + rating.def + rating.talent - 4 - 3, 12);
     expect(rating.notes).toContainEqual({ kind: "warn", text: "⚠️ Kein Rim Protector" });
     const atThreshold = teamRating(five({ playmaking: 60, blk: 70 }));
     expect(atThreshold.notes.filter((note) => note.kind === "warn")).toEqual([]);
-    expect(atThreshold.net).toBeCloseTo(atThreshold.off + atThreshold.def, 12);
+    expect(atThreshold.net).toBeCloseTo(atThreshold.off + atThreshold.def + atThreshold.talent, 12);
   });
 
   it("wertet Offensiv- und Defensivrebounds getrennt und meldet starke Defense und Rebounds", () => {
@@ -80,5 +82,12 @@ describe("Teamstärke und Passung", () => {
       expect(teamRating(shuffle(makeRng(hash(`reihenfolge-${index}`)), players))).toEqual(rating);
     }
     expect(players).toEqual(before);
+  });
+
+  it("rechnet die Gesamtstärke der Spieler als Talent ein, damit dominante Spieler mehr bringen", () => {
+    const weak = five().map((p) => ({ ...p, strength: 50 }));
+    const strong = five().map((p) => ({ ...p, strength: 90 }));
+    expect(teamRating(strong).net - teamRating(weak).net).toBeCloseTo(40 * CONFIG.team.talentScale, 12);
+    expect(CONFIG.team.talentScale).toBeGreaterThan(0);
   });
 });
