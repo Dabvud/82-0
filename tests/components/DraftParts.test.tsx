@@ -25,6 +25,14 @@ describe("BudgetBar", () => {
     expect(screen.queryByText(/Pleiterisiko/)).not.toBeInTheDocument();
   });
 
+  it("färbt den Balken als Verlauf über das ganze Budget: der Füllstand zeigt die Farbe seiner Position", () => {
+    const { container } = render(<BudgetBar spent={0.7 * CAP} budget={1.4 * CAP} luxuryLine={1.2 * CAP} bankruptcyOn />);
+    const fill = container.querySelector(".budget__fill") as HTMLElement;
+    expect(fill.style.width).toBe("50%");
+    // Verlauf auf volle Spurbreite gestreckt: bei 50 % Füllung doppelt so breit wie der Balken.
+    expect(fill.style.backgroundSize).toBe("200% 100%");
+  });
+
   it("warnt über der Luxussteuergrenze nur, wenn die Pleite eingeschaltet ist", () => {
     const { rerender } = render(<BudgetBar spent={1.25 * CAP} budget={1.4 * CAP} luxuryLine={1.2 * CAP} bankruptcyOn />);
     expect(screen.getByText("⚠️ 10 % Pleiterisiko")).toBeInTheDocument();

@@ -45,9 +45,8 @@ body {
 
 @media (prefers-color-scheme: light) {
   body {
-    background:
-      repeating-linear-gradient(90deg, rgba(120, 72, 28, 0.06) 0 2px, transparent 2px 46px),
-      linear-gradient(180deg, #f3e6d1, #e8d3b3);
+    /* Parkett: Dielen nebeneinander, Stoßfugen versetzt (SVG-Kachel 92 × 160 px). */
+    background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='92' height='160'><rect width='46' height='160' fill='%23ecd6b4'/><rect x='46' width='46' height='160' fill='%23e1c49a'/><rect y='0' width='46' height='60' fill='%23e7cda6'/><rect x='46' y='80' width='46' height='50' fill='%23dcbd90'/><path d='M0 0.75H46M46 80.75H92' stroke='%237a4a20' stroke-opacity='.45' stroke-width='1.5'/><path d='M0.5 0V160M46.5 0V160' stroke='%237a4a20' stroke-opacity='.35'/></svg>") 0 0 / 92px 160px repeat, #e6cca4;
   }
 }
 
@@ -131,10 +130,10 @@ p { margin: 0; }
 .btn--main:active { transform: translateY(1px); box-shadow: inset 0 -1px 0 var(--maple-dark); }
 
 .btn--quiet {
-  background: transparent;
-  color: inherit;
-  border: 1px solid currentColor;
-  opacity: 0.85;
+  /* Fest statt durchsichtig, damit der Knopf auf dem Parkett lesbar bleibt. */
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--panel-edge);
 }
 
 .btn--small { font-size: 1.05rem; padding: 10px 12px; width: auto; display: inline-block; }
@@ -165,8 +164,11 @@ p { margin: 0; }
 .budget__rest { color: var(--led); }
 .budget__risk { color: var(--loss); }
 .budget__track { position: relative; height: 10px; border-radius: 5px; background: #0a0b0f; margin-top: 4px; }
-.budget__fill { height: 100%; border-radius: 5px; background: var(--led); transition: width 0.25s ease; }
-.budget__fill--tax { background: linear-gradient(90deg, var(--led) 80%, var(--loss)); }
+.budget__fill {
+  height: 100%; border-radius: 5px; transition: width 0.25s ease, background-size 0.25s ease;
+  background-image: linear-gradient(90deg, #3ecf5c 0%, #b9d43a 35%, #ffb21e 65%, #ff4b3a 100%);
+  background-repeat: no-repeat;
+}
 .budget__marker { position: absolute; top: -4px; bottom: -4px; width: 2px; background: var(--ink); opacity: 0.7; }
 
 .slots { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
