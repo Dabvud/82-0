@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { CONFIG } from "../src/config";
 import type { NbaTeam, Player } from "../src/game/types";
 import { normalizeName } from "../src/model/names";
@@ -107,6 +107,18 @@ function percentiles(values: number[]): number[] {
   });
 }
 
+/** Vom Nutzer festgelegte Tiers (z. B. „nur absolute Stars in T1“) überschreiben die berechneten. */
+export function applyTierOverrides(ids: string[], tiers: (1 | 2 | 3 | 4 | 5)[], overrides: Record<string, number>): (1 | 2 | 3 | 4 | 5)[] {
+  const result = [...tiers];
+  for (const [id, tier] of Object.entries(overrides)) {
+    const index = ids.indexOf(id);
+    if (index < 0) throw new Error(`Tier-Korrektur für unbekannte ID: ${id}`);
+    if (![1, 2, 3, 4, 5].includes(tier)) throw new Error(`Ungültiges Tier ${tier} für ${id}`);
+    result[index] = tier as 1 | 2 | 3 | 4 | 5;
+  }
+  return result;
+}
+
 /** Team je Spieler und Saison: Einzelteam-Zeile mit den meisten Spielen (ohne TOT/2TM-Sammelzeilen). */
 export function teamsBySeasonFrom(csv: string): Map<string, Map<number, string>> {
   const best = new Map<string, { g: number; team: string }>();
@@ -130,7 +142,7 @@ const readJson = <T,>(path: string): T => JSON.parse(readFileSync(path, "utf8"))
 
 export function buildPlayers(pool: PoolPlayer[], sources: ReturnType<typeof loadSources>, estimates: Record<string, Estimate>,
   salaries: Salary[], manual: Record<string, ManualContract | null>, caps: Caps,
-  extra: { teamsBySeason: Map<string, Map<number, string>>; accolades: Map<string, number> } = { teamsBySeason: new Map(), accolades: new Map() }) {
+  extra: { teamsBySeason: Map<string, Map<number, string>>; accolades: Map<string, number>; tierOverrides?: Record<string, number> } = { teamsBySeason: new Map(), accolades: new Map() }) {
   const errors: string[] = [];
   const prepared = pool.map(player => {
     // Saisons ohne Rebound-Erfassung (BAA 1949/50) zählen nicht (Ruling).
@@ -179,7 +191,7 @@ export function buildPlayers(pool: PoolPlayer[], sources: ReturnType<typeof load
   });
   const cats = toCategories(peaks.map(peak => peak.raw));
   const strengths = percentiles(peaks.map(peak => peak.value));
-  const tiers = assignTiers(strengths);
+  const tiers = applyTierOverrides(pool.map(player => player.id), assignTiers(strengths), extra.tierOverrides ?? {});
   const careers = prepared.map(({ player, first, last }) => ({ ...player, first, last }));
   const contracts = careers.map(player => findContract(player, salaries, manual[player.id], caps));
   const prices = contracts.map((contract, index) => contract
@@ -258,6 +270,7 @@ export function main() {
         teamsBySeason: teamsBySeasonFrom(readFileSync("data/source/Player Per Game.csv", "utf8")),
         accolades: accoladesFrom(parseCsv(readFileSync("data/source/End of Season Teams.csv", "utf8")),
           parseCsv(readFileSync("data/source/Player Award Shares.csv", "utf8"))),
+        tierOverrides: existsSync("data/manual/tier-overrides.json") ? readJson<Record<string, number>>("data/manual/tier-overrides.json") : {},
       });
     const teams = buildTeams(readFileSync("data/source/Team Summaries.csv", "utf8"));
     const report = buildReport(players, ambiguities);

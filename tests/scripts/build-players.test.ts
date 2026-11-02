@@ -1,6 +1,6 @@
 // @vitest-environment node
 import { describe, expect, it } from "vitest";
-import { applyEstimates, buildPlayers, buildReport, buildTeams, findContract, findAmbiguousNames } from "../../scripts/build-players";
+import { applyEstimates, buildPlayers, buildReport, buildTeams, findContract, findAmbiguousNames , applyTierOverrides } from "../../scripts/build-players";
 import type { ContractPlayer, Estimate, Salary } from "../../scripts/build-players";
 import type { LeagueAvg, SeasonLine } from "../../src/model/types";
 import type { PoolPlayer } from "../../scripts/make-pool";
@@ -142,5 +142,15 @@ describe("Pipeline", () => {
     expect(teams[0]).toEqual({ abbr: "T0", name: "Team 0", net: -7 });
     expect(() => buildTeams(csv.replace("Team 0,T0,-7", "Team 0,T0,NA"))).toThrow();
     expect(() => buildTeams(csv.replace(rows[0], ""))).toThrow();
+  });
+});
+
+describe("Tier-Korrekturen", () => {
+  it("setzt vom Nutzer festgelegte Tiers über die berechneten", () => {
+    expect(applyTierOverrides(["a", "b", "c"], [1, 1, 2], { b: 2, c: 1 })).toEqual([1, 2, 1]);
+  });
+  it("meldet unbekannte IDs und ungültige Tiers", () => {
+    expect(() => applyTierOverrides(["a"], [1], { x: 2 })).toThrow(/x/);
+    expect(() => applyTierOverrides(["a"], [1], { a: 7 })).toThrow(/a/);
   });
 });
