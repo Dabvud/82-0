@@ -8,7 +8,7 @@ import { teamRating } from "../../src/game/team";
 import * as tradeModule from "../../src/game/trade";
 import { injuryGames, pickFiller, tradeOffers } from "../../src/game/trade";
 import type { Player, TradeDecision } from "../../src/game/types";
-import { FIXTURE_BUDGET, FIXTURE_POOL, FIXTURE_TEAMS, makePlayer } from "../helpers/fixtures";
+import { FIXTURE_BUDGET, FIXTURE_LUXURY_LINE, FIXTURE_POOL, FIXTURE_TEAMS, makePlayer } from "../helpers/fixtures";
 
 const lineup = [24, 25, 29, 30, 33].map((index) => FIXTURE_POOL[index]);
 const out = lineup[0];
@@ -221,7 +221,7 @@ describe("Lückenfüller", () => {
 });
 
 function seasonInput(trade: TradeDecision, seedKey = "verletzte-saison"): SeasonInput {
-  return { lineup, seedKey, options: { deadline: true, bankruptcy: false }, trade, pool: FIXTURE_POOL };
+  return { lineup, seedKey, options: { deadline: true, bankruptcy: false }, trade, pool: FIXTURE_POOL, luxuryLine: FIXTURE_LUXURY_LINE };
 }
 
 function expectedWin(game: GameResult, players: Player[], seedKey: string): boolean {

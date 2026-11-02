@@ -5,7 +5,7 @@ import { buildSchedule } from "../../src/game/schedule";
 import { teamRating } from "../../src/game/team";
 import { hash, makeRng } from "../../src/game/rng";
 import type { Player, TradeDecision, TradeOffer } from "../../src/game/types";
-import { FIXTURE_POOL, FIXTURE_TEAMS, makePlayer } from "../helpers/fixtures";
+import { FIXTURE_LUXURY_LINE, FIXTURE_POOL, FIXTURE_TEAMS, makePlayer } from "../helpers/fixtures";
 
 const lineup = [24, 25, 29, 30, 33].map((index) => FIXTURE_POOL[index]);
 const incoming = makePlayer({
@@ -16,7 +16,7 @@ const offer: TradeOffer = { player: incoming, injured: false };
 const trade: TradeDecision = { outId: lineup[0].id, offer };
 
 function input(overrides: Partial<SeasonInput> = {}): SeasonInput {
-  return { lineup, seedKey: "free|saison-test", options: { deadline: false, bankruptcy: false }, pool: FIXTURE_POOL, ...overrides };
+  return { lineup, seedKey: "free|saison-test", options: { deadline: false, bankruptcy: false }, pool: FIXTURE_POOL, luxuryLine: FIXTURE_LUXURY_LINE, ...overrides };
 }
 
 function expectedWin(game: GameResult, players: Player[], seedKey: string): boolean {
@@ -103,7 +103,7 @@ describe("Saison-Engine", () => {
     expect(playSeason(input({ trade: decision }), FIXTURE_TEAMS)).toEqual(playSeason(input(), FIXTURE_TEAMS));
   });
 
-  it("ignoriert die Pleite-Option bis Task 11", () => {
+  it("verändert unter der Luxusgrenze auch mit Pleite-Option keine Ergebnisse", () => {
     expect(playSeason(input({ options: { deadline: false, bankruptcy: true } }), FIXTURE_TEAMS))
       .toEqual(playSeason(input(), FIXTURE_TEAMS));
   });

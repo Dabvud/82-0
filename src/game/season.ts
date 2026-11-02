@@ -1,4 +1,5 @@
 import { CONFIG } from "../config";
+import { BANKRUPTCY_REASONS, bankruptcyPlan, bankruptcyVictim } from "./bankruptcy";
 import { hash, makeRng } from "./rng";
 import { buildSchedule } from "./schedule";
 import { teamRating } from "./team";
@@ -16,6 +17,7 @@ export interface SeasonInput {
   options: SeasonOptions;
   trade?: TradeDecision | "pending";
   pool: Player[];
+  luxuryLine: number;
 }
 
 export type SeasonEvent =
@@ -46,11 +48,13 @@ export function playSeason(input: SeasonInput, teams: NbaTeam[]): SeasonLog {
   const trade = options.deadline && input.trade !== "pending" ? input.trade : null;
   const outgoing = trade ? lineup.find((p) => p.id === trade.outId) : undefined;
   if (trade && !outgoing) throw new Error("Der abgegebene Spieler gehört nicht zum Kader.");
-  const tradedLineup = trade ? lineup.map((p) => p.id === trade.outId ? trade.offer.player : p) : lineup;
+  let tradedLineup = trade ? lineup.map((p) => p.id === trade.outId ? trade.offer.player : p) : lineup;
   const injuredGames = trade?.offer.injured ? injuryGames(seedKey, trade.outId, trade.offer.player.id) : 0;
   const filler = injuredGames > 0 && outgoing ? pickFiller(lineup, outgoing, input.pool, seedKey) : null;
-  const fillerLineup = filler && trade ? lineup.map((p) => p.id === trade.outId ? filler : p) : lineup;
+  let fillerLineup = filler && trade ? lineup.map((p) => p.id === trade.outId ? filler : p) : lineup;
   const returnAfterGame = CONFIG.sim.deadlineAfterGame + injuredGames;
+  const plan = bankruptcyPlan(seedKey);
+  let injuredPlayerRemoved = false;
 
   function rosterForGame(game: number): Player[] {
     if (game <= CONFIG.sim.deadlineAfterGame) return lineup;
@@ -87,7 +91,31 @@ export function playSeason(input: SeasonInput, teams: NbaTeam[]): SeasonLog {
         });
       }
     }
-    if (trade && injuredGames > 0 && game.game === returnAfterGame && returnAfterGame < CONFIG.sim.seasonGames) {
+    if (win && options.bankruptcy && plan.happens && log.wins === plan.atWins) {
+      // Der verletzte Neuzugang wird bezahlt, sein Lückenfüller nicht.
+      const salaryRoster = filler && trade && !injuredPlayerRemoved && game.game > CONFIG.sim.deadlineAfterGame && game.game <= returnAfterGame
+        ? roster.map((player) => player.id === filler.id ? trade.offer.player : player)
+        : roster;
+      const salary = salaryRoster.reduce((sum, player) => sum + player.price, 0);
+      if (salary > input.luxuryLine) {
+        const victim = bankruptcyVictim(salaryRoster, input.pool, input.luxuryLine, `${seedKey}|victim|${game.game}`);
+        if (victim) {
+          const removesInjured = trade?.offer.player.id === victim.out.id && injuredGames > 0;
+          const replace = (players: Player[]) => players.map((player) =>
+            player.id === victim.out.id || (removesInjured && player.id === filler?.id) ? victim.in : player,
+          );
+          // Beide Kader ändern, damit eine spätere Rückkehr den Ersatz nicht überschreibt.
+          tradedLineup = replace(tradedLineup);
+          fillerLineup = replace(fillerLineup);
+          injuredPlayerRemoved = removesInjured;
+          log.events.push({
+            kind: "bankrupt", afterGame: game.game, ...victim,
+            reason: `Der Owner ist pleite! Er hat ${BANKRUPTCY_REASONS[plan.reasonIndex]} ${victim.out.name} muss das Team verlassen, ${victim.in.name} übernimmt.`,
+          });
+        }
+      }
+    }
+    if (trade && injuredGames > 0 && !injuredPlayerRemoved && game.game === returnAfterGame && returnAfterGame < CONFIG.sim.seasonGames) {
       log.events.push({ kind: "injury-return", afterGame: returnAfterGame, player: trade.offer.player });
     }
   }

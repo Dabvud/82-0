@@ -1,6 +1,7 @@
 import type { NbaTeam, Player, Pos, Tier } from "../../src/game/types";
 
 export const FIXTURE_BUDGET = 1.4 * 164_961_000;
+export const FIXTURE_LUXURY_LINE = 1.2 * 164_961_000;
 
 export const FIXTURE_TEAMS: NbaTeam[] = Array.from({ length: 30 }, (_, index) => ({
   abbr: `T${String(index + 1).padStart(2, "0")}`,

@@ -22,6 +22,11 @@ export const CONFIG = {
     injuryMax: 15,
     offers: 3,
   },
+  bankruptcy: {
+    chance: 0.10,
+    minWins: 60,
+    maxWins: 75,
+  },
   team: {
     baseline: 50,
     shooterMin: 55,
