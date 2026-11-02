@@ -1,0 +1,2578 @@
+[
+  {
+    "id": "stephen-curry",
+    "name": "Stephen Curry",
+    "bbrefId": "curryst01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "kareem-abdul-jabbar",
+    "name": "Kareem Abdul-Jabbar",
+    "bbrefId": "abdulka01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "lebron-james",
+    "name": "LeBron James",
+    "bbrefId": "jamesle01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "nikola-jokic",
+    "name": "Nikola Jokić",
+    "bbrefId": "jokicni01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "shaquille-oneal",
+    "name": "Shaquille O'Neal",
+    "bbrefId": "onealsh01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "steve-nash",
+    "name": "Steve Nash",
+    "bbrefId": "nashst01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "giannis-antetokounmpo",
+    "name": "Giannis Antetokounmpo",
+    "bbrefId": "antetgi01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "ray-allen",
+    "name": "Ray Allen",
+    "bbrefId": "allenra02",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "larry-bird",
+    "name": "Larry Bird",
+    "bbrefId": "birdla01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "michael-jordan",
+    "name": "Michael Jordan",
+    "bbrefId": "jordami01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "chris-paul",
+    "name": "Chris Paul",
+    "bbrefId": "paulch01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "kevin-durant",
+    "name": "Kevin Durant",
+    "bbrefId": "duranke01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "tracy-mcgrady",
+    "name": "Tracy McGrady",
+    "bbrefId": "mcgratr01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "james-harden",
+    "name": "James Harden",
+    "bbrefId": "hardeja01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "gary-payton",
+    "name": "Gary Payton",
+    "bbrefId": "paytoga01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "hakeem-olajuwon",
+    "name": "Hakeem Olajuwon",
+    "bbrefId": "olajuha01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "david-robinson",
+    "name": "David Robinson",
+    "bbrefId": "robinda01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "kevin-garnett",
+    "name": "Kevin Garnett",
+    "bbrefId": "garneke01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "bob-mcadoo",
+    "name": "Bob McAdoo",
+    "bbrefId": "mcadobo01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "kobe-bryant",
+    "name": "Kobe Bryant",
+    "bbrefId": "bryanko01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "anthony-davis",
+    "name": "Anthony Davis",
+    "bbrefId": "davisan02",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "john-stockton",
+    "name": "John Stockton",
+    "bbrefId": "stockjo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "luka-doncic",
+    "name": "Luka Dončić",
+    "bbrefId": "doncilu01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "vince-carter",
+    "name": "Vince Carter",
+    "bbrefId": "cartevi01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "gilbert-arenas",
+    "name": "Gilbert Arenas",
+    "bbrefId": "arenagi01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "dirk-nowitzki",
+    "name": "Dirk Nowitzki",
+    "bbrefId": "nowitdi01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "tim-duncan",
+    "name": "Tim Duncan",
+    "bbrefId": "duncati01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "magic-johnson",
+    "name": "Magic Johnson",
+    "bbrefId": "johnsma02",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "joel-embiid",
+    "name": "Joel Embiid",
+    "bbrefId": "embiijo01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "dwyane-wade",
+    "name": "Dwyane Wade",
+    "bbrefId": "wadedw01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "shai-gilgeous-alexander",
+    "name": "Shai Gilgeous-Alexander",
+    "bbrefId": "gilgesh01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "dwight-howard",
+    "name": "Dwight Howard",
+    "bbrefId": "howardw01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "peja-stojakovic",
+    "name": "Peja Stojaković",
+    "bbrefId": "stojape01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "victor-wembanyama",
+    "name": "Victor Wembanyama",
+    "bbrefId": "wembavi01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "scottie-pippen",
+    "name": "Scottie Pippen",
+    "bbrefId": "pippesc01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "russell-westbrook",
+    "name": "Russell Westbrook",
+    "bbrefId": "westbru01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "paul-pierce",
+    "name": "Paul Pierce",
+    "bbrefId": "piercpa01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "tim-hardaway",
+    "name": "Tim Hardaway",
+    "bbrefId": "hardati01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jason-kidd",
+    "name": "Jason Kidd",
+    "bbrefId": "kiddja01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "baron-davis",
+    "name": "Baron Davis",
+    "bbrefId": "davisba01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "shawn-marion",
+    "name": "Shawn Marion",
+    "bbrefId": "mariosh01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "karl-anthony-towns",
+    "name": "Karl-Anthony Towns",
+    "bbrefId": "townska01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "mark-price",
+    "name": "Mark Price",
+    "bbrefId": "pricema01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "karl-malone",
+    "name": "Karl Malone",
+    "bbrefId": "malonka01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "charles-barkley",
+    "name": "Charles Barkley",
+    "bbrefId": "barklch01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "damian-lillard",
+    "name": "Damian Lillard",
+    "bbrefId": "lillada01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "mitch-richmond",
+    "name": "Mitch Richmond",
+    "bbrefId": "richmmi01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "chris-webber",
+    "name": "Chris Webber",
+    "bbrefId": "webbech01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "oscar-robertson",
+    "name": "Oscar Robertson",
+    "bbrefId": "roberos01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "glen-rice",
+    "name": "Glen Rice",
+    "bbrefId": "ricegl01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "andrei-kirilenko",
+    "name": "Andrei Kirilenko",
+    "bbrefId": "kirilan01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "rudy-gobert",
+    "name": "Rudy Gobert",
+    "bbrefId": "goberru01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "chauncey-billups",
+    "name": "Chauncey Billups",
+    "bbrefId": "billuch01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "kevin-love",
+    "name": "Kevin Love",
+    "bbrefId": "loveke01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "patrick-ewing",
+    "name": "Patrick Ewing",
+    "bbrefId": "ewingpa01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "kawhi-leonard",
+    "name": "Kawhi Leonard",
+    "bbrefId": "leonaka01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "allen-iverson",
+    "name": "Allen Iverson",
+    "bbrefId": "iversal01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "demarcus-cousins",
+    "name": "DeMarcus Cousins",
+    "bbrefId": "couside01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "kyrie-irving",
+    "name": "Kyrie Irving",
+    "bbrefId": "irvinky01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "joe-johnson",
+    "name": "Joe Johnson",
+    "bbrefId": "johnsjo02",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "tyrese-haliburton",
+    "name": "Tyrese Haliburton",
+    "bbrefId": "halibty01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "alonzo-mourning",
+    "name": "Alonzo Mourning",
+    "bbrefId": "mournal01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "mike-bibby",
+    "name": "Mike Bibby",
+    "bbrefId": "bibbymi01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "john-wall",
+    "name": "John Wall",
+    "bbrefId": "walljo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "deandre-jordan",
+    "name": "DeAndre Jordan",
+    "bbrefId": "jordade01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "amare-stoudemire",
+    "name": "Amar'e Stoudemire",
+    "bbrefId": "stoudam01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "jason-terry",
+    "name": "Jason Terry",
+    "bbrefId": "terryja01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "rashard-lewis",
+    "name": "Rashard Lewis",
+    "bbrefId": "lewisra02",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "reggie-miller",
+    "name": "Reggie Miller",
+    "bbrefId": "millere01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "bill-walton",
+    "name": "Bill Walton",
+    "bbrefId": "waltobi01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "domantas-sabonis",
+    "name": "Domantas Sabonis",
+    "bbrefId": "sabondo01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "stephon-marbury",
+    "name": "Stephon Marbury",
+    "bbrefId": "marbust01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "penny-hardaway",
+    "name": "Penny Hardaway",
+    "bbrefId": "hardaan01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "kyle-lowry",
+    "name": "Kyle Lowry",
+    "bbrefId": "lowryky01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "clyde-drexler",
+    "name": "Clyde Drexler",
+    "bbrefId": "drexlcl01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "marcus-camby",
+    "name": "Marcus Camby",
+    "bbrefId": "cambyma01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "jason-richardson",
+    "name": "Jason Richardson",
+    "bbrefId": "richaja01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "klay-thompson",
+    "name": "Klay Thompson",
+    "bbrefId": "thompkl01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "elvin-hayes",
+    "name": "Elvin Hayes",
+    "bbrefId": "hayesel01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "wilt-chamberlain",
+    "name": "Wilt Chamberlain",
+    "bbrefId": "chambwi01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "trae-young",
+    "name": "Trae Young",
+    "bbrefId": "youngtr01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "isiah-thomas",
+    "name": "Isiah Thomas",
+    "bbrefId": "thomais01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jayson-tatum",
+    "name": "Jayson Tatum",
+    "bbrefId": "tatumja01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "draymond-green",
+    "name": "Draymond Green",
+    "bbrefId": "greendr01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "carmelo-anthony",
+    "name": "Carmelo Anthony",
+    "bbrefId": "anthoca01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "bradley-beal",
+    "name": "Bradley Beal",
+    "bbrefId": "bealbr01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "rajon-rondo",
+    "name": "Rajon Rondo",
+    "bbrefId": "rondora01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "nick-van-exel",
+    "name": "Nick Van Exel",
+    "bbrefId": "vanexni01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "paul-george",
+    "name": "Paul George",
+    "bbrefId": "georgpa01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "ben-simmons",
+    "name": "Ben Simmons",
+    "bbrefId": "simmobe01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "kevin-johnson",
+    "name": "Kevin Johnson",
+    "bbrefId": "johnske02",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "rasheed-wallace",
+    "name": "Rasheed Wallace",
+    "bbrefId": "wallara01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "dominique-wilkins",
+    "name": "Dominique Wilkins",
+    "bbrefId": "wilkido01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "pau-gasol",
+    "name": "Pau Gasol",
+    "bbrefId": "gasolpa01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "donovan-mitchell",
+    "name": "Donovan Mitchell",
+    "bbrefId": "mitchdo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "george-mikan",
+    "name": "George Mikan",
+    "bbrefId": "mikange01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "grant-hill",
+    "name": "Grant Hill",
+    "bbrefId": "hillgr01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "rick-barry",
+    "name": "Rick Barry",
+    "bbrefId": "barryri01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "jrue-holiday",
+    "name": "Jrue Holiday",
+    "bbrefId": "holidjr01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "derrick-rose",
+    "name": "Derrick Rose",
+    "bbrefId": "rosede01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "dikembe-mutombo",
+    "name": "Dikembe Mutombo",
+    "bbrefId": "mutomdi01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "jimmy-butler",
+    "name": "Jimmy Butler",
+    "bbrefId": "butleji01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "andre-drummond",
+    "name": "Andre Drummond",
+    "bbrefId": "drumman01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "artis-gilmore",
+    "name": "Artis Gilmore",
+    "bbrefId": "gilmoar01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "julius-erving",
+    "name": "Julius Erving",
+    "bbrefId": "ervinju01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "mo-williams",
+    "name": "Mo Williams",
+    "bbrefId": "willima01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "tyrese-maxey",
+    "name": "Tyrese Maxey",
+    "bbrefId": "maxeyty01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "nikola-vucevic",
+    "name": "Nikola Vučević",
+    "bbrefId": "vucevni01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "ben-wallace",
+    "name": "Ben Wallace",
+    "bbrefId": "wallabe01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "kemba-walker",
+    "name": "Kemba Walker",
+    "bbrefId": "walkeke02",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "devin-booker",
+    "name": "Devin Booker",
+    "bbrefId": "bookede01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "blake-griffin",
+    "name": "Blake Griffin",
+    "bbrefId": "griffbl01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "hassan-whiteside",
+    "name": "Hassan Whiteside",
+    "bbrefId": "whiteha01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "bam-adebayo",
+    "name": "Bam Adebayo",
+    "bbrefId": "adebaba01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "walt-frazier",
+    "name": "Walt Frazier",
+    "bbrefId": "fraziwa01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jamal-murray",
+    "name": "Jamal Murray",
+    "bbrefId": "murraja01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "moses-malone",
+    "name": "Moses Malone",
+    "bbrefId": "malonmo01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "yao-ming",
+    "name": "Yao Ming",
+    "bbrefId": "mingya01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "jerry-west",
+    "name": "Jerry West",
+    "bbrefId": "westje01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "clint-capela",
+    "name": "Clint Capela",
+    "bbrefId": "capelca01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "kyle-korver",
+    "name": "Kyle Korver",
+    "bbrefId": "korveky01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "manu-ginobili",
+    "name": "Manu Ginóbili",
+    "bbrefId": "ginobma01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "anthony-edwards",
+    "name": "Anthony Edwards",
+    "bbrefId": "edwaran01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "lamelo-ball",
+    "name": "LaMelo Ball",
+    "bbrefId": "ballla01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "zach-lavine",
+    "name": "Zach LaVine",
+    "bbrefId": "lavinza01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "evan-mobley",
+    "name": "Evan Mobley",
+    "bbrefId": "mobleev01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "jalen-brunson",
+    "name": "Jalen Brunson",
+    "bbrefId": "brunsja01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "zion-williamson",
+    "name": "Zion Williamson",
+    "bbrefId": "willizi01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "ty-lawson",
+    "name": "Ty Lawson",
+    "bbrefId": "lawsoty01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "serge-ibaka",
+    "name": "Serge Ibaka",
+    "bbrefId": "ibakase01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "andre-iguodala",
+    "name": "Andre Iguodala",
+    "bbrefId": "iguodan01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "paul-millsap",
+    "name": "Paul Millsap",
+    "bbrefId": "millspa01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "alex-english",
+    "name": "Alex English",
+    "bbrefId": "englial01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "antawn-jamison",
+    "name": "Antawn Jamison",
+    "bbrefId": "jamisan01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "jalen-rose",
+    "name": "Jalen Rose",
+    "bbrefId": "roseja01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "kristaps-porzingis",
+    "name": "Kristaps Porziņģis",
+    "bbrefId": "porzikr01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "isaiah-thomas",
+    "name": "Isaiah Thomas",
+    "bbrefId": "thomais02",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "dejounte-murray",
+    "name": "Dejounte Murray",
+    "bbrefId": "murrade01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "fred-vanvleet",
+    "name": "Fred VanVleet",
+    "bbrefId": "vanvlfr01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "deaaron-fox",
+    "name": "De'Aaron Fox",
+    "bbrefId": "foxde01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "john-collins",
+    "name": "John Collins",
+    "bbrefId": "collijo01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "jermaine-oneal",
+    "name": "Jermaine O'Neal",
+    "bbrefId": "onealje01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "detlef-schrempf",
+    "name": "Detlef Schrempf",
+    "bbrefId": "schrede01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "ja-morant",
+    "name": "Ja Morant",
+    "bbrefId": "moranja01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "chris-bosh",
+    "name": "Chris Bosh",
+    "bbrefId": "boshch01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "jerry-stackhouse",
+    "name": "Jerry Stackhouse",
+    "bbrefId": "stackje01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "scottie-barnes",
+    "name": "Scottie Barnes",
+    "bbrefId": "barnesc01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "shawn-kemp",
+    "name": "Shawn Kemp",
+    "bbrefId": "kempsh01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "chet-holmgren",
+    "name": "Chet Holmgren",
+    "bbrefId": "holmgch01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "george-gervin",
+    "name": "George Gervin",
+    "bbrefId": "gervige01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "goran-dragic",
+    "name": "Goran Dragić",
+    "bbrefId": "dragigo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jarrett-allen",
+    "name": "Jarrett Allen",
+    "bbrefId": "allenja01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "cj-mccollum",
+    "name": "CJ McCollum",
+    "bbrefId": "mccolcj01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "latrell-sprewell",
+    "name": "Latrell Sprewell",
+    "bbrefId": "sprewla01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "nicolas-batum",
+    "name": "Nicolas Batum",
+    "bbrefId": "batumni01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "joe-dumars",
+    "name": "Joe Dumars",
+    "bbrefId": "dumarjo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "pascal-siakam",
+    "name": "Pascal Siakam",
+    "bbrefId": "siakapa01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "mike-conley",
+    "name": "Mike Conley",
+    "bbrefId": "conlemi01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "al-horford",
+    "name": "Al Horford",
+    "bbrefId": "horfoal01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "stephen-jackson",
+    "name": "Stephen Jackson",
+    "bbrefId": "jacksst02",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "alperen-sengun",
+    "name": "Alperen Şengün",
+    "bbrefId": "sengual01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "jaren-jackson-jr",
+    "name": "Jaren Jackson Jr.",
+    "bbrefId": "jacksja02",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "jalen-johnson",
+    "name": "Jalen Johnson",
+    "bbrefId": "johnsja05",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "tony-parker",
+    "name": "Tony Parker",
+    "bbrefId": "parketo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "joakim-noah",
+    "name": "Joakim Noah",
+    "bbrefId": "noahjo01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "vlade-divac",
+    "name": "Vlade Divac",
+    "bbrefId": "divacvl01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "lamarcus-aldridge",
+    "name": "LaMarcus Aldridge",
+    "bbrefId": "aldrila01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "jaylen-brown",
+    "name": "Jaylen Brown",
+    "bbrefId": "brownja02",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "eric-bledsoe",
+    "name": "Eric Bledsoe",
+    "bbrefId": "bledser01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jamal-crawford",
+    "name": "Jamal Crawford",
+    "bbrefId": "crawfja01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "demar-derozan",
+    "name": "DeMar DeRozan",
+    "bbrefId": "derozde01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "deandre-ayton",
+    "name": "Deandre Ayton",
+    "bbrefId": "aytonde01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "marc-gasol",
+    "name": "Marc Gasol",
+    "bbrefId": "gasolma01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "pete-maravich",
+    "name": "Pete Maravich",
+    "bbrefId": "maravpe01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jonas-valanciunas",
+    "name": "Jonas Valančiūnas",
+    "bbrefId": "valanjo01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "brook-lopez",
+    "name": "Brook Lopez",
+    "bbrefId": "lopezbr01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "victor-oladipo",
+    "name": "Victor Oladipo",
+    "bbrefId": "oladivi01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "julius-randle",
+    "name": "Julius Randle",
+    "bbrefId": "randlju01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "brandon-ingram",
+    "name": "Brandon Ingram",
+    "bbrefId": "ingrabr01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "khris-middleton",
+    "name": "Khris Middleton",
+    "bbrefId": "middlkh01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "gordon-hayward",
+    "name": "Gordon Hayward",
+    "bbrefId": "haywago01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "darius-garland",
+    "name": "Darius Garland",
+    "bbrefId": "garlada01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "rudy-gay",
+    "name": "Rudy Gay",
+    "bbrefId": "gayru01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "dangelo-russell",
+    "name": "D'Angelo Russell",
+    "bbrefId": "russeda01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jeff-teague",
+    "name": "Jeff Teague",
+    "bbrefId": "teaguje01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "wesley-matthews",
+    "name": "Wesley Matthews",
+    "bbrefId": "matthwe02",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "john-havlicek",
+    "name": "John Havlicek",
+    "bbrefId": "havlijo01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "jalen-duren",
+    "name": "Jalen Duren",
+    "bbrefId": "durenja01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "lauri-markkanen",
+    "name": "Lauri Markkanen",
+    "bbrefId": "markkla01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "eric-gordon",
+    "name": "Eric Gordon",
+    "bbrefId": "gordoer01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "raymond-felton",
+    "name": "Raymond Felton",
+    "bbrefId": "feltora01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "ricky-davis",
+    "name": "Ricky Davis",
+    "bbrefId": "davisri01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "richard-jefferson",
+    "name": "Richard Jefferson",
+    "bbrefId": "jefferi01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "christian-wood",
+    "name": "Christian Wood",
+    "bbrefId": "woodch01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "david-thompson",
+    "name": "David Thompson",
+    "bbrefId": "thompda01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "jj-redick",
+    "name": "JJ Redick",
+    "bbrefId": "redicjj01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "tyson-chandler",
+    "name": "Tyson Chandler",
+    "bbrefId": "chandty01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "jalen-williams",
+    "name": "Jalen Williams",
+    "bbrefId": "willija06",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "toni-kukoc",
+    "name": "Toni Kukoč",
+    "bbrefId": "kukocto01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "zach-randolph",
+    "name": "Zach Randolph",
+    "bbrefId": "randoza01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "tobias-harris",
+    "name": "Tobias Harris",
+    "bbrefId": "harrito02",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "bob-cousy",
+    "name": "Bob Cousy",
+    "bbrefId": "cousybo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "terry-rozier",
+    "name": "Terry Rozier",
+    "bbrefId": "roziete01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "lonzo-ball",
+    "name": "Lonzo Ball",
+    "bbrefId": "balllo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jakob-poltl",
+    "name": "Jakob Pöltl",
+    "bbrefId": "poeltja01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "arvydas-sabonis",
+    "name": "Arvydas Sabonis",
+    "bbrefId": "sabonar01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "george-hill",
+    "name": "George Hill",
+    "bbrefId": "hillge01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "richard-hamilton",
+    "name": "Richard Hamilton",
+    "bbrefId": "hamilri01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "david-west",
+    "name": "David West",
+    "bbrefId": "westda01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "malcolm-brogdon",
+    "name": "Malcolm Brogdon",
+    "bbrefId": "brogdma01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "luol-deng",
+    "name": "Luol Deng",
+    "bbrefId": "denglu01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "otto-porter-jr",
+    "name": "Otto Porter Jr.",
+    "bbrefId": "porteot01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "tyler-herro",
+    "name": "Tyler Herro",
+    "bbrefId": "herroty01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "wes-unseld",
+    "name": "Wes Unseld",
+    "bbrefId": "unselwe01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "trevor-ariza",
+    "name": "Trevor Ariza",
+    "bbrefId": "arizatr01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "ivica-zubac",
+    "name": "Ivica Zubac",
+    "bbrefId": "zubaciv01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "ricky-rubio",
+    "name": "Ricky Rubio",
+    "bbrefId": "rubiori01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "steven-adams",
+    "name": "Steven Adams",
+    "bbrefId": "adamsst01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "paolo-banchero",
+    "name": "Paolo Banchero",
+    "bbrefId": "banchpa01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "mikal-bridges",
+    "name": "Mikal Bridges",
+    "bbrefId": "bridgmi01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "danny-green",
+    "name": "Danny Green",
+    "bbrefId": "greenda02",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "montrezl-harrell",
+    "name": "Montrezl Harrell",
+    "bbrefId": "harremo01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "buddy-hield",
+    "name": "Buddy Hield",
+    "bbrefId": "hieldbu01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "derrick-favors",
+    "name": "Derrick Favors",
+    "bbrefId": "favorde01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "daniel-gafford",
+    "name": "Daniel Gafford",
+    "bbrefId": "gaffoda01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "jim-jackson",
+    "name": "Jim Jackson",
+    "bbrefId": "jacksji01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "jr-smith",
+    "name": "JR Smith",
+    "bbrefId": "smithjr01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "richaun-holmes",
+    "name": "Richaun Holmes",
+    "bbrefId": "holmeri01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "elgin-baylor",
+    "name": "Elgin Baylor",
+    "bbrefId": "bayloel01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "deni-avdija",
+    "name": "Deni Avdija",
+    "bbrefId": "avdijde01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "danilo-gallinari",
+    "name": "Danilo Gallinari",
+    "bbrefId": "gallida01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "jusuf-nurkic",
+    "name": "Jusuf Nurkić",
+    "bbrefId": "nurkiju01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "andrew-wiggins",
+    "name": "Andrew Wiggins",
+    "bbrefId": "wiggian01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "robert-covington",
+    "name": "Robert Covington",
+    "bbrefId": "covinro01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "tj-warren",
+    "name": "T.J. Warren",
+    "bbrefId": "warretj01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "chris-kaman",
+    "name": "Chris Kaman",
+    "bbrefId": "kamanch01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "michael-carter-williams",
+    "name": "Michael Carter-Williams",
+    "bbrefId": "cartemi01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "kyle-kuzma",
+    "name": "Kyle Kuzma",
+    "bbrefId": "kuzmaky01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "anfernee-simons",
+    "name": "Anfernee Simons",
+    "bbrefId": "simonan01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "marcus-smart",
+    "name": "Marcus Smart",
+    "bbrefId": "smartma01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "thaddeus-young",
+    "name": "Thaddeus Young",
+    "bbrefId": "youngth01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "jerami-grant",
+    "name": "Jerami Grant",
+    "bbrefId": "grantje01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "bernard-king",
+    "name": "Bernard King",
+    "bbrefId": "kingbe01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "dennis-rodman",
+    "name": "Dennis Rodman",
+    "bbrefId": "rodmade01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "lou-williams",
+    "name": "Lou Williams",
+    "bbrefId": "willilo02",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "isaiah-hartenstein",
+    "name": "Isaiah Hartenstein",
+    "bbrefId": "harteis01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "patrick-beverley",
+    "name": "Patrick Beverley",
+    "bbrefId": "beverpa01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "josh-hart",
+    "name": "Josh Hart",
+    "bbrefId": "hartjo01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "bogdan-bogdanovic",
+    "name": "Bogdan Bogdanović",
+    "bbrefId": "bogdabo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "caris-levert",
+    "name": "Caris LeVert",
+    "bbrefId": "leverca01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "norman-powell",
+    "name": "Norman Powell",
+    "bbrefId": "powelno01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "cameron-johnson",
+    "name": "Cameron Johnson",
+    "bbrefId": "johnsca02",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "dennis-schroder",
+    "name": "Dennis Schröder",
+    "bbrefId": "schrode01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jordan-poole",
+    "name": "Jordan Poole",
+    "bbrefId": "poolejo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "rik-smits",
+    "name": "Rik Smits",
+    "bbrefId": "smitsri01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "collin-sexton",
+    "name": "Collin Sexton",
+    "bbrefId": "sextoco01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "bob-pettit",
+    "name": "Bob Pettit",
+    "bbrefId": "pettibo01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "harrison-barnes",
+    "name": "Harrison Barnes",
+    "bbrefId": "barneha02",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "donte-divincenzo",
+    "name": "Donte DiVincenzo",
+    "bbrefId": "divindo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "kelly-oubre-jr",
+    "name": "Kelly Oubre Jr.",
+    "bbrefId": "oubreke01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "bojan-bogdanovic",
+    "name": "Bojan Bogdanović",
+    "bbrefId": "bogdabo02",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "malik-monk",
+    "name": "Malik Monk",
+    "bbrefId": "monkma01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "bobby-portis",
+    "name": "Bobby Portis",
+    "bbrefId": "portibo01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "jordan-clarkson",
+    "name": "Jordan Clarkson",
+    "bbrefId": "clarkjo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "kentavious-caldwell-pope",
+    "name": "Kentavious Caldwell-Pope",
+    "bbrefId": "caldwke01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "tim-hardaway-jr",
+    "name": "Tim Hardaway Jr.",
+    "bbrefId": "hardati02",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "alex-caruso",
+    "name": "Alex Caruso",
+    "bbrefId": "carusal01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jj-barea",
+    "name": "J.J. Barea",
+    "bbrefId": "bareajo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "daniel-theis",
+    "name": "Daniel Theis",
+    "bbrefId": "theisda01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "rui-hachimura",
+    "name": "Rui Hachimura",
+    "bbrefId": "hachiru01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "deandre-hunter",
+    "name": "De'Andre Hunter",
+    "bbrefId": "huntede01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "dillon-brooks",
+    "name": "Dillon Brooks",
+    "bbrefId": "brookdi01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "jonathan-kuminga",
+    "name": "Jonathan Kuminga",
+    "bbrefId": "kuminjo01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "bill-russell",
+    "name": "Bill Russell",
+    "bbrefId": "russebi01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "willis-reed",
+    "name": "Willis Reed",
+    "bbrefId": "reedwi01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "bennedict-mathurin",
+    "name": "Bennedict Mathurin",
+    "bbrefId": "mathube01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "moritz-wagner",
+    "name": "Moritz Wagner",
+    "bbrefId": "wagnemo01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "avery-bradley",
+    "name": "Avery Bradley",
+    "bbrefId": "bradlav01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "cam-reddish",
+    "name": "Cam Reddish",
+    "bbrefId": "reddica01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "derek-fisher",
+    "name": "Derek Fisher",
+    "bbrefId": "fishede01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "derrick-jones-jr",
+    "name": "Derrick Jones Jr.",
+    "bbrefId": "jonesde02",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "dorian-finney-smith",
+    "name": "Dorian Finney-Smith",
+    "bbrefId": "finnedo01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "enes-freedom",
+    "name": "Enes Freedom",
+    "bbrefId": "kanteen01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "evan-turner",
+    "name": "Evan Turner",
+    "bbrefId": "turneev01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "gary-payton-ii",
+    "name": "Gary Payton II",
+    "bbrefId": "paytoga02",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "gary-trent-jr",
+    "name": "Gary Trent Jr.",
+    "bbrefId": "trentga02",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "grant-williams",
+    "name": "Grant Williams",
+    "bbrefId": "willigr01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "grayson-allen",
+    "name": "Grayson Allen",
+    "bbrefId": "allengr01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jake-laravia",
+    "name": "Jake LaRavia",
+    "bbrefId": "laravja01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "james-wiseman",
+    "name": "James Wiseman",
+    "bbrefId": "wisemja01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "javale-mcgee",
+    "name": "JaVale McGee",
+    "bbrefId": "mcgeeja01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "joe-ingles",
+    "name": "Joe Ingles",
+    "bbrefId": "inglejo01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "jordan-goodwin",
+    "name": "Jordan Goodwin",
+    "bbrefId": "goodwjo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "josh-richardson",
+    "name": "Josh Richardson",
+    "bbrefId": "richajo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "kevon-looney",
+    "name": "Kevon Looney",
+    "bbrefId": "looneke01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "kyle-anderson",
+    "name": "Kyle Anderson",
+    "bbrefId": "anderky01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "luke-kennard",
+    "name": "Luke Kennard",
+    "bbrefId": "kennalu01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "matisse-thybulle",
+    "name": "Matisse Thybulle",
+    "bbrefId": "thybuma01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "mo-bamba",
+    "name": "Mo Bamba",
+    "bbrefId": "bambamo01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "nate-robinson",
+    "name": "Nate Robinson",
+    "bbrefId": "robinna01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "nickeil-alexander-walker",
+    "name": "Nickeil Alexander-Walker",
+    "bbrefId": "alexani01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "pj-tucker",
+    "name": "P.J. Tucker",
+    "bbrefId": "tuckepj01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "precious-achiuwa",
+    "name": "Precious Achiuwa",
+    "bbrefId": "achiupr01",
+    "positions": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "id": "reggie-jackson",
+    "name": "Reggie Jackson",
+    "bbrefId": "jacksre01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "robert-horry",
+    "name": "Robert Horry",
+    "bbrefId": "horryro01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "robin-lopez",
+    "name": "Robin Lopez",
+    "bbrefId": "lopezro01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "saddiq-bey",
+    "name": "Saddiq Bey",
+    "bbrefId": "beysa01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "seth-curry",
+    "name": "Seth Curry",
+    "bbrefId": "curryse01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "spencer-dinwiddie",
+    "name": "Spencer Dinwiddie",
+    "bbrefId": "dinwisp01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "steve-kerr",
+    "name": "Steve Kerr",
+    "bbrefId": "kerrst01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "timofey-mozgov",
+    "name": "Timofey Mozgov",
+    "bbrefId": "mozgoti01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "tony-allen",
+    "name": "Tony Allen",
+    "bbrefId": "allento01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "ty-jerome",
+    "name": "Ty Jerome",
+    "bbrefId": "jeromty01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "zaza-pachulia",
+    "name": "Zaza Pachulia",
+    "bbrefId": "pachuza01",
+    "positions": [
+      "C"
+    ]
+  }
+]

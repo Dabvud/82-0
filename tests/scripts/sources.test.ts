@@ -19,6 +19,20 @@ describe("parseCsv", () => {
 });
 
 describe("loadSources", () => {
+  it("leitet historische Zweier vor 1980 exakt aus Feldkörben ab, auch im Liga-Schnitt", () => {
+    const dir = mkdtempSync(join(tmpdir(), "82-0-sources-"));
+    folders.push(dir);
+    const header = "season,lg,team,player_id,g,fg_per_game,fg_percent,x2p_per_game,x2p_percent,stl_per_game,blk_per_game,orb_per_game,drb_per_game,tov_per_game\n";
+    const rows = "1979,NBA,AAA,old01,80,8,0.48,NA,NA,1,1,2,5,3\n1980,NBA,AAA,old01,80,9,0.5,NA,NA,1,1,2,5,3\n";
+    writeFileSync(join(dir, "Player Per Game.csv"), header + rows);
+    writeFileSync(join(dir, "Team Stats Per Game.csv"), header + rows.replaceAll(",AAA,", ",League Average,"));
+    writeFileSync(join(dir, "Player Season Info.csv"), "season,lg,player_id,player\n1979,NBA,old01,Old\n");
+    writeFileSync(join(dir, "End of Season Teams.csv"), "season,lg\n");
+    const sources = loadSources(dir);
+    expect(sources.seasonsByPlayer.get("old01")?.[0]).toMatchObject({ x2p: 8, x2pPct: 0.48 });
+    expect(sources.league.get(1979)).toMatchObject({ x2p: 8, x2pPct: 0.48 });
+    expect(sources.seasonsByPlayer.get("old01")?.[1].x2p).toBeNull();
+  });
   it("nimmt die größte Spielzahl, trennt NBA/BAA von ABA und ergänzt historische Liga-Lücken", () => {
     const dir = mkdtempSync(join(tmpdir(), "82-0-sources-"));
     folders.push(dir);

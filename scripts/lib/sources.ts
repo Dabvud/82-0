@@ -38,8 +38,11 @@ const number = (value: string | undefined): number | null => {
 };
 
 function statistics(row: Record<string, string>): LeagueAvg {
+  // Vor der Dreierlinie sind alle Feldkörbe Zweier; die CSV-Zweierspalten sind historisch leer.
+  const beforeThrees = Number(row.season) < 1980;
   return {
-    x2p: number(row.x2p_per_game), x2pPct: number(row.x2p_percent) ?? 0,
+    x2p: number(row.x2p_per_game) ?? (beforeThrees ? number(row.fg_per_game) : null),
+    x2pPct: number(row.x2p_percent) ?? (beforeThrees ? number(row.fg_percent) : null) ?? 0,
     x3p: number(row.x3p_per_game), x3pPct: number(row.x3p_percent),
     ftm: number(row.ft_per_game), fta: number(row.fta_per_game), ftPct: number(row.ft_percent) ?? 0,
     ast: number(row.ast_per_game), tov: number(row.tov_per_game),

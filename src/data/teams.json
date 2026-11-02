@@ -1,0 +1,152 @@
+[
+  {
+    "abbr": "ATL",
+    "name": "Atlanta Hawks",
+    "net": 2.4
+  },
+  {
+    "abbr": "BOS",
+    "name": "Boston Celtics",
+    "net": 8.1
+  },
+  {
+    "abbr": "BRK",
+    "name": "Brooklyn Nets",
+    "net": -10.3
+  },
+  {
+    "abbr": "CHI",
+    "name": "Chicago Bulls",
+    "net": -5.1
+  },
+  {
+    "abbr": "CHO",
+    "name": "Charlotte Hornets",
+    "net": 5
+  },
+  {
+    "abbr": "CLE",
+    "name": "Cleveland Cavaliers",
+    "net": 4.1
+  },
+  {
+    "abbr": "DAL",
+    "name": "Dallas Mavericks",
+    "net": -5.3
+  },
+  {
+    "abbr": "DEN",
+    "name": "Denver Nuggets",
+    "net": 5.2
+  },
+  {
+    "abbr": "DET",
+    "name": "Detroit Pistons",
+    "net": 8.2
+  },
+  {
+    "abbr": "GSW",
+    "name": "Golden State Warriors",
+    "net": -0.6
+  },
+  {
+    "abbr": "HOU",
+    "name": "Houston Rockets",
+    "net": 5.4
+  },
+  {
+    "abbr": "IND",
+    "name": "Indiana Pacers",
+    "net": -7.9
+  },
+  {
+    "abbr": "LAC",
+    "name": "Los Angeles Clippers",
+    "net": 1.2
+  },
+  {
+    "abbr": "LAL",
+    "name": "Los Angeles Lakers",
+    "net": 1.8
+  },
+  {
+    "abbr": "MEM",
+    "name": "Memphis Grizzlies",
+    "net": -5.9
+  },
+  {
+    "abbr": "MIA",
+    "name": "Miami Heat",
+    "net": 2.2
+  },
+  {
+    "abbr": "MIL",
+    "name": "Milwaukee Bucks",
+    "net": -6.4
+  },
+  {
+    "abbr": "MIN",
+    "name": "Minnesota Timberwolves",
+    "net": 3.3
+  },
+  {
+    "abbr": "NOP",
+    "name": "New Orleans Pelicans",
+    "net": -4.5
+  },
+  {
+    "abbr": "NYK",
+    "name": "New York Knicks",
+    "net": 6.5
+  },
+  {
+    "abbr": "OKC",
+    "name": "Oklahoma City Thunder",
+    "net": 11.2
+  },
+  {
+    "abbr": "ORL",
+    "name": "Orlando Magic",
+    "net": 0.6
+  },
+  {
+    "abbr": "PHI",
+    "name": "Philadelphia 76ers",
+    "net": -0.1
+  },
+  {
+    "abbr": "PHO",
+    "name": "Phoenix Suns",
+    "net": 1.5
+  },
+  {
+    "abbr": "POR",
+    "name": "Portland Trail Blazers",
+    "net": -0.3
+  },
+  {
+    "abbr": "SAC",
+    "name": "Sacramento Kings",
+    "net": -10.1
+  },
+  {
+    "abbr": "SAS",
+    "name": "San Antonio Spurs",
+    "net": 8.3
+  },
+  {
+    "abbr": "TOR",
+    "name": "Toronto Raptors",
+    "net": 2.9
+  },
+  {
+    "abbr": "UTA",
+    "name": "Utah Jazz",
+    "net": -8.2
+  },
+  {
+    "abbr": "WAS",
+    "name": "Washington Wizards",
+    "net": -11.7
+  }
+]
