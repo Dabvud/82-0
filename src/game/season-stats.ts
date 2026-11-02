@@ -5,14 +5,14 @@ import type { NbaTeam, Player } from "./types";
 export interface Record2 { wins: number; losses: number }
 export interface SeasonStats {
   longestStreak: number;
-  home: Record2;
-  away: Record2;
   vsTop10: Record2;
   /** Teamstärke der Start-Five (Net Rating, gleiche Skala wie die echten Teams). */
   net: number;
   off: number;
   def: number;
   bestTeam: { name: string; net: number };
+  /** Summe der Peak-Werte der Five pro Spiel; Dreierquote aus allen Treffern ÷ Versuchen. */
+  box: { pts: number; reb: number; ast: number; stl: number; blk: number; fg3m: number; fg3pct: number };
 }
 
 function record(games: SeasonLog["games"]): Record2 {
@@ -33,10 +33,18 @@ export function seasonStats(log: SeasonLog, lineup: Player[], teams: NbaTeam[]):
   const { net, off, def } = teamRating(lineup);
   return {
     longestStreak,
-    home: record(log.games.filter((g) => g.home)),
-    away: record(log.games.filter((g) => !g.home)),
     vsTop10: record(log.games.filter((g) => top10.has(g.opp))),
     net, off, def,
     bestTeam: { name: ranked[0]?.name ?? "–", net: ranked[0]?.net ?? 0 },
+    box: boxTotals(lineup),
+  };
+}
+
+function boxTotals(lineup: Player[]): SeasonStats["box"] {
+  const sum = (k: keyof Player["box"]) => Math.round(lineup.reduce((t, p) => t + p.box[k], 0) * 10) / 10;
+  const attempts = lineup.reduce((t, p) => t + p.box.fg3a, 0);
+  return {
+    pts: sum("pts"), reb: sum("reb"), ast: sum("ast"), stl: sum("stl"), blk: sum("blk"), fg3m: sum("fg3m"),
+    fg3pct: attempts > 0 ? Math.round(lineup.reduce((t, p) => t + p.box.fg3m, 0) / attempts * 1000) / 1000 : 0,
   };
 }

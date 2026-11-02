@@ -187,7 +187,15 @@ export function buildPlayers(pool: PoolPlayer[], sources: ReturnType<typeof load
     const raw = Object.fromEntries(keys.map(key => [key, raws.reduce((sum, r) => sum + r[key], 0) / raws.length])) as unknown as typeof raws[0];
     // Nur tatsächlich verwendete Peak-Saisons markieren, nicht ausgeschlossene Kurzsaisons dazwischen.
     const estimated = used.some(({ estimatedFields }) => estimatedFields.length > 0);
-    return { from: peak.from, to: peak.to, value: peak.value, raw, estimated };
+    // Peak-Werte pro Spiel für die Ergebnis-Statistik (inklusive Schätzwerte).
+    const avg = (f: (l: SeasonLine) => number) => used.reduce((sum, { line }) => sum + f(line), 0) / used.length;
+    const r1 = (x: number) => Math.round(x * 10) / 10;
+    const box = {
+      pts: r1(avg(l => 2 * (l.x2p ?? 0) + 3 * (l.x3p ?? 0) + (l.ftm ?? 0))), reb: r1(avg(l => l.trb ?? 0)),
+      ast: r1(avg(l => l.ast ?? 0)), stl: r1(avg(l => l.stl ?? 0)), blk: r1(avg(l => l.blk ?? 0)),
+      fg3m: r1(avg(l => l.x3p ?? 0)), fg3a: Math.round(avg(l => (l.x3p && l.x3pPct ? l.x3p / l.x3pPct : 0)) * 100) / 100,
+    };
+    return { from: peak.from, to: peak.to, value: peak.value, raw, estimated, box };
   });
   const cats = toCategories(peaks.map(peak => peak.raw));
   const strengths = percentiles(peaks.map(peak => peak.value));
@@ -209,7 +217,7 @@ export function buildPlayers(pool: PoolPlayer[], sources: ReturnType<typeof load
     strength: strengths[index], tier: tiers[index],
     price: Math.floor(prices[index].pct * capNow / 10_000) * 10_000, priceSource: prices[index].source,
     contract: contracts[index] ? { season: contracts[index].season, team: contracts[index].team } : null,
-    value: values[index], overpaid: isOverpaid(values[index]), estimated: peaks[index].estimated,
+    value: values[index], overpaid: isOverpaid(values[index]), estimated: peaks[index].estimated, box: peaks[index].box,
   }));
   return { players, ambiguities: findAmbiguousNames(careers) };
 }

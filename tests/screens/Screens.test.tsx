@@ -177,7 +177,7 @@ describe("Dominanz-Tafel im Ergebnis", () => {
     ], events: [], wins: 2, losses: 0, status: "done" };
     render(<ResultScreen log={log} lineup={FIXTURE_POOL.slice(0, 5)} teams={FIXTURE_TEAMS} puzzleNo={null} now={new Date()} onAgain={() => {}} onHome={() => {}} />);
     const board = screen.getByRole("region", { name: "So dominant war dein Team" });
-    for (const label of ["Teamstärke", "Offensive", "Defensive", "Längste Siegesserie", "Heim", "Auswärts", "Gegen die Top 10"]) {
+    for (const label of ["Teamstärke", "Offensive", "Defensive", "Längste Siegesserie", "Gegen die Top 10", "Punkte", "Rebounds", "Assists", "Steals", "Blocks", "Dreier", "Dreierquote"]) {
       expect(board).toHaveTextContent(label);
     }
     expect(board).toHaveTextContent("2 Siege");

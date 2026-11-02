@@ -33,6 +33,7 @@ export function ResultScreen({ log, lineup, teams = [], puzzleNo, now, onAgain, 
   const stats = teams.length ? seasonStats(log, lineup, teams) : null;
   const signed = (x: number) => (x >= 0 ? "+" : "−") + Math.abs(x).toLocaleString("de-DE", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
   const rec = (r: { wins: number; losses: number }) => r.wins + "-" + r.losses;
+  const num = (x: number) => x.toLocaleString("de-DE", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
   const text = shareText(puzzleNo, log, lineup);
   const [status, setStatus] = useState<string | null>(null);
   const [clock, setClock] = useState(now);
@@ -55,9 +56,17 @@ export function ResultScreen({ log, lineup, teams = [], puzzleNo, now, onAgain, 
             <div><dt>Offensive</dt><dd>{signed(stats.off)}</dd></div>
             <div><dt>Defensive</dt><dd>{signed(stats.def)}</dd></div>
             <div><dt>Längste Siegesserie</dt><dd>{stats.longestStreak} Siege</dd></div>
-            <div><dt>Heim</dt><dd>{rec(stats.home)}</dd></div>
-            <div><dt>Auswärts</dt><dd>{rec(stats.away)}</dd></div>
             <div><dt>Gegen die Top 10</dt><dd>{rec(stats.vsTop10)}</dd></div>
+          </dl>
+          <h3>Deine Five pro Spiel (Peak-Saisons)</h3>
+          <dl className="statlist statlist--grid">
+            <div><dt>Punkte</dt><dd>{num(stats.box.pts)}</dd></div>
+            <div><dt>Rebounds</dt><dd>{num(stats.box.reb)}</dd></div>
+            <div><dt>Assists</dt><dd>{num(stats.box.ast)}</dd></div>
+            <div><dt>Steals</dt><dd>{num(stats.box.stl)}</dd></div>
+            <div><dt>Blocks</dt><dd>{num(stats.box.blk)}</dd></div>
+            <div><dt>Dreier</dt><dd>{num(stats.box.fg3m)}</dd></div>
+            <div><dt>Dreierquote</dt><dd>{(stats.box.fg3pct * 100).toLocaleString("de-DE", { maximumFractionDigits: 1 })} %</dd></div>
           </dl>
         </section>
       )}

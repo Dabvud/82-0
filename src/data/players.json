@@ -29,7 +29,16 @@
     },
     "value": 12.876638746288378,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 25.9,
+      "reb": 4.7,
+      "ast": 7.6,
+      "stl": 1.9,
+      "blk": 0.2,
+      "fg3m": 4,
+      "fg3a": 9.05
+    }
   },
   {
     "id": "kareem-abdul-jabbar",
@@ -61,7 +70,16 @@
     },
     "value": 15.72328411370053,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 26.6,
+      "reb": 14.4,
+      "ast": 4.4,
+      "stl": 1.5,
+      "blk": 3.4,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "lebron-james",
@@ -93,7 +111,16 @@
     },
     "value": 31.82203909024274,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 27.1,
+      "reb": 7.6,
+      "ast": 6.6,
+      "stl": 1.7,
+      "blk": 0.7,
+      "fg3m": 1.3,
+      "fg3a": 3.3
+    }
   },
   {
     "id": "nikola-jokic",
@@ -125,7 +152,16 @@
     },
     "value": 18.569929481112666,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 26.9,
+      "reb": 12.3,
+      "ast": 9.7,
+      "stl": 1.5,
+      "blk": 0.7,
+      "fg3m": 1.3,
+      "fg3a": 3.32
+    }
   },
   {
     "id": "shaquille-oneal",
@@ -157,7 +193,16 @@
     },
     "value": 30.240569441680435,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 28.5,
+      "reb": 12.3,
+      "ast": 3.5,
+      "stl": 0.6,
+      "blk": 2.6,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "steve-nash",
@@ -189,7 +234,16 @@
     },
     "value": 42.995764194253844,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.8,
+      "reb": 3.7,
+      "ast": 11.2,
+      "stl": 0.9,
+      "blk": 0.1,
+      "fg3m": 1.8,
+      "fg3a": 3.99
+    }
   },
   {
     "id": "giannis-antetokounmpo",
@@ -221,7 +275,16 @@
     },
     "value": 29.60798158225552,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 28.4,
+      "reb": 12.4,
+      "ast": 5.8,
+      "stl": 1.2,
+      "blk": 1.2,
+      "fg3m": 1.1,
+      "fg3a": 3.66
+    }
   },
   {
     "id": "ray-allen",
@@ -253,7 +316,16 @@
     },
     "value": -6.13323247525247,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 23,
+      "reb": 4.8,
+      "ast": 4.3,
+      "stl": 1.3,
+      "blk": 0.2,
+      "fg3m": 2.6,
+      "fg3a": 6.9
+    }
   },
   {
     "id": "larry-bird",
@@ -285,7 +357,16 @@
     },
     "value": 16.98845983255036,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 26.2,
+      "reb": 10.1,
+      "ast": 6.7,
+      "stl": 1.8,
+      "blk": 0.9,
+      "fg3m": 0.6,
+      "fg3a": 1.6
+    }
   },
   {
     "id": "michael-jordan",
@@ -317,7 +398,16 @@
     },
     "value": 30.556863371392893,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 33.7,
+      "reb": 6.8,
+      "ast": 6.7,
+      "stl": 3,
+      "blk": 1,
+      "fg3m": 0.5,
+      "fg3a": 1.59
+    }
   },
   {
     "id": "chris-paul",
@@ -349,7 +439,16 @@
     },
     "value": 22.33322119886894,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.7,
+      "reb": 3.9,
+      "ast": 9.8,
+      "stl": 2.5,
+      "blk": 0.1,
+      "fg3m": 1.2,
+      "fg3a": 3.46
+    }
   },
   {
     "id": "kevin-durant",
@@ -381,7 +480,16 @@
     },
     "value": 31.189451230817824,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 29.4,
+      "reb": 7.8,
+      "ast": 4.5,
+      "stl": 1.3,
+      "blk": 1.1,
+      "fg3m": 2,
+      "fg3a": 5.13
+    }
   },
   {
     "id": "tracy-mcgrady",
@@ -414,7 +522,16 @@
     },
     "value": 21.068045480019094,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 28.3,
+      "reb": 7.3,
+      "ast": 5.1,
+      "stl": 1.6,
+      "blk": 1.1,
+      "fg3m": 1.5,
+      "fg3a": 4.02
+    }
   },
   {
     "id": "james-harden",
@@ -446,7 +563,16 @@
     },
     "value": 28.97539372283059,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 31.9,
+      "reb": 6.7,
+      "ast": 9.2,
+      "stl": 1.8,
+      "blk": 0.6,
+      "fg3m": 3.9,
+      "fg3a": 10.78
+    }
   },
   {
     "id": "gary-payton",
@@ -478,7 +604,16 @@
     },
     "value": 7.557923575920711,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21.8,
+      "reb": 5.3,
+      "ast": 8.6,
+      "stl": 2.1,
+      "blk": 0.2,
+      "fg3m": 1.8,
+      "fg3a": 5.66
+    }
   },
   {
     "id": "hakeem-olajuwon",
@@ -510,7 +645,16 @@
     },
     "value": 14.774402324563141,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 27,
+      "reb": 11.9,
+      "ast": 3.5,
+      "stl": 1.7,
+      "blk": 3.8,
+      "fg3m": 0,
+      "fg3a": 0.08
+    }
   },
   {
     "id": "david-robinson",
@@ -542,7 +686,16 @@
     },
     "value": 17.937341621687736,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 27.5,
+      "reb": 11.2,
+      "ast": 3.6,
+      "stl": 1.6,
+      "blk": 3.3,
+      "fg3m": 0.1,
+      "fg3a": 0.21
+    }
   },
   {
     "id": "kevin-garnett",
@@ -575,7 +728,16 @@
     },
     "value": 15.0906962542756,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 23.1,
+      "reb": 13.6,
+      "ast": 5.6,
+      "stl": 1.5,
+      "blk": 1.7,
+      "fg3m": 0.1,
+      "fg3a": 0.51
+    }
   },
   {
     "id": "bob-mcadoo",
@@ -605,7 +767,16 @@
     "contract": null,
     "value": 13.390637413328761,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 32.1,
+      "reb": 13.9,
+      "ast": 2.8,
+      "stl": 1.2,
+      "blk": 2.5,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "kobe-bryant",
@@ -637,7 +808,16 @@
     },
     "value": 13.19293267600085,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 28.9,
+      "reb": 5.7,
+      "ast": 5.2,
+      "stl": 1.6,
+      "blk": 0.5,
+      "fg3m": 1.7,
+      "fg3a": 4.74
+    }
   },
   {
     "id": "anthony-davis",
@@ -670,7 +850,16 @@
     },
     "value": 20.751751550306636,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 26.8,
+      "reb": 10.8,
+      "ast": 3.1,
+      "stl": 1.5,
+      "blk": 2.4,
+      "fg3m": 0.9,
+      "fg3a": 2.8
+    }
   },
   {
     "id": "john-stockton",
@@ -702,7 +891,16 @@
     },
     "value": 8.338430283390323,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 14.9,
+      "reb": 3,
+      "ast": 12,
+      "stl": 2.2,
+      "blk": 0.3,
+      "fg3m": 1,
+      "fg3a": 2.46
+    }
   },
   {
     "id": "luka-doncic",
@@ -734,7 +932,16 @@
     },
     "value": 21.700633339444025,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 31.6,
+      "reb": 9,
+      "ast": 8.8,
+      "stl": 1.3,
+      "blk": 0.5,
+      "fg3m": 3.3,
+      "fg3a": 9.23
+    }
   },
   {
     "id": "vince-carter",
@@ -767,7 +974,16 @@
     },
     "value": 3.039291486408871,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 26.1,
+      "reb": 5.5,
+      "ast": 3.9,
+      "stl": 1.5,
+      "blk": 1,
+      "fg3m": 1.8,
+      "fg3a": 4.51
+    }
   },
   {
     "id": "gilbert-arenas",
@@ -799,7 +1015,16 @@
     },
     "value": 5.885936853821022,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 27.8,
+      "reb": 4.3,
+      "ast": 5.7,
+      "stl": 1.9,
+      "blk": 0.3,
+      "fg3m": 2.6,
+      "fg3a": 7.29
+    }
   },
   {
     "id": "dirk-nowitzki",
@@ -831,7 +1056,16 @@
     },
     "value": 9.713699449163784,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 25.8,
+      "reb": 9.2,
+      "ast": 3.1,
+      "stl": 0.9,
+      "blk": 1.1,
+      "fg3m": 1.2,
+      "fg3a": 2.87
+    }
   },
   {
     "id": "tim-duncan",
@@ -864,7 +1098,16 @@
     },
     "value": 16.355871973125446,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 23.7,
+      "reb": 12.7,
+      "ast": 3.6,
+      "stl": 0.8,
+      "blk": 2.7,
+      "fg3m": 0,
+      "fg3a": 0.12
+    }
   },
   {
     "id": "magic-johnson",
@@ -896,7 +1139,16 @@
     },
     "value": 11.927756957151004,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 22.1,
+      "reb": 6.8,
+      "ast": 12.3,
+      "stl": 1.7,
+      "blk": 0.3,
+      "fg3m": 0.4,
+      "fg3a": 1.35
+    }
   },
   {
     "id": "joel-embiid",
@@ -928,7 +1180,16 @@
     },
     "value": 13.825520535425767,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 30.6,
+      "reb": 10.8,
+      "ast": 3.7,
+      "stl": 1,
+      "blk": 1.5,
+      "fg3m": 1.2,
+      "fg3a": 3.24
+    }
   },
   {
     "id": "dwyane-wade",
@@ -960,7 +1221,16 @@
     },
     "value": 17.66686606672924,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 27.4,
+      "reb": 5.4,
+      "ast": 6.2,
+      "stl": 1.8,
+      "blk": 1.2,
+      "fg3m": 0.9,
+      "fg3a": 3.03
+    }
   },
   {
     "id": "shai-gilgeous-alexander",
@@ -992,7 +1262,16 @@
     },
     "value": 37.119973758613035,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 31.4,
+      "reb": 5.1,
+      "ast": 6,
+      "stl": 1.8,
+      "blk": 1,
+      "fg3m": 1.4,
+      "fg3a": 3.96
+    }
   },
   {
     "id": "dwight-howard",
@@ -1024,7 +1303,16 @@
     },
     "value": 27.07763014455584,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.6,
+      "reb": 13.7,
+      "ast": 1.5,
+      "stl": 1.1,
+      "blk": 2.7,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "peja-stojakovic",
@@ -1056,7 +1344,16 @@
     },
     "value": 13.332131044775593,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21.6,
+      "reb": 5.7,
+      "ast": 2.2,
+      "stl": 1.1,
+      "blk": 0.2,
+      "fg3m": 2.3,
+      "fg3a": 5.67
+    }
   },
   {
     "id": "victor-wembanyama",
@@ -1088,7 +1385,16 @@
     },
     "value": 62.10624944696764,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 23.6,
+      "reb": 11,
+      "ast": 3.6,
+      "stl": 1.1,
+      "blk": 3.5,
+      "fg3m": 2.3,
+      "fg3a": 6.6
+    }
   },
   {
     "id": "scottie-pippen",
@@ -1120,7 +1426,16 @@
     },
     "value": 20.11916369088172,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21,
+      "reb": 7.7,
+      "ast": 5.6,
+      "stl": 2.5,
+      "blk": 0.9,
+      "fg3m": 1.4,
+      "fg3a": 3.98
+    }
   },
   {
     "id": "russell-westbrook",
@@ -1152,7 +1467,16 @@
     },
     "value": 23.598396917718787,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 27.8,
+      "reb": 8.6,
+      "ast": 9.8,
+      "stl": 1.9,
+      "blk": 0.3,
+      "fg3m": 1.7,
+      "fg3a": 5.34
+    }
   },
   {
     "id": "paul-pierce",
@@ -1184,7 +1508,16 @@
     },
     "value": -9.687659016266608,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 25.8,
+      "reb": 6.9,
+      "ast": 3.6,
+      "stl": 1.8,
+      "blk": 0.9,
+      "fg3m": 2,
+      "fg3a": 5.37
+    }
   },
   {
     "id": "tim-hardaway",
@@ -1216,7 +1549,16 @@
     },
     "value": 8.099994361808228,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.8,
+      "reb": 3.4,
+      "ast": 8.1,
+      "stl": 1.6,
+      "blk": 0.1,
+      "fg3m": 2.2,
+      "fg3a": 6.36
+    }
   },
   {
     "id": "jason-kidd",
@@ -1248,7 +1590,16 @@
     },
     "value": 17.905106182894485,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.3,
+      "reb": 7,
+      "ast": 9.9,
+      "stl": 2.1,
+      "blk": 0.3,
+      "fg3m": 1,
+      "fg3a": 3.26
+    }
   },
   {
     "id": "baron-davis",
@@ -1280,7 +1631,16 @@
     },
     "value": -6.2403934164014245,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.4,
+      "reb": 4.1,
+      "ast": 7.5,
+      "stl": 2.1,
+      "blk": 0.5,
+      "fg3m": 2.3,
+      "fg3a": 6.78
+    }
   },
   {
     "id": "shawn-marion",
@@ -1312,7 +1672,16 @@
     },
     "value": 0.8252339784216645,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.6,
+      "reb": 11,
+      "ast": 1.8,
+      "stl": 2,
+      "blk": 1.6,
+      "fg3m": 1.2,
+      "fg3a": 3.66
+    }
   },
   {
     "id": "karl-anthony-towns",
@@ -1344,7 +1713,16 @@
     },
     "value": 1.1415279081341083,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 25.2,
+      "reb": 10.4,
+      "ast": 4.2,
+      "stl": 0.9,
+      "blk": 1.1,
+      "fg3m": 2.6,
+      "fg3a": 6.36
+    }
   },
   {
     "id": "mark-price",
@@ -1376,7 +1754,16 @@
     },
     "value": 36.564507413329466,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.7,
+      "reb": 2.7,
+      "ast": 7.7,
+      "stl": 1.3,
+      "blk": 0.1,
+      "fg3m": 1.5,
+      "fg3a": 3.83
+    }
   },
   {
     "id": "karl-malone",
@@ -1408,7 +1795,16 @@
     },
     "value": 15.406990183988057,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 26,
+      "reb": 9.9,
+      "ast": 4.2,
+      "stl": 1.3,
+      "blk": 0.7,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "charles-barkley",
@@ -1440,7 +1836,16 @@
     },
     "value": 31.14809127815716,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 26.5,
+      "reb": 12,
+      "ast": 3.7,
+      "stl": 1.6,
+      "blk": 0.9,
+      "fg3m": 0.4,
+      "fg3a": 1.79
+    }
   },
   {
     "id": "damian-lillard",
@@ -1472,7 +1877,16 @@
     },
     "value": 0.5411754875024428,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 27.7,
+      "reb": 4.5,
+      "ast": 7.2,
+      "stl": 1.1,
+      "blk": 0.4,
+      "fg3m": 3.4,
+      "fg3a": 8.98
+    }
   },
   {
     "id": "mitch-richmond",
@@ -1504,7 +1918,16 @@
     },
     "value": -0.8158446505361638,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 23.9,
+      "reb": 3.9,
+      "ast": 3.7,
+      "stl": 1.4,
+      "blk": 0.3,
+      "fg3m": 2.4,
+      "fg3a": 5.8
+    }
   },
   {
     "id": "chris-webber",
@@ -1537,7 +1960,16 @@
     },
     "value": 3.3878208549145796,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 24.9,
+      "reb": 10.6,
+      "ast": 4.8,
+      "stl": 1.5,
+      "blk": 1.5,
+      "fg3m": 0.1,
+      "fg3a": 0.27
+    }
   },
   {
     "id": "oscar-robertson",
@@ -1566,7 +1998,16 @@
     "contract": null,
     "value": 14.458108394850683,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 31.1,
+      "reb": 8.9,
+      "ast": 11.2,
+      "stl": 1.4,
+      "blk": 0.1,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "glen-rice",
@@ -1598,7 +2039,16 @@
     },
     "value": 13.958810894899074,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 23.6,
+      "reb": 4.4,
+      "ast": 2.4,
+      "stl": 1,
+      "blk": 0.3,
+      "fg3m": 2.1,
+      "fg3a": 4.81
+    }
   },
   {
     "id": "andrei-kirilenko",
@@ -1630,7 +2080,16 @@
     },
     "value": -2.582814563885165,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.8,
+      "reb": 7.4,
+      "ast": 3.5,
+      "stl": 1.7,
+      "blk": 3.1,
+      "fg3m": 0.7,
+      "fg3a": 2.1
+    }
   },
   {
     "id": "rudy-gobert",
@@ -1662,7 +2121,16 @@
     },
     "value": 3.1050082825222916,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.1,
+      "reb": 13.3,
+      "ast": 1.6,
+      "stl": 0.7,
+      "blk": 2.3,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "chauncey-billups",
@@ -1694,7 +2162,16 @@
     },
     "value": 18.878477957492258,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.6,
+      "reb": 3.1,
+      "ast": 7.5,
+      "stl": 1.1,
+      "blk": 0.2,
+      "fg3m": 1.9,
+      "fg3a": 4.81
+    }
   },
   {
     "id": "kevin-love",
@@ -1727,7 +2204,16 @@
     },
     "value": 13.514972325174035,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 24.2,
+      "reb": 13.7,
+      "ast": 3,
+      "stl": 0.8,
+      "blk": 0.5,
+      "fg3m": 1.9,
+      "fg3a": 4.88
+    }
   },
   {
     "id": "patrick-ewing",
@@ -1759,7 +2245,16 @@
     },
     "value": 5.285584433189342,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 25.9,
+      "reb": 10.5,
+      "ast": 2.5,
+      "stl": 1.2,
+      "blk": 3.6,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "kawhi-leonard",
@@ -1791,7 +2286,16 @@
     },
     "value": 19.802869761169248,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 24.5,
+      "reb": 6.6,
+      "ast": 3.1,
+      "stl": 1.8,
+      "blk": 0.7,
+      "fg3m": 1.9,
+      "fg3a": 4.82
+    }
   },
   {
     "id": "allen-iverson",
@@ -1823,7 +2327,16 @@
     },
     "value": 17.27251832346957,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 28.8,
+      "reb": 4.2,
+      "ast": 4.6,
+      "stl": 2.3,
+      "blk": 0.2,
+      "fg3m": 1.3,
+      "fg3a": 4.1
+    }
   },
   {
     "id": "demarcus-cousins",
@@ -1855,7 +2368,16 @@
     },
     "value": 24.272376899333644,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 26,
+      "reb": 11.7,
+      "ast": 3.8,
+      "stl": 1.5,
+      "blk": 1.5,
+      "fg3m": 1,
+      "fg3a": 2.76
+    }
   },
   {
     "id": "kyrie-irving",
@@ -1887,7 +2409,16 @@
     },
     "value": 2.0904096972714967,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 25.9,
+      "reb": 5,
+      "ast": 6.1,
+      "stl": 1.3,
+      "blk": 0.7,
+      "fg3m": 2.8,
+      "fg3a": 7.21
+    }
   },
   {
     "id": "joe-johnson",
@@ -1920,7 +2451,16 @@
     },
     "value": -15.938344296338734,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21.6,
+      "reb": 4.5,
+      "ast": 5.5,
+      "stl": 1.1,
+      "blk": 0.2,
+      "fg3m": 1.9,
+      "fg3a": 5.13
+    }
   },
   {
     "id": "tyrese-haliburton",
@@ -1952,7 +2492,16 @@
     },
     "value": 0.5096761465655959,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.8,
+      "reb": 3.7,
+      "ast": 10.2,
+      "stl": 1.4,
+      "blk": 0.6,
+      "fg3m": 2.9,
+      "fg3a": 7.56
+    }
   },
   {
     "id": "alonzo-mourning",
@@ -1984,7 +2533,16 @@
     },
     "value": 16.956224393757125,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.3,
+      "reb": 10,
+      "ast": 1.4,
+      "stl": 0.6,
+      "blk": 3.3,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "mike-bibby",
@@ -2016,7 +2574,16 @@
     },
     "value": -16.54705578874887,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.9,
+      "reb": 3.4,
+      "ast": 5.8,
+      "stl": 1.4,
+      "blk": 0.2,
+      "fg3m": 1.5,
+      "fg3a": 3.83
+    }
   },
   {
     "id": "john-wall",
@@ -2048,7 +2615,16 @@
     },
     "value": -3.286587107840333,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.1,
+      "reb": 4.6,
+      "ast": 10.3,
+      "stl": 1.9,
+      "blk": 0.7,
+      "fg3m": 1.1,
+      "fg3a": 3.43
+    }
   },
   {
     "id": "deandre-jordan",
@@ -2080,7 +2656,16 @@
     },
     "value": 11.047617742309612,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 12.3,
+      "reb": 14.2,
+      "ast": 1,
+      "stl": 0.8,
+      "blk": 2.1,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "amare-stoudemire",
@@ -2113,7 +2698,16 @@
     },
     "value": 14.109579026344974,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 23.9,
+      "reb": 9.2,
+      "ast": 1.4,
+      "stl": 0.9,
+      "blk": 1.7,
+      "fg3m": 0,
+      "fg3a": 0.21
+    }
   },
   {
     "id": "jason-terry",
@@ -2145,7 +2739,16 @@
     },
     "value": 2.770089028848922,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.8,
+      "reb": 3.7,
+      "ast": 6.2,
+      "stl": 1.6,
+      "blk": 0.2,
+      "fg3m": 2,
+      "fg3a": 5.42
+    }
   },
   {
     "id": "rashard-lewis",
@@ -2177,7 +2780,16 @@
     },
     "value": -26.692337906562372,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.5,
+      "reb": 5.9,
+      "ast": 2.5,
+      "stl": 1.1,
+      "blk": 0.6,
+      "fg3m": 2.7,
+      "fg3a": 6.77
+    }
   },
   {
     "id": "reggie-miller",
@@ -2209,7 +2821,16 @@
     },
     "value": -27.925278186618968,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.7,
+      "reb": 3.1,
+      "ast": 2.9,
+      "stl": 1,
+      "blk": 0.2,
+      "fg3m": 2.3,
+      "fg3a": 5.53
+    }
   },
   {
     "id": "bill-walton",
@@ -2238,7 +2859,16 @@
     "contract": null,
     "value": 10.576395734771012,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 17.9,
+      "reb": 13.7,
+      "ast": 4.4,
+      "stl": 1,
+      "blk": 2.4,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "domantas-sabonis",
@@ -2271,7 +2901,16 @@
     },
     "value": 6.756865461999567,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.2,
+      "reb": 13.3,
+      "ast": 7.2,
+      "stl": 0.8,
+      "blk": 0.5,
+      "fg3m": 0.6,
+      "fg3a": 1.43
+    }
   },
   {
     "id": "stephon-marbury",
@@ -2303,7 +2942,16 @@
     },
     "value": -5.184350686115081,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21.5,
+      "reb": 3.1,
+      "ast": 8.4,
+      "stl": 1.5,
+      "blk": 0.1,
+      "fg3m": 1.2,
+      "fg3a": 3.69
+    }
   },
   {
     "id": "penny-hardaway",
@@ -2335,7 +2983,16 @@
     },
     "value": 22.291861246208278,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21,
+      "reb": 4.4,
+      "ast": 6.6,
+      "stl": 1.8,
+      "blk": 0.5,
+      "fg3m": 1.2,
+      "fg3a": 3.69
+    }
   },
   {
     "id": "kyle-lowry",
@@ -2367,7 +3024,16 @@
     },
     "value": -13.058509626627377,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.6,
+      "reb": 4.7,
+      "ast": 6.7,
+      "stl": 1.7,
+      "blk": 0.3,
+      "fg3m": 2.6,
+      "fg3a": 6.87
+    }
   },
   {
     "id": "clyde-drexler",
@@ -2399,7 +3065,16 @@
     },
     "value": 12.528109377782684,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 23.3,
+      "reb": 6.7,
+      "ast": 6.2,
+      "stl": 1.9,
+      "blk": 0.8,
+      "fg3m": 0.9,
+      "fg3a": 2.69
+    }
   },
   {
     "id": "marcus-camby",
@@ -2431,7 +3106,16 @@
     },
     "value": 22.272724040779167,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 11.1,
+      "reb": 12.2,
+      "ast": 2.9,
+      "stl": 1.2,
+      "blk": 3.4,
+      "fg3m": 0,
+      "fg3a": 0.11
+    }
   },
   {
     "id": "jason-richardson",
@@ -2464,7 +3148,16 @@
     },
     "value": -19.785739983348677,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.3,
+      "reb": 5.4,
+      "ast": 3.2,
+      "stl": 1.3,
+      "blk": 0.6,
+      "fg3m": 2.5,
+      "fg3a": 6.56
+    }
   },
   {
     "id": "klay-thompson",
@@ -2497,7 +3190,16 @@
     },
     "value": -18.152401804325955,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 22,
+      "reb": 3.6,
+      "ast": 2.4,
+      "stl": 0.9,
+      "blk": 0.6,
+      "fg3m": 3.3,
+      "fg3a": 7.84
+    }
   },
   {
     "id": "elvin-hayes",
@@ -2527,7 +3229,16 @@
     "contract": null,
     "value": 10.964567000778985,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 22.2,
+      "reb": 11.9,
+      "ast": 2,
+      "stl": 1.4,
+      "blk": 2.5,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "wilt-chamberlain",
@@ -2556,7 +3267,16 @@
     "contract": null,
     "value": 13.584723046332755,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 27.3,
+      "reb": 24.2,
+      "ast": 7.2,
+      "stl": 1,
+      "blk": 6.2,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "trae-young",
@@ -2588,7 +3308,16 @@
     },
     "value": -5.493577867422999,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 27.9,
+      "reb": 4,
+      "ast": 9.5,
+      "stl": 0.9,
+      "blk": 0.1,
+      "fg3m": 2.9,
+      "fg3a": 7.98
+    }
   },
   {
     "id": "isiah-thomas",
@@ -2620,7 +3349,16 @@
     },
     "value": 32.99080148282853,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21.2,
+      "reb": 4,
+      "ast": 11.9,
+      "stl": 2.3,
+      "blk": 0.3,
+      "fg3m": 0.3,
+      "fg3a": 1.14
+    }
   },
   {
     "id": "jayson-tatum",
@@ -2652,7 +3390,16 @@
     },
     "value": 4.652996573764426,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 27.9,
+      "reb": 8.5,
+      "ast": 5.2,
+      "stl": 1.1,
+      "blk": 0.6,
+      "fg3m": 3.3,
+      "fg3a": 9.2
+    }
   },
   {
     "id": "draymond-green",
@@ -2684,7 +3431,16 @@
     },
     "value": 21.878438055925344,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 11.9,
+      "reb": 8.5,
+      "ast": 6,
+      "stl": 1.7,
+      "blk": 1.4,
+      "fg3m": 1.2,
+      "fg3a": 3.61
+    }
   },
   {
     "id": "carmelo-anthony",
@@ -2716,7 +3472,16 @@
     },
     "value": 5.253348994396092,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 26.2,
+      "reb": 7.1,
+      "ast": 3.1,
+      "stl": 1,
+      "blk": 0.5,
+      "fg3m": 1.9,
+      "fg3a": 5.04
+    }
   },
   {
     "id": "bradley-beal",
@@ -2748,7 +3513,16 @@
     },
     "value": -4.8680567564026305,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 29.2,
+      "reb": 4.6,
+      "ast": 5.3,
+      "stl": 1.3,
+      "blk": 0.5,
+      "fg3m": 2.6,
+      "fg3a": 7.31
+    }
   },
   {
     "id": "rajon-rondo",
@@ -2780,7 +3554,16 @@
     },
     "value": 22.635547595463173,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 12,
+      "reb": 4.5,
+      "ast": 10.9,
+      "stl": 2.1,
+      "blk": 0.1,
+      "fg3m": 0.2,
+      "fg3a": 0.74
+    }
   },
   {
     "id": "nick-van-exel",
@@ -2812,7 +3595,16 @@
     },
     "value": -26.697250311480275,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.5,
+      "reb": 3.6,
+      "ast": 8,
+      "stl": 0.8,
+      "blk": 0.2,
+      "fg3m": 1.8,
+      "fg3a": 5.05
+    }
   },
   {
     "id": "paul-george",
@@ -2845,7 +3637,16 @@
     },
     "value": 4.6207611349711755,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 24.4,
+      "reb": 6.8,
+      "ast": 4.4,
+      "stl": 1.6,
+      "blk": 0.4,
+      "fg3m": 3.4,
+      "fg3a": 8.55
+    }
   },
   {
     "id": "ben-simmons",
@@ -2878,7 +3679,16 @@
     },
     "value": -3.8429858999167053,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.9,
+      "reb": 7.9,
+      "ast": 7.5,
+      "stl": 1.7,
+      "blk": 0.7,
+      "fg3m": 0,
+      "fg3a": 0.11
+    }
   },
   {
     "id": "kevin-johnson",
@@ -2910,7 +3720,16 @@
     },
     "value": 8.456939909834972,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21.7,
+      "reb": 3.8,
+      "ast": 11.2,
+      "stl": 1.7,
+      "blk": 0.2,
+      "fg3m": 0.1,
+      "fg3a": 0.33
+    }
   },
   {
     "id": "rasheed-wallace",
@@ -2943,7 +3762,16 @@
     },
     "value": -31.720805343168486,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.9,
+      "reb": 7.8,
+      "ast": 2.3,
+      "stl": 1.1,
+      "blk": 1.4,
+      "fg3m": 1.2,
+      "fg3a": 3.42
+    }
   },
   {
     "id": "dominique-wilkins",
@@ -2975,7 +3803,16 @@
     },
     "value": 25.147631127487834,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 30.1,
+      "reb": 6.9,
+      "ast": 2.9,
+      "stl": 1.5,
+      "blk": 0.6,
+      "fg3m": 0.4,
+      "fg3a": 1.38
+    }
   },
   {
     "id": "pau-gasol",
@@ -3008,7 +3845,16 @@
     },
     "value": 7.467406502383312,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.6,
+      "reb": 10.4,
+      "ast": 3.4,
+      "stl": 0.6,
+      "blk": 1.4,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "donovan-mitchell",
@@ -3040,7 +3886,16 @@
     },
     "value": 4.9370550646836335,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 26.3,
+      "reb": 4.6,
+      "ast": 5.2,
+      "stl": 1.5,
+      "blk": 0.4,
+      "fg3m": 3.4,
+      "fg3a": 9.09
+    }
   },
   {
     "id": "george-mikan",
@@ -3069,7 +3924,16 @@
     "contract": null,
     "value": 10.770481367774991,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 24.3,
+      "reb": 14,
+      "ast": 3,
+      "stl": 0.6,
+      "blk": 2.6,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "grant-hill",
@@ -3101,7 +3965,16 @@
     },
     "value": 13.793285096632516,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.9,
+      "reb": 8.8,
+      "ast": 7,
+      "stl": 1.6,
+      "blk": 0.6,
+      "fg3m": 0.1,
+      "fg3a": 0.28
+    }
   },
   {
     "id": "rick-barry",
@@ -3130,7 +4003,16 @@
     "contract": null,
     "value": 10.867524184276988,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 25.6,
+      "reb": 6.2,
+      "ast": 6.1,
+      "stl": 2.5,
+      "blk": 0.4,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "jrue-holiday",
@@ -3162,7 +4044,16 @@
     },
     "value": -12.288848597635571,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.4,
+      "reb": 4.8,
+      "ast": 6.8,
+      "stl": 1.6,
+      "blk": 0.7,
+      "fg3m": 1.9,
+      "fg3a": 5.35
+    }
   },
   {
     "id": "derrick-rose",
@@ -3194,7 +4085,16 @@
     },
     "value": 11.579227588645296,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 22.6,
+      "reb": 3.8,
+      "ast": 7.2,
+      "stl": 0.9,
+      "blk": 0.5,
+      "fg3m": 1.1,
+      "fg3a": 3.35
+    }
   },
   {
     "id": "dikembe-mutombo",
@@ -3226,7 +4126,16 @@
     },
     "value": -1.0725295998531124,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 12.6,
+      "reb": 11.6,
+      "ast": 1.3,
+      "stl": 0.5,
+      "blk": 3.7,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "jimmy-butler",
@@ -3259,7 +4168,16 @@
     },
     "value": 2.406703626983955,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 22,
+      "reb": 6.2,
+      "ast": 6,
+      "stl": 1.8,
+      "blk": 0.4,
+      "fg3m": 0.5,
+      "fg3a": 1.97
+    }
   },
   {
     "id": "andre-drummond",
@@ -3291,7 +4209,16 @@
     },
     "value": 1.9138424216280896,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 16.7,
+      "reb": 15.6,
+      "ast": 2.4,
+      "stl": 1.7,
+      "blk": 1.6,
+      "fg3m": 0.1,
+      "fg3a": 0.49
+    }
   },
   {
     "id": "artis-gilmore",
@@ -3323,7 +4250,16 @@
     },
     "value": 41.58557740725651,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 21.8,
+      "reb": 12.9,
+      "ast": 3,
+      "stl": 0.5,
+      "blk": 2.2,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "julius-erving",
@@ -3355,7 +4291,16 @@
     },
     "value": 10.029993378876242,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 25.2,
+      "reb": 7.4,
+      "ast": 4.3,
+      "stl": 2.1,
+      "blk": 1.8,
+      "fg3m": 0,
+      "fg3a": 0.17
+    }
   },
   {
     "id": "mo-williams",
@@ -3387,7 +4332,16 @@
     },
     "value": 3.4605954394622103,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 16.9,
+      "reb": 3.3,
+      "ast": 5.2,
+      "stl": 1,
+      "blk": 0.2,
+      "fg3m": 2,
+      "fg3a": 4.67
+    }
   },
   {
     "id": "tyrese-maxey",
@@ -3419,7 +4373,16 @@
     },
     "value": 6.4862892744526945,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 26.8,
+      "reb": 3.7,
+      "ast": 6.3,
+      "stl": 1.6,
+      "blk": 0.6,
+      "fg3m": 3.1,
+      "fg3a": 8.56
+    }
   },
   {
     "id": "nikola-vucevic",
@@ -3451,7 +4414,16 @@
     },
     "value": -5.013729677068525,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21.3,
+      "reb": 11.5,
+      "ast": 3.7,
+      "stl": 0.9,
+      "blk": 0.9,
+      "fg3m": 1.7,
+      "fg3a": 4.66
+    }
   },
   {
     "id": "ben-wallace",
@@ -3483,7 +4455,16 @@
     },
     "value": 8.4162882915207,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 8.1,
+      "reb": 13.6,
+      "ast": 1.6,
+      "stl": 1.6,
+      "blk": 3.2,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "kemba-walker",
@@ -3515,7 +4496,16 @@
     },
     "value": -20.05016538260071,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 23.6,
+      "reb": 3.8,
+      "ast": 5.7,
+      "stl": 1.1,
+      "blk": 0.3,
+      "fg3m": 3,
+      "fg3a": 8.02
+    }
   },
   {
     "id": "devin-booker",
@@ -3547,7 +4537,16 @@
     },
     "value": -10.212818122721202,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 27.1,
+      "reb": 4.7,
+      "ast": 5.7,
+      "stl": 1,
+      "blk": 0.4,
+      "fg3m": 2.3,
+      "fg3a": 6.36
+    }
   },
   {
     "id": "blake-griffin",
@@ -3579,7 +4578,16 @@
     },
     "value": 5.731236500201717,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21,
+      "reb": 9.6,
+      "ast": 3.6,
+      "stl": 1.1,
+      "blk": 0.6,
+      "fg3m": 0.1,
+      "fg3a": 0.43
+    }
   },
   {
     "id": "hassan-whiteside",
@@ -3611,7 +4619,16 @@
     },
     "value": 0.6486693136217241,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 14.3,
+      "reb": 12,
+      "ast": 0.4,
+      "stl": 0.6,
+      "blk": 2.8,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "bam-adebayo",
@@ -3643,7 +4660,16 @@
     },
     "value": -8.681933588748137,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.9,
+      "reb": 9.8,
+      "ast": 4.6,
+      "stl": 1.2,
+      "blk": 1,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "walt-frazier",
@@ -3672,7 +4698,16 @@
     "contract": null,
     "value": 10.673438551273009,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 21.9,
+      "reb": 6.5,
+      "ast": 6.9,
+      "stl": 1.9,
+      "blk": 0.2,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "jamal-murray",
@@ -3704,7 +4739,16 @@
     },
     "value": -11.826523210076743,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 22.8,
+      "reb": 4.1,
+      "ast": 6.5,
+      "stl": 1.1,
+      "blk": 0.5,
+      "fg3m": 2.7,
+      "fg3a": 6.44
+    }
   },
   {
     "id": "moses-malone",
@@ -3736,7 +4780,16 @@
     },
     "value": 50.35844942270628,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 27.8,
+      "reb": 14.9,
+      "ast": 1.6,
+      "stl": 1,
+      "blk": 1.8,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "yao-ming",
@@ -3768,7 +4821,16 @@
     },
     "value": 9.048876150945617,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 22.2,
+      "reb": 10,
+      "ast": 2,
+      "stl": 0.4,
+      "blk": 2,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "jerry-west",
@@ -3797,7 +4859,16 @@
     "contract": null,
     "value": 14.166979945344693,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 27.9,
+      "reb": 4.5,
+      "ast": 8.9,
+      "stl": 3.4,
+      "blk": 0.9,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "clint-capela",
@@ -3829,7 +4900,16 @@
     },
     "value": 22.34069336876854,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.3,
+      "reb": 13.6,
+      "ast": 1.1,
+      "stl": 0.7,
+      "blk": 1.8,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "kyle-korver",
@@ -3862,7 +4942,16 @@
     },
     "value": 0.23976511612097795,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 11.7,
+      "reb": 4,
+      "ast": 2.5,
+      "stl": 0.9,
+      "blk": 0.5,
+      "fg3m": 2.7,
+      "fg3a": 5.7
+    }
   },
   {
     "id": "manu-ginobili",
@@ -3894,7 +4983,16 @@
     },
     "value": -2.1528764962071776,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.2,
+      "reb": 4.4,
+      "ast": 4.3,
+      "stl": 1.5,
+      "blk": 0.4,
+      "fg3m": 1.8,
+      "fg3a": 4.95
+    }
   },
   {
     "id": "anthony-edwards",
@@ -3926,7 +5024,16 @@
     },
     "value": 4.304467205258717,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 27.6,
+      "reb": 5.4,
+      "ast": 4.4,
+      "stl": 1.3,
+      "blk": 0.6,
+      "fg3m": 3.3,
+      "fg3a": 8.54
+    }
   },
   {
     "id": "lamelo-ball",
@@ -3958,7 +5065,16 @@
     },
     "value": -7.430643632895553,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 22.7,
+      "reb": 6,
+      "ast": 7.8,
+      "stl": 1.3,
+      "blk": 0.3,
+      "fg3m": 3.6,
+      "fg3a": 9.77
+    }
   },
   {
     "id": "zach-lavine",
@@ -3990,7 +5106,16 @@
     },
     "value": -25.01752310367747,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 25.9,
+      "reb": 4.8,
+      "ast": 4.5,
+      "stl": 1,
+      "blk": 0.4,
+      "fg3m": 3.1,
+      "fg3a": 7.82
+    }
   },
   {
     "id": "evan-mobley",
@@ -4023,7 +5148,16 @@
     },
     "value": -2.6539992484154027,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.5,
+      "reb": 9.2,
+      "ast": 3.3,
+      "stl": 0.8,
+      "blk": 1.6,
+      "fg3m": 0.9,
+      "fg3a": 2.56
+    }
   },
   {
     "id": "jalen-brunson",
@@ -4055,7 +5189,16 @@
     },
     "value": 21.781763676705665,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 26.9,
+      "reb": 3.3,
+      "ast": 6.9,
+      "stl": 0.9,
+      "blk": 0.1,
+      "fg3m": 2.5,
+      "fg3a": 6.59
+    }
   },
   {
     "id": "zion-williamson",
@@ -4087,7 +5230,16 @@
     },
     "value": -0.8469647489229786,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 23.6,
+      "reb": 6.2,
+      "ast": 4,
+      "stl": 1,
+      "blk": 0.6,
+      "fg3m": 0.1,
+      "fg3a": 0.33
+    }
   },
   {
     "id": "ty-lawson",
@@ -4119,7 +5271,16 @@
     },
     "value": 11.577078125046846,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 16.9,
+      "reb": 3.3,
+      "ast": 7.4,
+      "stl": 1.5,
+      "blk": 0.1,
+      "fg3m": 1.2,
+      "fg3a": 3.31
+    }
   },
   {
     "id": "serge-ibaka",
@@ -4152,7 +5313,16 @@
     },
     "value": 13.964503405241459,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 12.6,
+      "reb": 8,
+      "ast": 0.6,
+      "stl": 0.5,
+      "blk": 3.1,
+      "fg3m": 0.2,
+      "fg3a": 0.55
+    }
   },
   {
     "id": "andre-iguodala",
@@ -4185,7 +5355,16 @@
     },
     "value": -3.1428401952219502,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.5,
+      "reb": 5.9,
+      "ast": 5.3,
+      "stl": 1.8,
+      "blk": 0.6,
+      "fg3m": 1.1,
+      "fg3a": 3.48
+    }
   },
   {
     "id": "paul-millsap",
@@ -4218,7 +5397,16 @@
     },
     "value": -16.57093215576365,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.3,
+      "reb": 8.4,
+      "ast": 3.2,
+      "stl": 1.8,
+      "blk": 1.2,
+      "fg3m": 1,
+      "fg3a": 2.9
+    }
   },
   {
     "id": "alex-english",
@@ -4250,7 +5438,16 @@
     },
     "value": 32.81734163733378,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 26.7,
+      "reb": 6.6,
+      "ast": 5,
+      "stl": 1.2,
+      "blk": 1.4,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "antawn-jamison",
@@ -4282,7 +5479,16 @@
     },
     "value": -25.479001280152403,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21.1,
+      "reb": 9,
+      "ast": 1.8,
+      "stl": 1.2,
+      "blk": 0.4,
+      "fg3m": 1.6,
+      "fg3a": 4.64
+    }
   },
   {
     "id": "jalen-rose",
@@ -4315,7 +5521,16 @@
     },
     "value": -29.538983273974516,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21.1,
+      "reb": 4.6,
+      "ast": 5,
+      "stl": 0.9,
+      "blk": 0.5,
+      "fg3m": 1.2,
+      "fg3a": 3.24
+    }
   },
   {
     "id": "kristaps-porzingis",
@@ -4348,7 +5563,16 @@
     },
     "value": -8.319391673097172,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.9,
+      "reb": 7.5,
+      "ast": 2.3,
+      "stl": 0.8,
+      "blk": 1.6,
+      "fg3m": 2.2,
+      "fg3a": 5.53
+    }
   },
   {
     "id": "isaiah-thomas",
@@ -4380,7 +5604,16 @@
     },
     "value": 36.72547850959244,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 22.5,
+      "reb": 2.7,
+      "ast": 5.4,
+      "stl": 1,
+      "blk": 0.1,
+      "fg3m": 2.4,
+      "fg3a": 6.37
+    }
   },
   {
     "id": "dejounte-murray",
@@ -4412,7 +5645,16 @@
     },
     "value": 1.6301595375669962,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21.4,
+      "reb": 6.3,
+      "ast": 7.2,
+      "stl": 1.6,
+      "blk": 0.3,
+      "fg3m": 1.9,
+      "fg3a": 5.56
+    }
   },
   {
     "id": "fred-vanvleet",
@@ -4444,7 +5686,16 @@
     },
     "value": -22.58051682030039,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19,
+      "reb": 4.1,
+      "ast": 7.3,
+      "stl": 1.6,
+      "blk": 0.6,
+      "fg3m": 3.3,
+      "fg3a": 8.87
+    }
   },
   {
     "id": "deaaron-fox",
@@ -4476,7 +5727,16 @@
     },
     "value": -12.142817139789209,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 25,
+      "reb": 4.5,
+      "ast": 6,
+      "stl": 1.5,
+      "blk": 0.4,
+      "fg3m": 2.1,
+      "fg3a": 6.31
+    }
   },
   {
     "id": "john-collins",
@@ -4509,7 +5769,16 @@
     },
     "value": 3.6822691250239643,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.5,
+      "reb": 9.1,
+      "ast": 1.6,
+      "stl": 0.6,
+      "blk": 1.1,
+      "fg3m": 1.2,
+      "fg3a": 3.11
+    }
   },
   {
     "id": "jermaine-oneal",
@@ -4542,7 +5811,16 @@
     },
     "value": 6.518524713245938,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.9,
+      "reb": 10.3,
+      "ast": 1.9,
+      "stl": 0.8,
+      "blk": 2.4,
+      "fg3m": 0,
+      "fg3a": 0.1
+    }
   },
   {
     "id": "detlef-schrempf",
@@ -4574,7 +5852,16 @@
     },
     "value": -23.213104679725312,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.7,
+      "reb": 6,
+      "ast": 4.2,
+      "stl": 1,
+      "blk": 0.3,
+      "fg3m": 1.1,
+      "fg3a": 2.54
+    }
   },
   {
     "id": "ja-morant",
@@ -4606,7 +5893,16 @@
     },
     "value": 3.264856337339012,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 25.6,
+      "reb": 5.2,
+      "ast": 7.4,
+      "stl": 1.2,
+      "blk": 0.3,
+      "fg3m": 1.6,
+      "fg3a": 5.02
+    }
   },
   {
     "id": "chris-bosh",
@@ -4639,7 +5935,16 @@
     },
     "value": -1.3888235295655704,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 22.5,
+      "reb": 9.8,
+      "ast": 2.5,
+      "stl": 0.8,
+      "blk": 1.1,
+      "fg3m": 0.2,
+      "fg3a": 0.55
+    }
   },
   {
     "id": "jerry-stackhouse",
@@ -4672,7 +5977,16 @@
     },
     "value": 10.083841992817206,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 24.9,
+      "reb": 3.9,
+      "ast": 5,
+      "stl": 1.2,
+      "blk": 0.5,
+      "fg3m": 1.4,
+      "fg3a": 4.43
+    }
   },
   {
     "id": "scottie-barnes",
@@ -4704,7 +6018,16 @@
     },
     "value": 3.781704566563107,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.2,
+      "reb": 7.8,
+      "ast": 5.9,
+      "stl": 1.4,
+      "blk": 1.3,
+      "fg3m": 1.3,
+      "fg3a": 4.12
+    }
   },
   {
     "id": "shawn-kemp",
@@ -4736,7 +6059,16 @@
     },
     "value": 9.365170080658075,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.7,
+      "reb": 11,
+      "ast": 2.2,
+      "stl": 1.4,
+      "blk": 1.7,
+      "fg3m": 0,
+      "fg3a": 0.08
+    }
   },
   {
     "id": "chet-holmgren",
@@ -4768,7 +6100,16 @@
     },
     "value": 2.9159714911733374,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17,
+      "reb": 8.4,
+      "ast": 2.1,
+      "stl": 0.6,
+      "blk": 2.1,
+      "fg3m": 1.5,
+      "fg3a": 3.96
+    }
   },
   {
     "id": "george-gervin",
@@ -4801,7 +6142,16 @@
     },
     "value": 38.33000264378856,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 29.9,
+      "reb": 5.1,
+      "ast": 3,
+      "stl": 1.6,
+      "blk": 1.1,
+      "fg3m": 0.1,
+      "fg3a": 0.42
+    }
   },
   {
     "id": "goran-dragic",
@@ -4833,7 +6183,16 @@
     },
     "value": 3.8764210005193434,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.6,
+      "reb": 2.9,
+      "ast": 6.2,
+      "stl": 1.4,
+      "blk": 0.3,
+      "fg3m": 1.2,
+      "fg3a": 3.45
+    }
   },
   {
     "id": "jarrett-allen",
@@ -4865,7 +6224,16 @@
     },
     "value": 13.749588132549917,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15,
+      "reb": 9.6,
+      "ast": 2.1,
+      "stl": 0.9,
+      "blk": 0.9,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "cj-mccollum",
@@ -4897,7 +6265,16 @@
     },
     "value": -24.53827299570105,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 22.5,
+      "reb": 4.1,
+      "ast": 4.7,
+      "stl": 0.9,
+      "blk": 0.5,
+      "fg3m": 3.1,
+      "fg3a": 7.94
+    }
   },
   {
     "id": "latrell-sprewell",
@@ -4930,7 +6307,16 @@
     },
     "value": -11.510229280364292,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.2,
+      "reb": 4.5,
+      "ast": 4.3,
+      "stl": 1.8,
+      "blk": 0.7,
+      "fg3m": 1.4,
+      "fg3a": 4.38
+    }
   },
   {
     "id": "nicolas-batum",
@@ -4962,7 +6348,16 @@
     },
     "value": -14.900626798484545,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 13.9,
+      "reb": 5.9,
+      "ast": 3.8,
+      "stl": 1,
+      "blk": 0.9,
+      "fg3m": 2,
+      "fg3a": 5.26
+    }
   },
   {
     "id": "joe-dumars",
@@ -4994,7 +6389,16 @@
     },
     "value": -19.520149280793518,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21.3,
+      "reb": 2.2,
+      "ast": 4.7,
+      "stl": 1,
+      "blk": 0.1,
+      "fg3m": 0.8,
+      "fg3a": 2.04
+    }
   },
   {
     "id": "pascal-siakam",
@@ -5026,7 +6430,16 @@
     },
     "value": -5.816202447683608,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 22.4,
+      "reb": 7.7,
+      "ast": 4.4,
+      "stl": 1.1,
+      "blk": 0.7,
+      "fg3m": 1.5,
+      "fg3a": 4.57
+    }
   },
   {
     "id": "mike-conley",
@@ -5058,7 +6471,16 @@
     },
     "value": -24.79457432828761,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 13.7,
+      "reb": 2.8,
+      "ast": 6.4,
+      "stl": 2.1,
+      "blk": 0.2,
+      "fg3m": 1.1,
+      "fg3a": 2.98
+    }
   },
   {
     "id": "al-horford",
@@ -5091,7 +6513,16 @@
     },
     "value": -5.783998268390462,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.5,
+      "reb": 9.8,
+      "ast": 3,
+      "stl": 0.9,
+      "blk": 1.1,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "stephen-jackson",
@@ -5124,7 +6555,16 @@
     },
     "value": 7.032670203232968,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.5,
+      "reb": 4.8,
+      "ast": 4.8,
+      "stl": 1.5,
+      "blk": 0.5,
+      "fg3m": 1.9,
+      "fg3a": 5.6
+    }
   },
   {
     "id": "alperen-sengun",
@@ -5156,7 +6596,16 @@
     },
     "value": 10.581714241567312,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.2,
+      "reb": 9.5,
+      "ast": 5.4,
+      "stl": 1.2,
+      "blk": 0.9,
+      "fg3m": 0.5,
+      "fg3a": 1.65
+    }
   },
   {
     "id": "jaren-jackson-jr",
@@ -5189,7 +6638,16 @@
     },
     "value": -12.642168355118876,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21.1,
+      "reb": 6,
+      "ast": 1.8,
+      "stl": 1.1,
+      "blk": 2,
+      "fg3m": 1.8,
+      "fg3a": 5.16
+    }
   },
   {
     "id": "jalen-johnson",
@@ -5221,7 +6679,16 @@
     },
     "value": 14.651063775471513,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.2,
+      "reb": 9.7,
+      "ast": 5.5,
+      "stl": 1.3,
+      "blk": 0.7,
+      "fg3m": 1.4,
+      "fg3a": 4.11
+    }
   },
   {
     "id": "tony-parker",
@@ -5253,7 +6720,16 @@
     },
     "value": 23.011733033920777,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.4,
+      "reb": 2.7,
+      "ast": 7,
+      "stl": 0.8,
+      "blk": 0.1,
+      "fg3m": 0.3,
+      "fg3a": 1.03
+    }
   },
   {
     "id": "joakim-noah",
@@ -5285,7 +6761,16 @@
     },
     "value": 28.116130492768875,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 11.6,
+      "reb": 10.7,
+      "ast": 4,
+      "stl": 1,
+      "blk": 1.7,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "vlade-divac",
@@ -5317,7 +6802,16 @@
     },
     "value": -12.166375884927987,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 13.7,
+      "reb": 9.3,
+      "ast": 3.7,
+      "stl": 1.2,
+      "blk": 2,
+      "fg3m": 0.1,
+      "fg3a": 0.32
+    }
   },
   {
     "id": "lamarcus-aldridge",
@@ -5350,7 +6844,16 @@
     },
     "value": 1.242505921223362,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 22.5,
+      "reb": 10.1,
+      "ast": 2.3,
+      "stl": 0.8,
+      "blk": 1.1,
+      "fg3m": 0.2,
+      "fg3a": 0.47
+    }
   },
   {
     "id": "jaylen-brown",
@@ -5383,7 +6886,16 @@
     },
     "value": -28.557866046043884,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 24.9,
+      "reb": 6.3,
+      "ast": 3.5,
+      "stl": 1.1,
+      "blk": 0.4,
+      "fg3m": 2.6,
+      "fg3a": 7.07
+    }
   },
   {
     "id": "eric-bledsoe",
@@ -5415,7 +6927,16 @@
     },
     "value": -1.1431501638284018,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.7,
+      "reb": 4.9,
+      "ast": 6,
+      "stl": 1.5,
+      "blk": 0.5,
+      "fg3m": 1.3,
+      "fg3a": 3.84
+    }
   },
   {
     "id": "jamal-crawford",
@@ -5447,7 +6968,16 @@
     },
     "value": -10.183738121622309,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.5,
+      "reb": 2.7,
+      "ast": 4.1,
+      "stl": 0.9,
+      "blk": 0.2,
+      "fg3m": 2.2,
+      "fg3a": 5.93
+    }
   },
   {
     "id": "demar-derozan",
@@ -5480,7 +7010,16 @@
     },
     "value": -3.351496369235818,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 23.8,
+      "reb": 5,
+      "ast": 5.8,
+      "stl": 0.9,
+      "blk": 0.3,
+      "fg3m": 0.4,
+      "fg3a": 1.18
+    }
   },
   {
     "id": "deandre-ayton",
@@ -5512,7 +7051,16 @@
     },
     "value": -13.123934367719826,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 16.7,
+      "reb": 10.7,
+      "ast": 1.6,
+      "stl": 0.7,
+      "blk": 1.1,
+      "fg3m": 0.1,
+      "fg3a": 0.4
+    }
   },
   {
     "id": "marc-gasol",
@@ -5544,7 +7092,16 @@
     },
     "value": 6.623198673672157,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.3,
+      "reb": 7.6,
+      "ast": 3.8,
+      "stl": 1,
+      "blk": 1.5,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "pete-maravich",
@@ -5573,7 +7130,16 @@
     "contract": null,
     "value": 9.50892475324909,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 28,
+      "reb": 4.5,
+      "ast": 5.8,
+      "stl": 1.5,
+      "blk": 0.3,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "jonas-valanciunas",
@@ -5605,7 +7171,16 @@
     },
     "value": 8.057258544692402,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 16.6,
+      "reb": 11.7,
+      "ast": 2.1,
+      "stl": 0.5,
+      "blk": 0.9,
+      "fg3m": 0.5,
+      "fg3a": 1.48
+    }
   },
   {
     "id": "brook-lopez",
@@ -5637,7 +7212,16 @@
     },
     "value": -9.511487689000276,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.6,
+      "reb": 7.2,
+      "ast": 1.6,
+      "stl": 0.6,
+      "blk": 1.8,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "victor-oladipo",
@@ -5669,7 +7253,16 @@
     },
     "value": -6.1192145504342506,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.3,
+      "reb": 4.8,
+      "ast": 3.6,
+      "stl": 1.7,
+      "blk": 0.6,
+      "fg3m": 1.8,
+      "fg3a": 4.98
+    }
   },
   {
     "id": "julius-randle",
@@ -5701,7 +7294,16 @@
     },
     "value": 7.770912197109105,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 23.1,
+      "reb": 10,
+      "ast": 5.1,
+      "stl": 0.7,
+      "blk": 0.4,
+      "fg3m": 2.3,
+      "fg3a": 6.43
+    }
   },
   {
     "id": "brandon-ingram",
@@ -5733,7 +7335,16 @@
     },
     "value": -17.845285762582314,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 23.3,
+      "reb": 5.6,
+      "ast": 4.9,
+      "stl": 0.8,
+      "blk": 0.6,
+      "fg3m": 2,
+      "fg3a": 5.38
+    }
   },
   {
     "id": "khris-middleton",
@@ -5766,7 +7377,16 @@
     },
     "value": -35.83997327853864,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.5,
+      "reb": 5.9,
+      "ast": 5,
+      "stl": 1.1,
+      "blk": 0.2,
+      "fg3m": 2.4,
+      "fg3a": 5.93
+    }
   },
   {
     "id": "gordon-hayward",
@@ -5798,7 +7418,16 @@
     },
     "value": -34.283392219661415,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.3,
+      "reb": 5.1,
+      "ast": 3.8,
+      "stl": 1.2,
+      "blk": 0.3,
+      "fg3m": 1.8,
+      "fg3a": 4.86
+    }
   },
   {
     "id": "darius-garland",
@@ -5830,7 +7459,16 @@
     },
     "value": -24.885303407069934,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.4,
+      "reb": 2.9,
+      "ast": 7.6,
+      "stl": 1.3,
+      "blk": 0.1,
+      "fg3m": 2.4,
+      "fg3a": 6.28
+    }
   },
   {
     "id": "rudy-gay",
@@ -5862,7 +7500,16 @@
     },
     "value": -21.947928960875473,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.4,
+      "reb": 6.2,
+      "ast": 2.3,
+      "stl": 1.6,
+      "blk": 0.9,
+      "fg3m": 0.9,
+      "fg3a": 2.6
+    }
   },
   {
     "id": "dangelo-russell",
@@ -5894,7 +7541,16 @@
     },
     "value": -28.906304252990576,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21.1,
+      "reb": 3.5,
+      "ast": 6.4,
+      "stl": 1.1,
+      "blk": 0.3,
+      "fg3m": 3.1,
+      "fg3a": 8.3
+    }
   },
   {
     "id": "jeff-teague",
@@ -5926,7 +7582,16 @@
     },
     "value": -3.4278790155253205,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.6,
+      "reb": 2.5,
+      "ast": 7,
+      "stl": 1.4,
+      "blk": 0.3,
+      "fg3m": 1,
+      "fg3a": 2.91
+    }
   },
   {
     "id": "wesley-matthews",
@@ -5959,7 +7624,16 @@
     },
     "value": -30.277805192807868,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.8,
+      "reb": 3.3,
+      "ast": 2.4,
+      "stl": 1.2,
+      "blk": 0.2,
+      "fg3m": 2.6,
+      "fg3a": 6.62
+    }
   },
   {
     "id": "john-havlicek",
@@ -5989,7 +7663,16 @@
     "contract": null,
     "value": 11.740909532794916,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 26.7,
+      "reb": 8.1,
+      "ast": 7.2,
+      "stl": 1.4,
+      "blk": 0.5,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "jalen-duren",
@@ -6021,7 +7704,16 @@
     },
     "value": 49.5654144491524,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15,
+      "reb": 10.8,
+      "ast": 2.4,
+      "stl": 0.7,
+      "blk": 0.9,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "lauri-markkanen",
@@ -6053,7 +7745,16 @@
     },
     "value": -24.161986468862693,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 22.9,
+      "reb": 7,
+      "ast": 1.9,
+      "stl": 0.9,
+      "blk": 0.5,
+      "fg3m": 2.9,
+      "fg3a": 8
+    }
   },
   {
     "id": "eric-gordon",
@@ -6085,7 +7786,16 @@
     },
     "value": -22.49275839069711,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.4,
+      "reb": 2.7,
+      "ast": 3.4,
+      "stl": 1.1,
+      "blk": 0.3,
+      "fg3m": 1.8,
+      "fg3a": 4.9
+    }
   },
   {
     "id": "raymond-felton",
@@ -6117,7 +7827,16 @@
     },
     "value": 13.430258792045478,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 13.9,
+      "reb": 3.7,
+      "ast": 6.9,
+      "stl": 1.6,
+      "blk": 0.3,
+      "fg3m": 1,
+      "fg3a": 2.93
+    }
   },
   {
     "id": "ricky-davis",
@@ -6150,7 +7869,16 @@
     },
     "value": 2.446115368507172,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17,
+      "reb": 4.1,
+      "ast": 3.9,
+      "stl": 1.3,
+      "blk": 0.4,
+      "fg3m": 0.8,
+      "fg3a": 2.14
+    }
   },
   {
     "id": "richard-jefferson",
@@ -6182,7 +7910,16 @@
     },
     "value": -16.226896345535025,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.9,
+      "reb": 6.3,
+      "ast": 3.4,
+      "stl": 1,
+      "blk": 0.4,
+      "fg3m": 0.5,
+      "fg3a": 1.52
+    }
   },
   {
     "id": "christian-wood",
@@ -6215,7 +7952,16 @@
     },
     "value": 12.827097531444476,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.4,
+      "reb": 9,
+      "ast": 1.9,
+      "stl": 0.7,
+      "blk": 1.1,
+      "fg3m": 1.8,
+      "fg3a": 4.74
+    }
   },
   {
     "id": "david-thompson",
@@ -6245,7 +7991,16 @@
     "contract": null,
     "value": 8.732582221233159,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 25.6,
+      "reb": 4.2,
+      "ast": 3.9,
+      "stl": 1.2,
+      "blk": 1,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "jj-redick",
@@ -6277,7 +8032,16 @@
     },
     "value": -8.27745220809929,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.3,
+      "reb": 2.1,
+      "ast": 2.6,
+      "stl": 0.6,
+      "blk": 0.1,
+      "fg3m": 2.3,
+      "fg3a": 5.67
+    }
   },
   {
     "id": "tyson-chandler",
@@ -6309,7 +8073,16 @@
     },
     "value": 0.7723086552996747,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 10.6,
+      "reb": 10,
+      "ast": 0.7,
+      "stl": 0.7,
+      "blk": 1.2,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "jalen-williams",
@@ -6342,7 +8115,16 @@
     },
     "value": -11.000961416174903,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.3,
+      "reb": 4.6,
+      "ast": 4.3,
+      "stl": 1.4,
+      "blk": 0.6,
+      "fg3m": 1.4,
+      "fg3a": 3.75
+    }
   },
   {
     "id": "toni-kukoc",
@@ -6374,7 +8156,16 @@
     },
     "value": -15.858508807751537,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.2,
+      "reb": 5.3,
+      "ast": 4.7,
+      "stl": 1.1,
+      "blk": 0.4,
+      "fg3m": 0.9,
+      "fg3a": 2.79
+    }
   },
   {
     "id": "zach-randolph",
@@ -6407,7 +8198,16 @@
     },
     "value": -13.724286788351506,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.6,
+      "reb": 11.3,
+      "ast": 2,
+      "stl": 0.9,
+      "blk": 0.3,
+      "fg3m": 0.3,
+      "fg3a": 1.02
+    }
   },
   {
     "id": "tobias-harris",
@@ -6439,7 +8239,16 @@
     },
     "value": -36.18115579793617,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.6,
+      "reb": 7.2,
+      "ast": 3.2,
+      "stl": 0.7,
+      "blk": 0.6,
+      "fg3m": 1.7,
+      "fg3a": 4.33
+    }
   },
   {
     "id": "bob-cousy",
@@ -6468,7 +8277,16 @@
     "contract": null,
     "value": 12.032037982300892,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 20.3,
+      "reb": 5.9,
+      "ast": 8.1,
+      "stl": 1.7,
+      "blk": 0.1,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "terry-rozier",
@@ -6500,7 +8318,16 @@
     },
     "value": -8.573370864266789,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.2,
+      "reb": 4.3,
+      "ast": 4.6,
+      "stl": 1.3,
+      "blk": 0.3,
+      "fg3m": 2.9,
+      "fg3a": 8.07
+    }
   },
   {
     "id": "lonzo-ball",
@@ -6532,7 +8359,16 @@
     },
     "value": -3.914471453629506,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 13,
+      "reb": 5.4,
+      "ast": 5.9,
+      "stl": 1.6,
+      "blk": 0.7,
+      "fg3m": 2.8,
+      "fg3a": 7.22
+    }
   },
   {
     "id": "jakob-poltl",
@@ -6561,7 +8397,16 @@
     "contract": null,
     "value": 28.96007536402533,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 12.7,
+      "reb": 9.1,
+      "ast": 2.7,
+      "stl": 0.9,
+      "blk": 1.3,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "arvydas-sabonis",
@@ -6593,7 +8438,16 @@
     },
     "value": -29.120660375522988,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 14.6,
+      "reb": 8.7,
+      "ast": 2.3,
+      "stl": 0.9,
+      "blk": 1.1,
+      "fg3m": 0.5,
+      "fg3a": 1.58
+    }
   },
   {
     "id": "george-hill",
@@ -6625,7 +8479,16 @@
     },
     "value": -15.130754414886347,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 13.5,
+      "reb": 3.9,
+      "ast": 4.4,
+      "stl": 1,
+      "blk": 0.3,
+      "fg3m": 1.5,
+      "fg3a": 4.22
+    }
   },
   {
     "id": "richard-hamilton",
@@ -6657,7 +8520,16 @@
     },
     "value": -20.607699544099553,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.5,
+      "reb": 3.4,
+      "ast": 4.1,
+      "stl": 0.8,
+      "blk": 0.1,
+      "fg3m": 0.8,
+      "fg3a": 2.17
+    }
   },
   {
     "id": "david-west",
@@ -6689,7 +8561,16 @@
     },
     "value": 3.391429744253209,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.2,
+      "reb": 8.3,
+      "ast": 2.5,
+      "stl": 0.8,
+      "blk": 1,
+      "fg3m": 0.1,
+      "fg3a": 0.41
+    }
   },
   {
     "id": "malcolm-brogdon",
@@ -6721,7 +8602,16 @@
     },
     "value": -9.140529486091786,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.9,
+      "reb": 5.1,
+      "ast": 6.3,
+      "stl": 0.8,
+      "blk": 0.3,
+      "fg3m": 1.9,
+      "fg3a": 5.37
+    }
   },
   {
     "id": "luol-deng",
@@ -6753,7 +8643,16 @@
     },
     "value": -19.97937285229876,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 16.9,
+      "reb": 6.5,
+      "ast": 2.6,
+      "stl": 1,
+      "blk": 0.7,
+      "fg3m": 1.1,
+      "fg3a": 3.15
+    }
   },
   {
     "id": "otto-porter-jr",
@@ -6785,7 +8684,16 @@
     },
     "value": -36.28440716488096,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 14.1,
+      "reb": 6.1,
+      "ast": 1.9,
+      "stl": 1.5,
+      "blk": 0.5,
+      "fg3m": 1.9,
+      "fg3a": 4.38
+    }
   },
   {
     "id": "tyler-herro",
@@ -6817,7 +8725,16 @@
     },
     "value": -15.728883466865359,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21.6,
+      "reb": 5.3,
+      "ast": 4.7,
+      "stl": 0.8,
+      "blk": 0.2,
+      "fg3m": 3.1,
+      "fg3a": 8.19
+    }
   },
   {
     "id": "wes-unseld",
@@ -6846,7 +8763,16 @@
     "contract": null,
     "value": 21.9770326509606,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 14.7,
+      "reb": 17.3,
+      "ast": 3.4,
+      "stl": 1.5,
+      "blk": 0.9,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "trevor-ariza",
@@ -6878,7 +8804,16 @@
     },
     "value": -7.099404606697593,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 12.2,
+      "reb": 5.4,
+      "ast": 3.1,
+      "stl": 1.7,
+      "blk": 0.5,
+      "fg3m": 1.2,
+      "fg3a": 3.81
+    }
   },
   {
     "id": "ivica-zubac",
@@ -6910,7 +8845,16 @@
     },
     "value": 21.865639657285872,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 14.2,
+      "reb": 10.8,
+      "ast": 2.1,
+      "stl": 0.5,
+      "blk": 1,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "ricky-rubio",
@@ -6942,7 +8886,16 @@
     },
     "value": -1.3929718147695453,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 10.3,
+      "reb": 4.1,
+      "ast": 8,
+      "stl": 2.3,
+      "blk": 0.1,
+      "fg3m": 0.6,
+      "fg3a": 1.86
+    }
   },
   {
     "id": "steven-adams",
@@ -6974,7 +8927,16 @@
     },
     "value": -28.39943836401762,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 12.9,
+      "reb": 9.3,
+      "ast": 1.7,
+      "stl": 1.2,
+      "blk": 1,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "paolo-banchero",
@@ -7006,7 +8968,16 @@
     },
     "value": -10.368373556749987,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 23.6,
+      "reb": 7.6,
+      "ast": 5.1,
+      "stl": 0.8,
+      "blk": 0.6,
+      "fg3m": 1.5,
+      "fg3a": 4.77
+    }
   },
   {
     "id": "mikal-bridges",
@@ -7039,7 +9010,16 @@
     },
     "value": -14.240865036098942,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.9,
+      "reb": 4.3,
+      "ast": 2.6,
+      "stl": 1.1,
+      "blk": 0.7,
+      "fg3m": 1.8,
+      "fg3a": 4.5
+    }
   },
   {
     "id": "danny-green",
@@ -7072,7 +9052,16 @@
     },
     "value": -12.60560729566791,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 10.4,
+      "reb": 3.6,
+      "ast": 1.8,
+      "stl": 1.1,
+      "blk": 0.9,
+      "fg3m": 2.2,
+      "fg3a": 5.15
+    }
   },
   {
     "id": "montrezl-harrell",
@@ -7105,7 +9094,16 @@
     },
     "value": 19.694064562380987,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 16.2,
+      "reb": 6.6,
+      "ast": 1.6,
+      "stl": 0.7,
+      "blk": 1,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "buddy-hield",
@@ -7137,7 +9135,16 @@
     },
     "value": -29.141115779763823,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.9,
+      "reb": 4.8,
+      "ast": 3,
+      "stl": 0.8,
+      "blk": 0.3,
+      "fg3m": 3.7,
+      "fg3a": 9.28
+    }
   },
   {
     "id": "derrick-favors",
@@ -7170,7 +9177,16 @@
     },
     "value": -6.315028191814761,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.2,
+      "reb": 8.3,
+      "ast": 1.4,
+      "stl": 1,
+      "blk": 1.6,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "daniel-gafford",
@@ -7202,7 +9218,16 @@
     },
     "value": 23.21465468000661,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 11,
+      "reb": 7.1,
+      "ast": 1.4,
+      "stl": 0.7,
+      "blk": 1.7,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "jim-jackson",
@@ -7235,7 +9260,16 @@
     },
     "value": -8.817297780257928,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.4,
+      "reb": 5.1,
+      "ast": 3.6,
+      "stl": 0.7,
+      "blk": 0.3,
+      "fg3m": 1.1,
+      "fg3a": 3.16
+    }
   },
   {
     "id": "jr-smith",
@@ -7267,7 +9301,16 @@
     },
     "value": -10.282222887753118,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 14.3,
+      "reb": 4.4,
+      "ast": 2.4,
+      "stl": 1.3,
+      "blk": 0.2,
+      "fg3m": 1.8,
+      "fg3a": 4.97
+    }
   },
   {
     "id": "richaun-holmes",
@@ -7300,7 +9343,16 @@
     },
     "value": 17.217933981302835,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 12.3,
+      "reb": 7.8,
+      "ast": 1.3,
+      "stl": 0.6,
+      "blk": 1.3,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "elgin-baylor",
@@ -7329,7 +9381,16 @@
     "contract": null,
     "value": 11.934995165798895,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 29.8,
+      "reb": 17.1,
+      "ast": 4.2,
+      "stl": 1.7,
+      "blk": 0.8,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "deni-avdija",
@@ -7361,7 +9422,16 @@
     },
     "value": 20.27097007610535,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.6,
+      "reb": 7.1,
+      "ast": 4.8,
+      "stl": 0.9,
+      "blk": 0.5,
+      "fg3m": 1.6,
+      "fg3a": 4.61
+    }
   },
   {
     "id": "danilo-gallinari",
@@ -7393,7 +9463,16 @@
     },
     "value": -17.82026938558374,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.5,
+      "reb": 4.9,
+      "ast": 2.3,
+      "stl": 0.9,
+      "blk": 0.5,
+      "fg3m": 1.7,
+      "fg3a": 4.73
+    }
   },
   {
     "id": "jusuf-nurkic",
@@ -7425,7 +9504,16 @@
     },
     "value": 9.028185949653569,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 14,
+      "reb": 10.2,
+      "ast": 3.1,
+      "stl": 1,
+      "blk": 1,
+      "fg3m": 0.2,
+      "fg3a": 0.62
+    }
   },
   {
     "id": "andrew-wiggins",
@@ -7457,7 +9545,16 @@
     },
     "value": -36.938252317205155,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.3,
+      "reb": 4.8,
+      "ast": 2.8,
+      "stl": 0.9,
+      "blk": 0.9,
+      "fg3m": 2.1,
+      "fg3a": 5.73
+    }
   },
   {
     "id": "robert-covington",
@@ -7489,7 +9586,16 @@
     },
     "value": 3.663863800657694,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 12.7,
+      "reb": 5.8,
+      "ast": 1.5,
+      "stl": 1.8,
+      "blk": 1.2,
+      "fg3m": 2.4,
+      "fg3a": 6.66
+    }
   },
   {
     "id": "tj-warren",
@@ -7521,7 +9627,16 @@
     },
     "value": 1.4709020173786627,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.1,
+      "reb": 4.4,
+      "ast": 1.4,
+      "stl": 1.1,
+      "blk": 0.6,
+      "fg3m": 1.2,
+      "fg3a": 3.01
+    }
   },
   {
     "id": "chris-kaman",
@@ -7553,7 +9668,16 @@
     },
     "value": -13.194057156597445,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.8,
+      "reb": 9.9,
+      "ast": 1.9,
+      "stl": 0.5,
+      "blk": 1.9,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "michael-carter-williams",
@@ -7585,7 +9709,16 @@
     },
     "value": 27.618038310546194,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 14.3,
+      "reb": 5.5,
+      "ast": 6.1,
+      "stl": 1.7,
+      "blk": 0.6,
+      "fg3m": 0.5,
+      "fg3a": 2.09
+    }
   },
   {
     "id": "kyle-kuzma",
@@ -7617,7 +9750,16 @@
     },
     "value": -14.788819936104009,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.2,
+      "reb": 7.4,
+      "ast": 3.8,
+      "stl": 0.6,
+      "blk": 0.7,
+      "fg3m": 2.2,
+      "fg3a": 6.54
+    }
   },
   {
     "id": "anfernee-simons",
@@ -7649,7 +9791,16 @@
     },
     "value": -17.918328455118477,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 21,
+      "reb": 3,
+      "ast": 4.8,
+      "stl": 0.7,
+      "blk": 0.1,
+      "fg3m": 3.3,
+      "fg3a": 8.8
+    }
   },
   {
     "id": "marcus-smart",
@@ -7681,7 +9832,16 @@
     },
     "value": -1.1351271907950782,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 12.7,
+      "reb": 3.7,
+      "ast": 5.5,
+      "stl": 1.6,
+      "blk": 0.4,
+      "fg3m": 2,
+      "fg3a": 5.84
+    }
   },
   {
     "id": "thaddeus-young",
@@ -7713,7 +9873,16 @@
     },
     "value": -1.991523260342582,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.1,
+      "reb": 6.2,
+      "ast": 1.7,
+      "stl": 1.6,
+      "blk": 0.6,
+      "fg3m": 0.4,
+      "fg3a": 1.19
+    }
   },
   {
     "id": "jerami-grant",
@@ -7745,7 +9914,16 @@
     },
     "value": -18.13727064175527,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.6,
+      "reb": 4.4,
+      "ast": 2.5,
+      "stl": 0.8,
+      "blk": 1,
+      "fg3m": 2.1,
+      "fg3a": 5.68
+    }
   },
   {
     "id": "bernard-king",
@@ -7777,7 +9955,16 @@
     },
     "value": 35.66825060145399,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 27,
+      "reb": 5.2,
+      "ast": 2.9,
+      "stl": 1.2,
+      "blk": 0.2,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "dennis-rodman",
@@ -7809,7 +9996,16 @@
     },
     "value": -33.65080436023649,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 7.3,
+      "reb": 18.1,
+      "ast": 2.1,
+      "stl": 0.8,
+      "blk": 0.7,
+      "fg3m": 0.2,
+      "fg3a": 0.91
+    }
   },
   {
     "id": "lou-williams",
@@ -7841,7 +10037,16 @@
     },
     "value": 6.70587688778544,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 20.3,
+      "reb": 2.9,
+      "ast": 5.4,
+      "stl": 0.9,
+      "blk": 0.2,
+      "fg3m": 1.8,
+      "fg3a": 5.13
+    }
   },
   {
     "id": "isaiah-hartenstein",
@@ -7873,7 +10078,16 @@
     },
     "value": -9.978073794762366,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 9.4,
+      "reb": 9.5,
+      "ast": 3.3,
+      "stl": 1,
+      "blk": 1,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "patrick-beverley",
@@ -7905,7 +10119,16 @@
     },
     "value": -9.870489304786853,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 8.4,
+      "reb": 5.4,
+      "ast": 3.9,
+      "stl": 1.2,
+      "blk": 0.5,
+      "fg3m": 1.5,
+      "fg3a": 3.95
+    }
   },
   {
     "id": "josh-hart",
@@ -7938,7 +10161,16 @@
     },
     "value": 5.8302820043500425,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 11.7,
+      "reb": 8.4,
+      "ast": 4.9,
+      "stl": 1.2,
+      "blk": 0.3,
+      "fg3m": 1.2,
+      "fg3a": 3.39
+    }
   },
   {
     "id": "bogdan-bogdanovic",
@@ -7970,7 +10202,16 @@
     },
     "value": -17.04994890331827,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.5,
+      "reb": 3.7,
+      "ast": 3.3,
+      "stl": 1.1,
+      "blk": 0.2,
+      "fg3m": 2.9,
+      "fg3a": 7.38
+    }
   },
   {
     "id": "caris-levert",
@@ -8003,7 +10244,16 @@
     },
     "value": -8.014333993766314,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.6,
+      "reb": 4.2,
+      "ast": 4.6,
+      "stl": 1.2,
+      "blk": 0.4,
+      "fg3m": 1.7,
+      "fg3a": 4.95
+    }
   },
   {
     "id": "norman-powell",
@@ -8036,7 +10286,16 @@
     },
     "value": -5.03256330559006,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.2,
+      "reb": 3.1,
+      "ast": 1.9,
+      "stl": 1,
+      "blk": 0.2,
+      "fg3m": 2.6,
+      "fg3a": 6.45
+    }
   },
   {
     "id": "cameron-johnson",
@@ -8068,7 +10327,16 @@
     },
     "value": -20.37725804598761,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 16,
+      "reb": 4.3,
+      "ast": 2.6,
+      "stl": 1,
+      "blk": 0.3,
+      "fg3m": 2.6,
+      "fg3a": 6.5
+    }
   },
   {
     "id": "dennis-schroder",
@@ -8100,7 +10368,16 @@
     },
     "value": -15.797914033907537,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.7,
+      "reb": 3.3,
+      "ast": 5.5,
+      "stl": 0.9,
+      "blk": 0.2,
+      "fg3m": 1.3,
+      "fg3a": 4.1
+    }
   },
   {
     "id": "jordan-poole",
@@ -8132,7 +10409,16 @@
     },
     "value": -25.468265262678027,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 19.5,
+      "reb": 2.8,
+      "ast": 4.5,
+      "stl": 1.1,
+      "blk": 0.3,
+      "fg3m": 2.8,
+      "fg3a": 8.12
+    }
   },
   {
     "id": "rik-smits",
@@ -8164,7 +10450,16 @@
     },
     "value": -55.75914400131545,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.4,
+      "reb": 6.9,
+      "ast": 1.7,
+      "stl": 0.5,
+      "blk": 0.9,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "collin-sexton",
@@ -8196,7 +10491,16 @@
     },
     "value": -5.740029133598046,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.3,
+      "reb": 2.5,
+      "ast": 4.1,
+      "stl": 0.9,
+      "blk": 0.1,
+      "fg3m": 1.6,
+      "fg3a": 4.08
+    }
   },
   {
     "id": "bob-pettit",
@@ -8226,7 +10530,16 @@
     "contract": null,
     "value": 12.61429488131283,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 26.7,
+      "reb": 16.9,
+      "ast": 3,
+      "stl": 1.1,
+      "blk": 1.1,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "harrison-barnes",
@@ -8258,7 +10571,16 @@
     },
     "value": -34.02460042258442,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.6,
+      "reb": 5.7,
+      "ast": 2.7,
+      "stl": 0.7,
+      "blk": 0.2,
+      "fg3m": 1.6,
+      "fg3a": 4.2
+    }
   },
   {
     "id": "donte-divincenzo",
@@ -8290,7 +10612,16 @@
     },
     "value": 5.190029736171709,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 13.2,
+      "reb": 3.8,
+      "ast": 3.4,
+      "stl": 1.3,
+      "blk": 0.4,
+      "fg3m": 3.1,
+      "fg3a": 7.9
+    }
   },
   {
     "id": "kelly-oubre-jr",
@@ -8322,7 +10653,16 @@
     },
     "value": -9.522249052619681,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 14.9,
+      "reb": 5.4,
+      "ast": 1.6,
+      "stl": 1.3,
+      "blk": 0.6,
+      "fg3m": 1.5,
+      "fg3a": 4.55
+    }
   },
   {
     "id": "bojan-bogdanovic",
@@ -8354,7 +10694,16 @@
     },
     "value": -22.16266734757542,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.3,
+      "reb": 4,
+      "ast": 2,
+      "stl": 0.7,
+      "blk": 0.1,
+      "fg3m": 2.5,
+      "fg3a": 6.12
+    }
   },
   {
     "id": "malik-monk",
@@ -8386,7 +10735,16 @@
     },
     "value": -8.246901109742224,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15,
+      "reb": 2.9,
+      "ast": 4.6,
+      "stl": 0.7,
+      "blk": 0.5,
+      "fg3m": 2.1,
+      "fg3a": 5.84
+    }
   },
   {
     "id": "bobby-portis",
@@ -8419,7 +10777,16 @@
     },
     "value": -12.785095821352943,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 13.7,
+      "reb": 7.4,
+      "ast": 1.7,
+      "stl": 0.7,
+      "blk": 0.4,
+      "fg3m": 1.5,
+      "fg3a": 3.63
+    }
   },
   {
     "id": "jordan-clarkson",
@@ -8451,7 +10818,16 @@
     },
     "value": -24.74847417041509,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 18.2,
+      "reb": 3.5,
+      "ast": 4.4,
+      "stl": 0.6,
+      "blk": 0.2,
+      "fg3m": 2.2,
+      "fg3a": 6.51
+    }
   },
   {
     "id": "kentavious-caldwell-pope",
@@ -8483,7 +10859,16 @@
     },
     "value": -29.2526460678365,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 13.8,
+      "reb": 4.1,
+      "ast": 2.2,
+      "stl": 1.3,
+      "blk": 0.2,
+      "fg3m": 1.9,
+      "fg3a": 5.35
+    }
   },
   {
     "id": "tim-hardaway-jr",
@@ -8516,7 +10901,16 @@
     },
     "value": -32.27857385336087,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.1,
+      "reb": 3.5,
+      "ast": 2.3,
+      "stl": 0.8,
+      "blk": 0.1,
+      "fg3m": 2.6,
+      "fg3a": 7.3
+    }
   },
   {
     "id": "alex-caruso",
@@ -8548,7 +10942,16 @@
     },
     "value": -7.25647706204064,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 7.5,
+      "reb": 3.2,
+      "ast": 3,
+      "stl": 1.6,
+      "blk": 0.8,
+      "fg3m": 1.3,
+      "fg3a": 3.32
+    }
   },
   {
     "id": "jj-barea",
@@ -8580,7 +10983,16 @@
     },
     "value": -6.432570808599398,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 10.7,
+      "reb": 2.5,
+      "ast": 4.5,
+      "stl": 0.4,
+      "blk": 0,
+      "fg3m": 1.1,
+      "fg3a": 3.18
+    }
   },
   {
     "id": "daniel-theis",
@@ -8613,7 +11025,16 @@
     },
     "value": -0.7126144035738591,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 9,
+      "reb": 5.7,
+      "ast": 1.4,
+      "stl": 0.5,
+      "blk": 1,
+      "fg3m": 0.7,
+      "fg3a": 2.09
+    }
   },
   {
     "id": "rui-hachimura",
@@ -8645,7 +11066,16 @@
     },
     "value": -12.62358355766038,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 12.6,
+      "reb": 4.2,
+      "ast": 1.1,
+      "stl": 0.7,
+      "blk": 0.4,
+      "fg3m": 1.6,
+      "fg3a": 3.76
+    }
   },
   {
     "id": "deandre-hunter",
@@ -8677,7 +11107,16 @@
     },
     "value": -21.89874971615373,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.6,
+      "reb": 4,
+      "ast": 1.6,
+      "stl": 0.7,
+      "blk": 0.2,
+      "fg3m": 2.1,
+      "fg3a": 5.73
+    }
   },
   {
     "id": "dillon-brooks",
@@ -8709,7 +11148,16 @@
     },
     "value": -27.22462750242726,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.6,
+      "reb": 3.6,
+      "ast": 1.7,
+      "stl": 0.9,
+      "blk": 0.2,
+      "fg3m": 2.2,
+      "fg3a": 6
+    }
   },
   {
     "id": "jonathan-kuminga",
@@ -8741,7 +11189,16 @@
     },
     "value": -17.082980058817874,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 14.5,
+      "reb": 5,
+      "ast": 2.2,
+      "stl": 0.7,
+      "blk": 0.4,
+      "fg3m": 0.9,
+      "fg3a": 2.82
+    }
   },
   {
     "id": "bill-russell",
@@ -8770,7 +11227,16 @@
     "contract": null,
     "value": 9.994138835759045,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 17.1,
+      "reb": 23.2,
+      "ast": 3.3,
+      "stl": 1.1,
+      "blk": 5.1,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "willis-reed",
@@ -8799,7 +11265,16 @@
     "contract": null,
     "value": 9.023710670739149,
     "overpaid": false,
-    "estimated": true
+    "estimated": true,
+    "box": {
+      "pts": 21.3,
+      "reb": 14,
+      "ast": 2.1,
+      "stl": 0.9,
+      "blk": 1.6,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "bennedict-mathurin",
@@ -8832,7 +11307,16 @@
     },
     "value": 4.871717613984101,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 16.2,
+      "reb": 4.9,
+      "ast": 2.1,
+      "stl": 0.7,
+      "blk": 0.2,
+      "fg3m": 1.4,
+      "fg3a": 4.1
+    }
   },
   {
     "id": "moritz-wagner",
@@ -8864,7 +11348,16 @@
     },
     "value": -7.907994305933288,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 10.2,
+      "reb": 4.2,
+      "ast": 1.4,
+      "stl": 0.5,
+      "blk": 0.2,
+      "fg3m": 0.8,
+      "fg3a": 2.48
+    }
   },
   {
     "id": "avery-bradley",
@@ -8896,7 +11389,16 @@
     },
     "value": -9.28542778683266,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.1,
+      "reb": 4,
+      "ast": 2,
+      "stl": 1.3,
+      "blk": 0.2,
+      "fg3m": 1.8,
+      "fg3a": 4.98
+    }
   },
   {
     "id": "cam-reddish",
@@ -8928,7 +11430,16 @@
     },
     "value": -2.021231794728358,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 10,
+      "reb": 2.7,
+      "ast": 1.3,
+      "stl": 1,
+      "blk": 0.4,
+      "fg3m": 1.3,
+      "fg3a": 3.78
+    }
   },
   {
     "id": "derek-fisher",
@@ -8960,7 +11471,16 @@
     },
     "value": -12.200951870953046,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 11.8,
+      "reb": 2.4,
+      "ast": 3.9,
+      "stl": 1.2,
+      "blk": 0.1,
+      "fg3m": 1.2,
+      "fg3a": 3.17
+    }
   },
   {
     "id": "derrick-jones-jr",
@@ -8992,7 +11512,16 @@
     },
     "value": -7.823507322603038,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 9.7,
+      "reb": 3.4,
+      "ast": 1.1,
+      "stl": 0.9,
+      "blk": 0.7,
+      "fg3m": 1.1,
+      "fg3a": 3.03
+    }
   },
   {
     "id": "dorian-finney-smith",
@@ -9024,7 +11553,16 @@
     },
     "value": -9.752426633189653,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 10.2,
+      "reb": 5.3,
+      "ast": 1.7,
+      "stl": 0.9,
+      "blk": 0.5,
+      "fg3m": 1.9,
+      "fg3a": 4.97
+    }
   },
   {
     "id": "enes-freedom",
@@ -9056,7 +11594,16 @@
     },
     "value": -34.70592020878231,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 13.9,
+      "reb": 9.2,
+      "ast": 1.4,
+      "stl": 0.5,
+      "blk": 0.5,
+      "fg3m": 0.1,
+      "fg3a": 0.37
+    }
   },
   {
     "id": "evan-turner",
@@ -9089,7 +11636,16 @@
     },
     "value": -26.088295107678206,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 12.2,
+      "reb": 5.5,
+      "ast": 4.3,
+      "stl": 0.9,
+      "blk": 0.2,
+      "fg3m": 0.6,
+      "fg3a": 1.74
+    }
   },
   {
     "id": "gary-payton-ii",
@@ -9121,7 +11677,16 @@
     },
     "value": -6.29609623785414,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 6.5,
+      "reb": 3.1,
+      "ast": 1.4,
+      "stl": 0.9,
+      "blk": 0.3,
+      "fg3m": 0.5,
+      "fg3a": 1.54
+    }
   },
   {
     "id": "gary-trent-jr",
@@ -9153,7 +11718,16 @@
     },
     "value": -17.213901327064043,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 16.9,
+      "reb": 2.6,
+      "ast": 1.7,
+      "stl": 1.4,
+      "blk": 0.2,
+      "fg3m": 2.8,
+      "fg3a": 7.29
+    }
   },
   {
     "id": "grant-williams",
@@ -9185,7 +11759,16 @@
     },
     "value": -11.318655835398076,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 8.5,
+      "reb": 4.2,
+      "ast": 1.9,
+      "stl": 0.5,
+      "blk": 0.5,
+      "fg3m": 1.5,
+      "fg3a": 3.98
+    }
   },
   {
     "id": "grayson-allen",
@@ -9217,7 +11800,16 @@
     },
     "value": -2.1858989334793115,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 13.5,
+      "reb": 3.3,
+      "ast": 3,
+      "stl": 1,
+      "blk": 0.4,
+      "fg3m": 2.7,
+      "fg3a": 6.71
+    }
   },
   {
     "id": "jake-laravia",
@@ -9249,7 +11841,16 @@
     },
     "value": 3.2458934737966025,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 8.7,
+      "reb": 3.9,
+      "ast": 2,
+      "stl": 1,
+      "blk": 0.4,
+      "fg3m": 1.1,
+      "fg3a": 3.22
+    }
   },
   {
     "id": "james-wiseman",
@@ -9281,7 +11882,16 @@
     },
     "value": -11.665673350351257,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 9.5,
+      "reb": 5.7,
+      "ast": 0.8,
+      "stl": 0.2,
+      "blk": 0.7,
+      "fg3m": 0.1,
+      "fg3a": 0.48
+    }
   },
   {
     "id": "javale-mcgee",
@@ -9313,7 +11923,16 @@
     },
     "value": -7.544591764252843,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 10.1,
+      "reb": 6.9,
+      "ast": 0.4,
+      "stl": 0.5,
+      "blk": 2.2,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "joe-ingles",
@@ -9345,7 +11964,16 @@
     },
     "value": -13.186555654754864,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 11.4,
+      "reb": 3.8,
+      "ast": 5.2,
+      "stl": 0.9,
+      "blk": 0.2,
+      "fg3m": 2.3,
+      "fg3a": 5.63
+    }
   },
   {
     "id": "jordan-goodwin",
@@ -9377,7 +12005,16 @@
     },
     "value": 2.821297507315623,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 7.2,
+      "reb": 4.2,
+      "ast": 2.5,
+      "stl": 1.1,
+      "blk": 0.3,
+      "fg3m": 1,
+      "fg3a": 2.84
+    }
   },
   {
     "id": "josh-richardson",
@@ -9409,7 +12046,16 @@
     },
     "value": -4.276109161796942,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 14.3,
+      "reb": 3.4,
+      "ast": 3.3,
+      "stl": 1.2,
+      "blk": 0.7,
+      "fg3m": 1.8,
+      "fg3a": 4.93
+    }
   },
   {
     "id": "kevon-looney",
@@ -9441,7 +12087,16 @@
     },
     "value": -2.8217779572843678,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 5.9,
+      "reb": 7.4,
+      "ast": 2.1,
+      "stl": 0.5,
+      "blk": 0.5,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "kyle-anderson",
@@ -9473,7 +12128,16 @@
     },
     "value": 2.4327955834958477,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 9.7,
+      "reb": 5.4,
+      "ast": 3.7,
+      "stl": 1.1,
+      "blk": 0.8,
+      "fg3m": 0.8,
+      "fg3a": 2.29
+    }
   },
   {
     "id": "luke-kennard",
@@ -9505,7 +12169,16 @@
     },
     "value": -17.119386029052343,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 9.3,
+      "reb": 2.7,
+      "ast": 3,
+      "stl": 0.7,
+      "blk": 0.1,
+      "fg3m": 2,
+      "fg3a": 4.35
+    }
   },
   {
     "id": "matisse-thybulle",
@@ -9538,7 +12211,16 @@
     },
     "value": -7.321707001675831,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 4.9,
+      "reb": 1.9,
+      "ast": 1.1,
+      "stl": 1.6,
+      "blk": 1,
+      "fg3m": 0.8,
+      "fg3a": 2.36
+    }
   },
   {
     "id": "mo-bamba",
@@ -9570,7 +12252,16 @@
     },
     "value": -2.573234082760113,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 8,
+      "reb": 6.3,
+      "ast": 0.9,
+      "stl": 0.4,
+      "blk": 1.5,
+      "fg3m": 1,
+      "fg3a": 2.72
+    }
   },
   {
     "id": "nate-robinson",
@@ -9602,7 +12293,16 @@
     },
     "value": -0.27928273270786796,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 13.4,
+      "reb": 3,
+      "ast": 3.3,
+      "stl": 1,
+      "blk": 0.1,
+      "fg3m": 1.5,
+      "fg3a": 4.42
+    }
   },
   {
     "id": "nickeil-alexander-walker",
@@ -9634,7 +12334,16 @@
     },
     "value": -3.5413809216408225,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 12.7,
+      "reb": 2.9,
+      "ast": 3,
+      "stl": 0.9,
+      "blk": 0.5,
+      "fg3m": 2.2,
+      "fg3a": 5.52
+    }
   },
   {
     "id": "pj-tucker",
@@ -9666,7 +12375,16 @@
     },
     "value": -7.885904550155484,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 8.8,
+      "reb": 6.4,
+      "ast": 1.8,
+      "stl": 1.4,
+      "blk": 0.3,
+      "fg3m": 0.9,
+      "fg3a": 2.65
+    }
   },
   {
     "id": "precious-achiuwa",
@@ -9699,7 +12417,16 @@
     },
     "value": 5.08875605559647,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 8.2,
+      "reb": 6.3,
+      "ast": 1.2,
+      "stl": 0.8,
+      "blk": 0.8,
+      "fg3m": 0.3,
+      "fg3a": 1.22
+    }
   },
   {
     "id": "reggie-jackson",
@@ -9731,7 +12458,16 @@
     },
     "value": -23.588778620102584,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.4,
+      "reb": 3.8,
+      "ast": 5.4,
+      "stl": 0.9,
+      "blk": 0.1,
+      "fg3m": 1.1,
+      "fg3a": 3.4
+    }
   },
   {
     "id": "robert-horry",
@@ -9763,7 +12499,16 @@
     },
     "value": -24.81243877274175,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 10.6,
+      "reb": 5.4,
+      "ast": 3.4,
+      "stl": 1.5,
+      "blk": 1.2,
+      "fg3m": 1.3,
+      "fg3a": 3.48
+    }
   },
   {
     "id": "robin-lopez",
@@ -9795,7 +12540,16 @@
     },
     "value": -13.543637706706662,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 10.7,
+      "reb": 6.9,
+      "ast": 0.9,
+      "stl": 0.3,
+      "blk": 1.6,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "saddiq-bey",
@@ -9827,7 +12581,16 @@
     },
     "value": 9.654797532803434,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 15.1,
+      "reb": 5.6,
+      "ast": 1.8,
+      "stl": 0.9,
+      "blk": 0.2,
+      "fg3m": 2,
+      "fg3a": 5.65
+    }
   },
   {
     "id": "seth-curry",
@@ -9859,7 +12622,16 @@
     },
     "value": -1.4938739635620228,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 13.4,
+      "reb": 2.6,
+      "ast": 2.7,
+      "stl": 0.7,
+      "blk": 0.1,
+      "fg3m": 2.3,
+      "fg3a": 5.3
+    }
   },
   {
     "id": "spencer-dinwiddie",
@@ -9891,7 +12663,16 @@
     },
     "value": -8.853818968049659,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 17.2,
+      "reb": 3.7,
+      "ast": 6.2,
+      "stl": 0.7,
+      "blk": 0.3,
+      "fg3m": 2,
+      "fg3a": 5.81
+    }
   },
   {
     "id": "steve-kerr",
@@ -9923,7 +12704,16 @@
     },
     "value": -5.161895563494702,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 8,
+      "reb": 1.5,
+      "ast": 2.1,
+      "stl": 0.7,
+      "blk": 0,
+      "fg3m": 1.3,
+      "fg3a": 2.74
+    }
   },
   {
     "id": "timofey-mozgov",
@@ -9955,7 +12745,16 @@
     },
     "value": -28.788586797984294,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 8.4,
+      "reb": 6,
+      "ast": 0.6,
+      "stl": 0.3,
+      "blk": 1.1,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   },
   {
     "id": "tony-allen",
@@ -9988,7 +12787,16 @@
     },
     "value": 7.06375007080862,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 9.2,
+      "reb": 3.8,
+      "ast": 1.3,
+      "stl": 1.7,
+      "blk": 0.6,
+      "fg3m": 0.1,
+      "fg3a": 0.3
+    }
   },
   {
     "id": "ty-jerome",
@@ -10020,7 +12828,16 @@
     },
     "value": -3.936924989381799,
     "overpaid": false,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 8.8,
+      "reb": 1.9,
+      "ast": 2.9,
+      "stl": 0.7,
+      "blk": 0.1,
+      "fg3m": 1.2,
+      "fg3a": 3.16
+    }
   },
   {
     "id": "zaza-pachulia",
@@ -10052,6 +12869,15 @@
     },
     "value": -8.529915137290601,
     "overpaid": true,
-    "estimated": false
+    "estimated": false,
+    "box": {
+      "pts": 10,
+      "reb": 6.6,
+      "ast": 1.3,
+      "stl": 0.9,
+      "blk": 0.5,
+      "fg3m": 0,
+      "fg3a": 0
+    }
   }
 ]

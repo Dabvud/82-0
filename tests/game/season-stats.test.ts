@@ -26,9 +26,11 @@ describe("seasonStats", () => {
     expect(stats.longestStreak).toBe(3);
   });
 
-  it("trennt Heim- und Auswärtsbilanz", () => {
-    expect(stats.home).toEqual({ wins: 3, losses: 0 });
-    expect(stats.away).toEqual({ wins: 2, losses: 1 });
+  it("zählt die Peak-Werte der Five pro Spiel zusammen und berechnet die Dreierquote aus Treffern und Versuchen", () => {
+    const five = [1, 2, 3, 4, 5].map((n) => ({ ...lineup[0], id: "p" + n,
+      box: { pts: 20, reb: n, ast: 5, stl: 1, blk: 0.5, fg3m: 2, fg3a: 5 } }));
+    const box = seasonStats(season, five, FIXTURE_TEAMS).box;
+    expect(box).toEqual({ pts: 100, reb: 15, ast: 25, stl: 5, blk: 2.5, fg3m: 10, fg3pct: 0.4 });
   });
 
   it("zählt die Bilanz gegen die zehn stärksten Teams der Liga", () => {

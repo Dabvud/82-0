@@ -24,6 +24,7 @@ export function makePlayer(partial: Partial<Player> = {}): Player {
     value: 0,
     overpaid: false,
     estimated: false,
+    box: { pts: 15, reb: 5, ast: 3, stl: 1, blk: 0.5, fg3m: 1.5, fg3a: 4 },
     ...partial,
   };
 }

@@ -3,6 +3,9 @@ export type { Pos, Categories };
 
 export type Tier = 1 | 2 | 3 | 4 | 5;
 
+/** Peak-Werte pro Spiel (Durchschnitt der Peak-Saisons) für die Ergebnis-Statistik. */
+export interface Box { pts: number; reb: number; ast: number; stl: number; blk: number; fg3m: number; fg3a: number; }
+
 export interface Player {
   id: string;
   name: string;
@@ -17,6 +20,7 @@ export interface Player {
   value: number;
   overpaid: boolean;
   estimated: boolean;
+  box: Box;
 }
 
 export interface NbaTeam {

@@ -102,6 +102,8 @@ describe("Pipeline", () => {
       { name: "Dominant", season: 2027, team: "Team", salary: 25_001_000 },
     ], {}, { "2027": 100_000_000 });
     expect(players.map(player => player.strength)).toEqual([99, 49.5, 0]);
+    // Peak-Werte pro Spiel für die Ergebnis-Statistik: Punkte = 2·9 + 3·1 + 5, Dreierversuche = 1 / 0,35.
+    expect(players[2].box).toEqual({ pts: 26, reb: 15, ast: 4, stl: 1, blk: 1, fg3m: 1, fg3a: 2.86 });
     expect(players[0]).toMatchObject({ tier: 1, price: 25_000_000, priceSource: "contract",
       contract: { season: 2027, team: "Team" }, estimated: false, peak: { from: 2027, to: 2027 } });
     // Nutzerregel: Tier 1–2 ohne Vertrag zahlt 30–35 % (einziger in der Gruppe → 35 %).
