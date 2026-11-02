@@ -76,7 +76,7 @@ export const CONFIG = {
     allNba: [3, 2, 1], mvp: 4, dpoy: 2,
   },
   tierPricePct: { 1: 0.30, 2: 0.22, 3: 0.14, 4: 0.08, 5: 0.03 },
-  overpaidMargin: 4,
+  overpaidMargin: 3,
   budgetPct: 1.40,
   luxuryPct: 1.20,
   ui: { tickerMs: 9000 },

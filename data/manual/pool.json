@@ -2574,5 +2574,351 @@
     "positions": [
       "C"
     ]
+  },
+  {
+    "id": "cade-cunningham",
+    "name": "Cade Cunningham",
+    "bbrefId": "cunnica01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "josh-giddey",
+    "name": "Josh Giddey",
+    "bbrefId": "giddejo01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "austin-reaves",
+    "name": "Austin Reaves",
+    "bbrefId": "reaveau01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "keyonte-george",
+    "name": "Keyonte George",
+    "bbrefId": "georgke01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "cooper-flagg",
+    "name": "Cooper Flagg",
+    "bbrefId": "flaggco01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "amen-thompson",
+    "name": "Amen Thompson",
+    "bbrefId": "thompam01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "trey-murphy",
+    "name": "Trey Murphy III",
+    "bbrefId": "murphtr02",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "stephon-castle",
+    "name": "Stephon Castle",
+    "bbrefId": "castlst01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "franz-wagner",
+    "name": "Franz Wagner",
+    "bbrefId": "wagnefr01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "brandon-miller",
+    "name": "Brandon Miller",
+    "bbrefId": "millebr02",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "desmond-bane",
+    "name": "Desmond Bane",
+    "bbrefId": "banede01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "shaedon-sharpe",
+    "name": "Shaedon Sharpe",
+    "bbrefId": "sharpsh01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "ryan-rollins",
+    "name": "Ryan Rollins",
+    "bbrefId": "rolliry01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "andrew-nembhard",
+    "name": "Andrew Nembhard",
+    "bbrefId": "nembhan01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "kon-knueppel",
+    "name": "Kon Knueppel",
+    "bbrefId": "knuepko01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "alex-sarr",
+    "name": "Alex Sarr",
+    "bbrefId": "sarral01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "immanuel-quickley",
+    "name": "Immanuel Quickley",
+    "bbrefId": "quickim01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "payton-pritchard",
+    "name": "Payton Pritchard",
+    "bbrefId": "pritcpa01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "onyeka-okongwu",
+    "name": "Onyeka Okongwu",
+    "bbrefId": "okongon01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "donovan-clingan",
+    "name": "Donovan Clingan",
+    "bbrefId": "clingdo01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "vj-edgecombe",
+    "name": "VJ Edgecombe",
+    "bbrefId": "edgecvj01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jaime-jaquez",
+    "name": "Jaime Jaquez Jr.",
+    "bbrefId": "jaqueja01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "dyson-daniels",
+    "name": "Dyson Daniels",
+    "bbrefId": "daniedy01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jabari-smith",
+    "name": "Jabari Smith Jr.",
+    "bbrefId": "smithja05",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "kyshawn-george",
+    "name": "Kyshawn George",
+    "bbrefId": "georgky01",
+    "positions": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "id": "matas-buzelis",
+    "name": "Matas Buzelis",
+    "bbrefId": "buzelma01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "jalen-green",
+    "name": "Jalen Green",
+    "bbrefId": "greenja05",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "santi-aldama",
+    "name": "Santi Aldama",
+    "bbrefId": "aldamsa01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "naji-marshall",
+    "name": "Naji Marshall",
+    "bbrefId": "marshna01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "jalen-suggs",
+    "name": "Jalen Suggs",
+    "bbrefId": "suggsja01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "tre-jones",
+    "name": "Tre Jones",
+    "bbrefId": "jonestr01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "brandin-podziemski",
+    "name": "Brandin Podziemski",
+    "bbrefId": "podzibr01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "anthony-black",
+    "name": "Anthony Black",
+    "bbrefId": "blackan01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "derik-queen",
+    "name": "Derik Queen",
+    "bbrefId": "queende01",
+    "positions": [
+      "C"
+    ]
+  },
+  {
+    "id": "cedric-coward",
+    "name": "Cedric Coward",
+    "bbrefId": "cowarce01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "ayo-dosunmu",
+    "name": "Ayo Dosunmu",
+    "bbrefId": "dosunay01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jaden-mcdaniels",
+    "name": "Jaden McDaniels",
+    "bbrefId": "mcdanja02",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "peyton-watson",
+    "name": "Peyton Watson",
+    "bbrefId": "watsope01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "isaiah-collier",
+    "name": "Isaiah Collier",
+    "bbrefId": "colliis01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jeremiah-fears",
+    "name": "Jeremiah Fears",
+    "bbrefId": "fearsje01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "jared-mccain",
+    "name": "Jared McCain",
+    "bbrefId": "mccaija01",
+    "positions": [
+      "G"
+    ]
+  },
+  {
+    "id": "zaccharie-risacher",
+    "name": "Zaccharie Risacher",
+    "bbrefId": "risacza01",
+    "positions": [
+      "F"
+    ]
+  },
+  {
+    "id": "ausar-thompson",
+    "name": "Ausar Thompson",
+    "bbrefId": "thompau01",
+    "positions": [
+      "F"
+    ]
   }
 ]

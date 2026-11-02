@@ -200,5 +200,3 @@ export function main() {
   for (const player of proposal.ungeklaert) console.log(`  ${player.id} (${player.name}): ${player.kandidaten.join(", ") || "kein namensgleicher Kandidat"}`);
 }
 
-// Nur ausführen, wenn dieses Skript direkt gestartet wurde (nicht beim Import, nicht unter Vitest).
-if (!process.env.VITEST && process.argv.some((arg) => arg.replace(/\\/g, "/").endsWith("pool-candidates.ts"))) main();

@@ -61,5 +61,3 @@ export function main(args = process.argv.slice(2)) {
     .map(pos => `${pos}: ${pool.filter(player => player.positions.includes(pos)).length}`).join("; ")}`);
 }
 
-// Nur ausführen, wenn dieses Skript direkt gestartet wurde (nicht beim Import, nicht unter Vitest).
-if (!process.env.VITEST && process.argv.some((arg) => arg.replace(/\\/g, "/").endsWith("make-pool.ts"))) main();

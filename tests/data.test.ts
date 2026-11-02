@@ -7,9 +7,9 @@ import salaryCap from "../data/manual/salary-cap.json";
 import pool from "../data/manual/pool.json";
 
 describe("generierte Spieldaten", () => {
-  it("enthält 250–330 Spieler (Nutzer wählte 314), eindeutige Identitäten und gültige Positionen", () => {
+  it("enthält 250–400 Spieler (Nutzer wählte 357), eindeutige Identitäten und gültige Positionen", () => {
     expect(PLAYERS.length).toBeGreaterThanOrEqual(250);
-    expect(PLAYERS.length).toBeLessThanOrEqual(330);
+    expect(PLAYERS.length).toBeLessThanOrEqual(400);
     expect(new Set(PLAYERS.map(player => player.id)).size).toBe(PLAYERS.length);
     expect(new Set(pool.map(player => player.bbrefId)).size).toBe(pool.length);
     expect(PLAYERS.map(player => player.id)).toEqual(pool.map(player => player.id));
