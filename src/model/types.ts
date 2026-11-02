@@ -3,6 +3,7 @@ export type Pos = "G" | "F" | "C";
 export interface SeasonLine {
   season: number;
   g: number;
+  mp?: number | null;
   x2p: number | null;
   x2pPct: number;
   x3p: number | null;
@@ -22,7 +23,7 @@ export interface SeasonLine {
 }
 
 // Liga-Durchschnitte pro Team und Spiel.
-export type LeagueAvg = Omit<SeasonLine, "season" | "g" | "allDef1" | "allDef2">;
+export type LeagueAvg = Omit<SeasonLine, "season" | "g" | "mp" | "allDef1" | "allDef2">;
 
 export interface RawCats {
   shooter: number;

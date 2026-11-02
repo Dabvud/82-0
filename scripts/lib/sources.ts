@@ -74,7 +74,7 @@ export function loadSources(dir = "data/source"): {
   for (const row of best.values()) {
     const awards = defense.get(`${row.player_id}:${row.season}`);
     const lines = seasonsByPlayer.get(row.player_id) ?? [];
-    lines.push({ season: Number(row.season), g: Number(row.g), ...statistics(row),
+    lines.push({ season: Number(row.season), g: Number(row.g), mp: number(row.mp_per_game), ...statistics(row),
       allDef1: awards?.has("1st") ?? false, allDef2: awards?.has("2nd") ?? false });
     seasonsByPlayer.set(row.player_id, lines);
   }

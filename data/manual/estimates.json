@@ -1,0 +1,276 @@
+{
+  "kareem-abdul-jabbar": {
+    "tovPer36": 3.4,
+    "orbShare": 0.24,
+    "stlPer36": 1.2,
+    "blkPer36": 2.9,
+    "reason": "Eigene Anker: 1973/74 mit 43,8 Minuten, 3,5 ORB bei 14,5 TRB sowie 1,4 STL und 3,5 BLK pro Spiel; daraus folgen gerundet 0,24 ORB-Anteil, 1,2 STL und 2,9 BLK pro 36 Minuten. Für TOV dient 1977/78 mit 3,4 in 36,5 Minuten als Anker für 3,4/36; die frühen Jahre erhalten keinen unbelegten Defensivbonus.",
+    "sources": [
+      "https://www.basketball-reference.com/players/a/abdulka01.html"
+    ]
+  },
+  "julius-erving": {
+    "tovPer36": 3.5,
+    "orbShare": null,
+    "stlPer36": null,
+    "blkPer36": null,
+    "reason": "Eigener NBA-Anker 1977/78: 3,2 TOV in 32,8 Minuten ergeben rund 3,5 pro 36 Minuten. Für die unmittelbar vorherige NBA-Saison 1976/77 übernommen; ABA-Zahlen werden nicht benötigt.",
+    "sources": [
+      "https://www.basketball-reference.com/players/e/ervinju01.html",
+      "https://www.basketball-reference.com/teams/PHI/1978.html"
+    ]
+  },
+  "moses-malone": {
+    "tovPer36": 3.7,
+    "orbShare": null,
+    "stlPer36": null,
+    "blkPer36": null,
+    "reason": "Eigener NBA-Anker 1977/78: 3,7 TOV in 35,7 Minuten ergeben rund 3,7 pro 36 Minuten. Dies ist der Vorschlag für 1976/77, ohne bereits erfasste Rebound- oder Defensivwerte zu ersetzen.",
+    "sources": [
+      "https://www.basketball-reference.com/players/m/malonmo01.html"
+    ]
+  },
+  "alex-english": {
+    "tovPer36": 3.2,
+    "orbShare": null,
+    "stlPer36": null,
+    "blkPer36": null,
+    "reason": "Eigener Anker 1977/78 in Milwaukee: 1,7 TOV in 18,9 Minuten ergeben rund 3,2 pro 36 Minuten. Seine kleine Rolle passt besser zur Rookie-Saison 1976/77 als spätere Denver-Spitzenjahre.",
+    "sources": [
+      "https://www.basketball-reference.com/players/e/englial01.html"
+    ]
+  },
+  "artis-gilmore": {
+    "tovPer36": 4.3,
+    "orbShare": null,
+    "stlPer36": null,
+    "blkPer36": null,
+    "reason": "Eigener NBA-Anker 1977/78: 4,5 TOV in 37,4 Minuten ergeben rund 4,3 pro 36 Minuten. Für 1976/77 ist diese hohe, aber tatsächlich belegte Ballverlustrate eines stark eingebundenen Centers plausibler als eine niedrige Pauschale.",
+    "sources": [
+      "https://www.basketball-reference.com/players/g/gilmoar01.html"
+    ]
+  },
+  "george-gervin": {
+    "tovPer36": 3.8,
+    "orbShare": null,
+    "stlPer36": null,
+    "blkPer36": null,
+    "reason": "Eigener NBA-Anker 1977/78: 3,7 TOV in 34,8 Minuten ergeben rund 3,8 pro 36 Minuten. Der Vorschlag für 1976/77 bleibt bei seiner frühen NBA-Rolle als primärer Scorer.",
+    "sources": [
+      "https://www.basketball-reference.com/players/g/gervige01.html",
+      "https://www.basketball-reference.com/tools/share.fcgi?id=yqToU"
+    ]
+  },
+  "bill-walton": {
+    "tovPer36": 3.9,
+    "orbShare": null,
+    "stlPer36": null,
+    "blkPer36": null,
+    "reason": "Eigener Anker 1977/78 in Portland: die im lokalen Datensatz gerundeten 3,6 TOV in 33,3 Minuten ergeben rund 3,9 pro 36 Minuten. Damit werden nur seine fehlenden TOV von 1974/75 bis 1976/77 geschätzt; seine tatsächlichen Defensivwerte bleiben erhalten.",
+    "sources": [
+      "https://www.basketball-reference.com/players/w/waltobi01.html",
+      "https://www.basketball-reference.com/teams/POR/1978.html"
+    ]
+  },
+  "bob-mcadoo": {
+    "tovPer36": 3.9,
+    "orbShare": 0.25,
+    "stlPer36": 1,
+    "blkPer36": 2.8,
+    "reason": "Eigener Anker 1973/74: 3,8 ORB bei 15,1 TRB sowie 1,2 STL und 3,3 BLK in 43,0 Minuten ergeben 0,25 ORB-Anteil, 1,0 STL und 2,8 BLK pro 36 Minuten. Seine 4,4 TOV in 40,3 Minuten 1977/78 ergeben rund 3,9/36; für die Rookie-Lücken wird kein zusätzlicher Peak-Aufschlag vergeben.",
+    "sources": [
+      "https://www.basketball-reference.com/players/m/mcadobo01.html"
+    ]
+  },
+  "elvin-hayes": {
+    "tovPer36": 2.5,
+    "orbShare": 0.24,
+    "stlPer36": 0.9,
+    "blkPer36": 2.4,
+    "reason": "Eigener Anker 1973/74: 4,4 ORB bei 18,1 TRB, 1,1 STL und 3,0 BLK in 44,5 Minuten ergeben rund 0,24 ORB-Anteil, 0,9 STL und 2,4 BLK pro 36 Minuten. Für TOV liefern die eigenen 2,8 in 40,1 Minuten 1977/78 den Anker 2,5/36.",
+    "sources": [
+      "https://www.basketball-reference.com/players/h/hayesel01.html"
+    ]
+  },
+  "oscar-robertson": {
+    "tovPer36": 3.3,
+    "orbShare": 0.25,
+    "stlPer36": 1.1,
+    "blkPer36": 0.1,
+    "reason": "Eigener Anker 1973/74: 1,0 ORB bei 4,0 TRB sowie 1,1 STL und 0,1 BLK in 35,4 Minuten ergeben 0,25 ORB-Anteil, 1,1 STL und 0,1 BLK pro 36 Minuten. TOV 3,3/36 ist eine Vergleichsschätzung zwischen Frazier 1977/78 (2,4/36) und Kevin Porter 1977/78 (4,6/36). Unsicher: letzter Karrierejahrgang als Defensivanker und keine eigene erfasste TOV-Saison.",
+    "sources": [
+      "https://www.basketball-reference.com/players/r/roberos01.html",
+      "https://www.basketball-reference.com/players/f/fraziwa01.html",
+      "https://www.basketball-reference.com/players/p/porteke01.html"
+    ]
+  },
+  "rick-barry": {
+    "tovPer36": 2.6,
+    "orbShare": 0.19,
+    "stlPer36": 2.1,
+    "blkPer36": 0.5,
+    "reason": "Eigener Anker 1973/74: 1,3 ORB bei 6,8 TRB sowie 2,1 STL und 0,5 BLK in 36,5 Minuten ergeben rund 0,19 ORB-Anteil, 2,1 STL und 0,5 BLK pro 36 Minuten. Seine 2,7 TOV in 36,9 Minuten 1977/78 ergeben rund 2,6/36; die früheste vollständig erfasste NBA-Defensivsaison hat Vorrang vor späteren Spitzenwerten.",
+    "sources": [
+      "https://www.basketball-reference.com/players/b/barryri01.html"
+    ]
+  },
+  "walt-frazier": {
+    "tovPer36": 2.4,
+    "orbShare": 0.22,
+    "stlPer36": 1.7,
+    "blkPer36": 0.2,
+    "reason": "Eigener Anker 1973/74: 1,5 ORB bei 6,7 TRB sowie 2,0 STL und 0,2 BLK in 41,7 Minuten ergeben rund 0,22 ORB-Anteil, 1,7 STL und 0,2 BLK pro 36 Minuten. TOV 2,4/36 folgen aus seinen eigenen 2,2 in 32,6 Minuten 1977/78; der späte TOV-Anker ist weniger sicher als die Defensivwerte aus seinen Knicks-Jahren.",
+    "sources": [
+      "https://www.basketball-reference.com/players/f/fraziwa01.html"
+    ]
+  },
+  "wes-unseld": {
+    "tovPer36": 2.4,
+    "orbShare": 0.3,
+    "stlPer36": 1.4,
+    "blkPer36": 0.8,
+    "reason": "Eigene frühe Anker: 1973/74 liefert 2,7 ORB bei 9,2 TRB, die vollständigere Folgesaison 1974/75 mit 73 Spielen 4,4 bei 14,8; beide stützen 0,30 ORB-Anteil. STL 1,4 und BLK 0,8 pro 36 Minuten folgen aus den eigenen 1,6 und 0,9 in 39,8 Minuten 1974/75; TOV 2,4/36 aus 2,2 in 33,1 Minuten 1977/78.",
+    "sources": [
+      "https://www.basketball-reference.com/players/u/unselwe01.html"
+    ]
+  },
+  "david-thompson": {
+    "tovPer36": 3,
+    "orbShare": null,
+    "stlPer36": null,
+    "blkPer36": null,
+    "reason": "Eigener NBA-Anker 1977/78: 3,1 TOV in 37,8 Minuten ergeben rund 3,0 pro 36 Minuten. Für die direkt vorherige NBA-Saison 1976/77 übernommen; vorhandene STL-, BLK- und Reboundwerte werden nicht geschätzt.",
+    "sources": [
+      "https://www.basketball-reference.com/players/t/thompda01.html",
+      "https://www.basketball-reference.com/tools/share.fcgi?id=yqToU"
+    ]
+  },
+  "john-havlicek": {
+    "tovPer36": 2.6,
+    "orbShare": 0.28,
+    "stlPer36": 1.1,
+    "blkPer36": 0.4,
+    "reason": "Eigener Anker 1973/74: 1,8 ORB bei 6,4 TRB sowie 1,3 STL und 0,4 BLK in 40,7 Minuten ergeben rund 0,28 ORB-Anteil, 1,1 STL und 0,4 BLK pro 36 Minuten. TOV 2,6/36 folgen aus 2,5 in 34,1 Minuten 1977/78. Unsicher ist vor allem die Übertragung dieser letzten Saison im Alter von 37 auf frühere Jahre mit größerer Offensivrolle.",
+    "sources": [
+      "https://www.basketball-reference.com/players/h/havlijo01.html"
+    ]
+  },
+  "jerry-west": {
+    "tovPer36": 3.3,
+    "orbShare": 0.27,
+    "stlPer36": 3,
+    "blkPer36": 0.8,
+    "reason": "Eigener Anker 1973/74: 1,0 ORB bei 3,7 TRB sowie 2,6 STL und 0,7 BLK in 31,2 Minuten ergeben rund 0,27 ORB-Anteil, 3,0 STL und 0,8 BLK pro 36 Minuten. TOV 3,3/36 ist eine Vergleichsschätzung zwischen Frazier 1977/78 (2,4/36) und Maravich 1977/78 (4,4/36). Unsicher: nur 31 Spiele im eigenen Defensivanker und keine eigene erfasste TOV-Saison.",
+    "sources": [
+      "https://www.basketball-reference.com/players/w/westje01.html",
+      "https://www.basketball-reference.com/teams/LAL/1974.html",
+      "https://www.basketball-reference.com/players/f/fraziwa01.html",
+      "https://www.basketball-reference.com/players/m/maravpe01.html"
+    ]
+  },
+  "pete-maravich": {
+    "tovPer36": 4.4,
+    "orbShare": 0.27,
+    "stlPer36": 1.4,
+    "blkPer36": 0.2,
+    "reason": "Eigener Anker 1973/74: 1,3 ORB bei 4,9 TRB sowie 1,5 STL und 0,2 BLK in 38,2 Minuten ergeben rund 0,27 ORB-Anteil, 1,4 STL und 0,2 BLK pro 36 Minuten. TOV 4,4/36 folgen aus seinen eigenen 5,0 in 40,8 Minuten 1977/78 und bilden die damals tatsächlich hohe Ballverlustlast ab.",
+    "sources": [
+      "https://www.basketball-reference.com/players/m/maravpe01.html",
+      "https://www.basketball-reference.com/teams/NOJ/1978.html"
+    ]
+  },
+  "bob-cousy": {
+    "tovPer36": 3.8,
+    "orbShare": 0.25,
+    "stlPer36": 1.6,
+    "blkPer36": 0.1,
+    "reason": "Ohne eigene erfasste Kategorien dienen Norm Van Lier 1973/74 (ORB-Anteil rund 0,30, STL 2,0/36, BLK 0,1/36) und Kevin Porter 1977/78 (TOV 4,6/36) als frühe Guard-Anker. Für Cousy werden vorsichtig 0,25 ORB-Anteil, 1,6 STL, 0,1 BLK und 3,8 TOV pro 36 Minuten angesetzt, mit weniger Defensivwirkung als Van Lier. Unsicher: reiner Vergleich über mehr als ein Jahrzehnt, keine gemessenen Cousy-Raten.",
+    "sources": [
+      "https://www.basketball-reference.com/players/v/vanlino01.html",
+      "https://www.basketball-reference.com/players/p/porteke01.html"
+    ]
+  },
+  "wilt-chamberlain": {
+    "tovPer36": 3.4,
+    "orbShare": 0.28,
+    "stlPer36": 0.8,
+    "blkPer36": 4.8,
+    "reason": "Die von Sports Reference belegten Block-Einzelzählungen ergeben im gemeinsamen 13-Spiele-Ausschnitt 6,2 pro Spiel für Wilt; daraus wird vorsichtig 4,8/36 modelliert, kein gemessener Karriereschnitt. ORB-Anteil 0,28 und STL 0,8/36 orientieren sich an Thurmond 1973/74 (0,28 und 0,6/36), TOV 3,4/36 an Kareem 1977/78 (3,4/36). Unsicher: selektive Spielberichte, unbekannte repräsentative Minutenbasis und wechselnde Offensivrolle.",
+    "sources": [
+      "https://www.sports-reference.com/blog/2026/04/thousands-of-unofficial-game-level-totals-added-to-basketball-reference/",
+      "https://reference3989.rssing.com/a/thousands-of-unofficial-game-level-totals-added-to-basketball-47yojqj6",
+      "https://www.basketball-reference.com/players/t/thurmna01.html",
+      "https://www.basketball-reference.com/players/a/abdulka01.html"
+    ]
+  },
+  "bill-russell": {
+    "tovPer36": 2.8,
+    "orbShare": 0.25,
+    "stlPer36": 1,
+    "blkPer36": 4.5,
+    "reason": "Die von Sports Reference belegten Block-Einzelzählungen ergeben im gemeinsamen 13-Spiele-Ausschnitt 5,5 pro Spiel für Russell; 4,5/36 ist eine vorsichtige Modellannahme unterhalb dieses Spielmittels. ORB-Anteil 0,25 und STL 1,0/36 liegen zwischen Cowens und Thurmond 1973/74 (ORB etwa 0,21–0,28, STL etwa 0,6–1,0/36), TOV 2,8/36 zwischen Cowens 1977/78 (2,4/36) und Walton 1977/78 (rund 3,9/36). Unsicher: weder die ausgewählten Blockspiele noch die Vergleichsspieler liefern einen vollständigen Russell-Saisonschnitt.",
+    "sources": [
+      "https://www.sports-reference.com/blog/2026/04/thousands-of-unofficial-game-level-totals-added-to-basketball-reference/",
+      "https://reference3989.rssing.com/a/thousands-of-unofficial-game-level-totals-added-to-basketball-47yojqj6",
+      "https://www.basketball-reference.com/players/c/cowenda01.html",
+      "https://www.basketball-reference.com/players/t/thurmna01.html",
+      "https://www.basketball-reference.com/players/w/waltobi01.html"
+    ]
+  },
+  "elgin-baylor": {
+    "tovPer36": 3.5,
+    "orbShare": 0.3,
+    "stlPer36": 1.5,
+    "blkPer36": 0.7,
+    "reason": "Ohne eigene erfasste Kategorien ist der frühe NBA-Flügel Erving 1976/77 der Anker: ORB-Anteil rund 0,27, STL 1,9/36 und BLK 1,4/36; Ervings TOV 1977/78 liegen bei 3,5/36. Für Baylor werden 0,30 ORB-Anteil, 1,5 STL, 0,7 BLK und 3,5 TOV pro 36 Minuten vorgeschlagen, mit geringerem Blockwert als Erving. Unsicher: Vergleichsschätzung ohne eigene Zählungen, insbesondere die Reboundaufteilung ist nicht belegt.",
+    "sources": [
+      "https://www.basketball-reference.com/teams/PHI/1977.html",
+      "https://www.basketball-reference.com/players/e/ervinju01.html"
+    ]
+  },
+  "george-mikan": {
+    "tovPer36": 3.2,
+    "orbShare": 0.3,
+    "stlPer36": 0.6,
+    "blkPer36": 2.5,
+    "reason": "Ohne eigene erfasste Kategorien bilden Kareem 1973/74 (ORB-Anteil 0,24, STL 1,2/36, BLK 2,9/36) und Elmore Smith 1973/74 (BLK 4,9/36) den frühen Center-Vergleich. Mikan erhält als vorsichtige Modellannahme 0,30 ORB-Anteil, 0,6 STL, 2,5 BLK und 3,2 TOV pro 36 Minuten; letzterer Wert liegt nahe Kareems 3,4 TOV/36 von 1977/78. Unsicher: größter Epochenabstand der Liste, keine belegte ORB-, STL-, BLK- oder TOV-Saison und keine Übernahme angeblicher zweistelliger Blockmittel.",
+    "sources": [
+      "https://www.basketball-reference.com/players/a/abdulka01.html",
+      "https://www.basketball-reference.com/players/s/smithel01.html"
+    ]
+  },
+  "bob-pettit": {
+    "tovPer36": 2.8,
+    "orbShare": 0.28,
+    "stlPer36": 1,
+    "blkPer36": 1,
+    "reason": "Ohne eigene erfasste Kategorien dienen Hayes und Cowens 1973/74 als frühe Big-Man-Anker: ORB-Anteile rund 0,24 und 0,21 sowie STL rund 0,9 und 1,0 pro 36 Minuten; Cowens liefert etwa 1,1 BLK/36. Für Pettit werden 0,28 ORB-Anteil, 1,0 STL und 1,0 BLK angesetzt, TOV 2,8/36 leicht oberhalb von Hayes 1977/78 (2,5/36). Unsicher: Der höhere ORB-Anteil ist eine Modellannahme für den offensiven Rebounder und kein belegter Pettit-Wert.",
+    "sources": [
+      "https://www.basketball-reference.com/players/h/hayesel01.html",
+      "https://www.basketball-reference.com/players/c/cowenda01.html"
+    ]
+  },
+  "willis-reed": {
+    "tovPer36": 2.8,
+    "orbShare": 0.34,
+    "stlPer36": 0.8,
+    "blkPer36": 1.5,
+    "reason": "Eigener Anker 1973/74: 2,5 ORB bei 7,4 TRB sowie 0,6 STL und 1,1 BLK in 26,3 Minuten ergeben rund 0,34 ORB-Anteil, 0,8 STL und 1,5 BLK pro 36 Minuten. TOV 2,8/36 ist eine Vergleichsschätzung zwischen Hayes 1977/78 (2,5/36) und Kareem 1977/78 (3,4/36). Unsicher: nur 19 Spiele im eigenen späten Defensivanker und keine eigene erfasste TOV-Saison.",
+    "sources": [
+      "https://www.basketball-reference.com/players/r/reedwi01.html",
+      "https://www.basketball-reference.com/players/h/hayesel01.html",
+      "https://www.basketball-reference.com/players/a/abdulka01.html"
+    ]
+  },
+  "dennis-johnson": {
+    "tovPer36": 2.6,
+    "orbShare": null,
+    "stlPer36": null,
+    "blkPer36": null,
+    "reason": "Eigener Anker 1977/78 in Seattle: 2,0 TOV in 27,3 Minuten ergeben rund 2,6 pro 36 Minuten. Die frühe Rolle passt zur unmittelbar vorherigen Rookie-Saison 1976/77; die anderen drei Felder werden nicht benötigt.",
+    "sources": [
+      "https://www.basketball-reference.com/players/j/johnsde01.html",
+      "https://www.basketball-reference.com/teams/SEA/1978.html"
+    ]
+  }
+}

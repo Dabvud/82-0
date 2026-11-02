@@ -22,12 +22,12 @@ describe("loadSources", () => {
   it("nimmt die größte Spielzahl, trennt NBA/BAA von ABA und ergänzt historische Liga-Lücken", () => {
     const dir = mkdtempSync(join(tmpdir(), "82-0-sources-"));
     folders.push(dir);
-    const stats = "x2p_per_game,x2p_percent,x3p_per_game,x3p_percent,ft_per_game,fta_per_game,ft_percent,ast_per_game,tov_per_game,orb_per_game,drb_per_game,trb_per_game,stl_per_game,blk_per_game";
+    const stats = "x2p_per_game,x2p_percent,x3p_per_game,x3p_percent,ft_per_game,fta_per_game,ft_percent,ast_per_game,tov_per_game,orb_per_game,drb_per_game,trb_per_game,stl_per_game,blk_per_game,mp_per_game";
     writeFileSync(join(dir, "Player Per Game.csv"), `season,lg,player,player_id,team,pos,g,${stats}
-1973,NBA,Example,example01,TOT,PG-SG,80,5,0.5,NA,NA,2,3,NA,4,NA,NA,NA,6,NA,NA
+1973,NBA,Example,example01,TOT,PG-SG,80,5,0.5,NA,NA,2,3,NA,4,NA,NA,NA,6,NA,NA,39.5
 1973,NBA,Example,example01,AAA,PG,45,9,0.6,NA,NA,3,4,0.75,6,NA,NA,NA,7,NA,NA
 1973,NBA,Example,example01,BBB,SG,35,8,0.6,NA,NA,3,4,0.75,6,NA,NA,NA,7,NA,NA
-1974,NBA,Example,example01,2TM,PG,70,NA,NA,0,NA,NA,NA,0.7,NA,2,1,5,NA,1,0.5
+1974,NBA,Example,example01,2TM,PG,70,NA,NA,0,NA,NA,NA,0.7,NA,2,1,5,NA,1,0.5,NA
 1974,NBA,Example,example01,AAA,PG,40,9,0.6,0,NA,3,4,0.75,6,2,2,5,7,1,1
 1974,ABA,Example,example01,ZZZ,PG,90,20,0.6,3,0.5,8,10,0.8,9,2,2,5,7,1,1
 `);
@@ -51,10 +51,10 @@ describe("loadSources", () => {
 `);
     const sources = loadSources(dir);
     expect(sources.seasonsByPlayer.get("example01")).toEqual([
-      { season: 1973, g: 80, x2p: 5, x2pPct: 0.5, x3p: null, x3pPct: null,
+      { season: 1973, g: 80, mp: 39.5, x2p: 5, x2pPct: 0.5, x3p: null, x3pPct: null,
         ftm: 2, fta: 3, ftPct: 0, ast: 4, tov: null, orb: null, drb: null,
         trb: 6, stl: null, blk: null, allDef1: true, allDef2: false },
-      { season: 1974, g: 70, x2p: null, x2pPct: 0, x3p: 0, x3pPct: null,
+      { season: 1974, g: 70, mp: null, x2p: null, x2pPct: 0, x3p: 0, x3pPct: null,
         ftm: null, fta: null, ftPct: 0.7, ast: null, tov: 2, orb: 1, drb: 5,
         trb: null, stl: 1, blk: 0.5, allDef1: false, allDef2: true },
     ]);
@@ -63,5 +63,10 @@ describe("loadSources", () => {
     });
     expect(sources.playerInfo.get("example01")).toEqual({ name: "Example", first: 1973, last: 1974 });
     expect(sources.playerInfo.get("old01")).toEqual({ name: "Old Player", first: 1947, last: 1947 });
+    // Leere Minutenfelder und ältere CSVs ohne Minutenspalte bleiben lesbar.
+    for (const suffix of [",mp_per_game\n1974,NBA,Example,example01,AAA,1,\n", "\n1974,NBA,Example,example01,AAA,1\n"]) {
+      writeFileSync(join(dir, "Player Per Game.csv"), "season,lg,player,player_id,team,g" + suffix);
+      expect(loadSources(dir).seasonsByPlayer.get("example01")?.[0].mp).toBeNull();
+    }
   });
 });
