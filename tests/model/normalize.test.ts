@@ -53,4 +53,11 @@ describe("Saison-Normalisierung", () => {
     const preThreeLeague = { ...league, x3p: null, x3pPct: null };
     expect(seasonRaw(noThrees, preThreeLeague).shooter).toBeCloseTo(0.25);
   });
+
+  it("dämpft Dreier aus Epochen mit kaum Liga-Dreiern (Mindest-Schnitt und Effizienz-Deckel)", () => {
+    const eighties = { ...league, x3p: 0.9, x3pPct: 0.282 };
+    const bird = { ...average, x3p: 1.4, x3pPct: 0.423, ftPct: 0.8 };
+    // 1,4 Treffer gegen mindestens 1,0 pro Platz, Effizienz gedeckelt auf 1,35.
+    expect(seasonRaw(bird, eighties).shooter).toBeCloseTo(0.75 * 1.4 * 1.35 ** 2 + 0.25);
+  });
 });

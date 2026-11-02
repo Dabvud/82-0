@@ -70,6 +70,17 @@ export function toCategories(peaks: RawCats[]): Categories[] {
   });
 }
 
+/** Stärke 0–99 als Perzentil der Rohwert-Summe: Wie weit jemand vorne liegt, zählt mit. */
+export function strengthsFromRaw(peaks: RawCats[]): number[] {
+  const scores = peaks.map(seasonScore);
+  return scores.map((score) => {
+    const lower = scores.filter((other) => other < score).length;
+    const equal = scores.filter((other) => other === score).length;
+    return scores.length === 1 ? CONFIG.categoryMax / 2
+      : (lower + (equal - 1) / 2) / (scores.length - 1) * CONFIG.categoryMax;
+  });
+}
+
 export function strength(c: Categories): number {
   return Math.max(0, Math.min(CONFIG.categoryMax, weightedScore(c, CONFIG.strengthWeights)));
 }

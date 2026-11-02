@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { assignTiers, pickPeak, toCategories } from "../../src/model/rating";
+import { assignTiers, pickPeak, strengthsFromRaw, toCategories } from "../../src/model/rating";
 import type { RawCats, SeasonLine } from "../../src/model/types";
 
 function rawWithScore(score: number): RawCats {
@@ -54,5 +54,15 @@ describe("Bewertung", () => {
       .toEqual([3, 2, 2, 2, 2]);
     expect(strengths.filter((_, index) => tiers[index] === 1).sort((a, b) => b - a))
       .toEqual([11, 10, 9]);
+  });
+
+  it("bewertet Stärke nach Rohwerten: Dominanz in einer Kategorie schlägt knappes Plus überall", () => {
+    const dominant = { ...rawWithScore(1), finisher: 4 };
+    const balanced = rawWithScore(1.3);
+    const average = rawWithScore(1);
+    const [a, b, c] = strengthsFromRaw([dominant, balanced, average]);
+    expect(a).toBe(99);
+    expect(b).toBeGreaterThan(c);
+    expect(a).toBeGreaterThan(b);
   });
 });

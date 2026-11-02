@@ -15,8 +15,11 @@ export function seasonRaw(line: SeasonLine, lg: LeagueAvg): RawCats {
   const e2 = line.x2pPct / lg.x2pPct;
   const eft = line.ftPct / lg.ftPct;
   // Ohne Dreier gibt es keine Quote (und vor 1979/80 keine Liga-Werte): Dreieranteil ist dann 0.
+  // Epochen mit kaum Liga-Dreiern (80er) würden sonst jeden Treffer riesig wirken lassen:
+  // Liga-Schnitt pro Platz mindestens minLeague3pmPerSlot, Effizienz höchstens maxEff3.
   const threes = line.x3p === 0 ? 0
-    : rel("x3p") * (value("x3pPct") / value("x3pPct", lg)) ** CONFIG.effExponent;
+    : value("x3p") / Math.max(CONFIG.minLeague3pmPerSlot, value("x3p", lg) / CONFIG.playersPerTeam)
+      * Math.min(CONFIG.maxEff3, value("x3pPct") / value("x3pPct", lg)) ** CONFIG.effExponent;
 
   return {
     shooter: CONFIG.shooterWeights.threePoint * threes + CONFIG.shooterWeights.freeThrow * eft,

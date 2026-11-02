@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { normalizeName } from "../src/model/names";
 import { seasonRaw } from "../src/model/normalize";
-import { pickPeak, strength, toCategories } from "../src/model/rating";
+import { pickPeak, strengthsFromRaw } from "../src/model/rating";
 import type { LeagueAvg, Pos, SeasonLine } from "../src/model/types";
 import { loadSources, parseCsv } from "./lib/sources";
 
@@ -24,6 +24,10 @@ const reviewNameHints: Record<string, string> = {
   "jakob poltl": "jakob poeltl",
   "penny hardaway": "anfernee hardaway",
 };
+
+// Vom Prüfer festgelegt (2026-11-02): Namensvarianten fest zuordnen, TNC-Doppeleinträge überspringen.
+const MANUAL_IDS: Record<string, string> = { "jakob-poltl": "poeltja01", "penny-hardaway": "hardaan01" };
+const SKIP_TNC_IDS = new Set(["cam-johnson", "jimmy-butler-iii"]);
 
 export function matchPlayer(player: Pick<TncPlayer, "name" | "stations">, info: PlayerInfo): {
   bbrefId?: string; kandidaten: string[];
@@ -106,7 +110,9 @@ export function buildProposal(tncPath = "C:/Users/trill/Desktop/hoopjourney/src/
   const kandidaten: PoolCandidate[] = [];
   const ungeklaert: { id: string; name: string; kandidaten: string[] }[] = [];
   for (const player of tnc) {
-    const match = matchPlayer(player, sources.playerInfo);
+    if (SKIP_TNC_IDS.has(player.id)) continue;
+    const match = MANUAL_IDS[player.id] ? { bbrefId: MANUAL_IDS[player.id], kandidaten: [MANUAL_IDS[player.id]] }
+      : matchPlayer(player, sources.playerInfo);
     if (!match.bbrefId || !sources.seasonsByPlayer.has(match.bbrefId)) {
       ungeklaert.push({ id: player.id, name: player.name, kandidaten: match.kandidaten });
       continue;
@@ -168,12 +174,11 @@ export function buildProposal(tncPath = "C:/Users/trill/Desktop/hoopjourney/src/
     return pickPeak(lines, raws);
   });
   const reference = peaks.slice(0, resolved.length).map(peak => peak.raw);
-  const categories = toCategories(reference);
+  const strengths = strengthsFromRaw(reference);
   all.forEach((player, index) => {
     // Ergänzungen einzeln gegen dieselbe TNC-Bezugsgruppe bewerten, ohne deren Ränge zu ändern.
-    const category = index < resolved.length ? categories[index]
-      : toCategories([...reference, peaks[index].raw]).at(-1)!;
-    player.strength = strength(category);
+    player.strength = index < resolved.length ? strengths[index]
+      : strengthsFromRaw([...reference, peaks[index].raw]).at(-1)!;
     player.peak = { from: peaks[index].from, to: peaks[index].to };
   });
   selectPool(resolved);
@@ -197,5 +202,5 @@ export function main() {
   for (const player of proposal.ungeklaert) console.log(`  ${player.id} (${player.name}): ${player.kandidaten.join(", ") || "kein namensgleicher Kandidat"}`);
 }
 
-if (process.argv[1] && (import.meta.url === pathToFileURL(resolve(process.argv[1])).href
-  || process.argv[1].replace(/\\/g, "/").endsWith("/vite-node/dist/cli.mjs"))) main();
+// Unter Vitest nur importieren, sonst (vite-node) direkt ausführen.
+if (!process.env.VITEST) main();
