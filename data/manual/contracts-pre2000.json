@@ -1,0 +1,591 @@
+{
+  "shaquille-oneal": {
+    "season": 2000,
+    "team": "Los Angeles Lakers",
+    "salary": 17142858,
+    "source": "https://fr.wikipedia.org/wiki/Shaquille_O'Neal#Salaires",
+    "note": "Lakers-Vertrag 1996: 7 Jahre/120 Mio. USD; hier die Jahresrate 1999/2000."
+  },
+  "steve-nash": {
+    "season": 2000,
+    "team": "Dallas Mavericks",
+    "salary": 5500000,
+    "source": "https://fr.wikipedia.org/wiki/Steve_Nash#Salaires"
+  },
+  "ray-allen": {
+    "season": 2000,
+    "team": "Milwaukee Bucks",
+    "salary": 9000000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "larry-bird": {
+    "season": 1992,
+    "team": "Boston Celtics",
+    "salary": 7070000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%91%D1%91%D1%80%D0%B4%2C_%D0%9B%D0%B0%D1%80%D1%80%D0%B8"
+  },
+  "michael-jordan": {
+    "season": 1998,
+    "team": "Chicago Bulls",
+    "salary": 33140000,
+    "source": "https://www.basketball-reference.com/players/j/jordami01.html#all_salaries"
+  },
+  "tracy-mcgrady": {
+    "season": 2000,
+    "team": "Toronto Raptors",
+    "salary": 1767120,
+    "source": "https://fr.wikipedia.org/wiki/Tracy_McGrady#Salaires"
+  },
+  "gary-payton": {
+    "season": 2000,
+    "team": "Seattle SuperSonics",
+    "salary": 11020473,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "hakeem-olajuwon": {
+    "season": 2000,
+    "team": "Houston Rockets",
+    "salary": 14302001,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "david-robinson": {
+    "season": 1999,
+    "team": "San Antonio Spurs",
+    "salary": 14841000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B1%D0%B8%D0%BD%D1%81%D0%BE%D0%BD%2C_%D0%94%D1%8D%D0%B2%D0%B8%D0%B4",
+    "note": "Nominaler Jahresbetrag 1998/99 vor der Kürzung durch den Lockout."
+  },
+  "kevin-garnett": {
+    "season": 2000,
+    "team": "Minnesota Timberwolves",
+    "salary": 16806300,
+    "source": "https://fr.wikipedia.org/wiki/Kevin_Garnett#Salaires",
+    "note": "Sechsjahresverlängerung gilt ab 1998/99; 1999/2000 ist der höchste Jahreswert bis zum Stichtag."
+  },
+  "kobe-bryant": {
+    "season": 2000,
+    "team": "Los Angeles Lakers",
+    "salary": 9000000,
+    "source": "https://fr.wikipedia.org/wiki/Kobe_Bryant#Salaires"
+  },
+  "john-stockton": {
+    "season": 2000,
+    "team": "Utah Jazz",
+    "salary": 11000000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "vince-carter": {
+    "season": 2000,
+    "team": "Toronto Raptors",
+    "salary": 2267280,
+    "source": "https://fr.wikipedia.org/wiki/Vince_Carter#Salaires"
+  },
+  "dirk-nowitzki": {
+    "season": 2000,
+    "team": "Dallas Mavericks",
+    "salary": 1583040,
+    "source": "https://fr.wikipedia.org/wiki/Dirk_Nowitzki#Salaires"
+  },
+  "tim-duncan": {
+    "season": 2000,
+    "team": "San Antonio Spurs",
+    "salary": 3858240,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "magic-johnson": {
+    "season": 1995,
+    "team": "Los Angeles Lakers",
+    "salary": 14660000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries95.txt",
+    "note": "1994/95 trotz Rücktritt weiterbezahlt; in dieser Saison kein NBA-Einsatz."
+  },
+  "peja-stojakovic": {
+    "season": 2000,
+    "team": "Sacramento Kings",
+    "salary": 1310400,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "scottie-pippen": {
+    "season": 2000,
+    "team": "Portland Trail Blazers",
+    "salary": 14795642,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "paul-pierce": {
+    "season": 2000,
+    "team": "Boston Celtics",
+    "salary": 1503960,
+    "source": "https://fr.wikipedia.org/wiki/Paul_Pierce#Salaires"
+  },
+  "tim-hardaway": {
+    "season": 1999,
+    "team": "Miami Heat",
+    "salary": 5600000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D1%80%D0%B4%D1%83%D1%8D%D0%B9%2C_%D0%A2%D0%B8%D0%BC",
+    "note": "Nominaler Jahresbetrag 1998/99 vor der Kürzung durch den Lockout."
+  },
+  "jason-kidd": {
+    "season": 2000,
+    "team": "Phoenix Suns",
+    "salary": 6858335,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "baron-davis": {
+    "season": 2000,
+    "team": "Charlotte Hornets",
+    "salary": 2712480,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "shawn-marion": {
+    "season": 2000,
+    "team": "Phoenix Suns",
+    "salary": 1546320,
+    "source": "https://fr.wikipedia.org/wiki/Shawn_Marion#Salaires"
+  },
+  "mark-price": {
+    "season": 1998,
+    "team": "Orlando Magic",
+    "salary": 4090920,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries98.txt"
+  },
+  "karl-malone": {
+    "season": 2000,
+    "team": "Utah Jazz",
+    "salary": 14000000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "charles-barkley": {
+    "season": 2000,
+    "team": "Houston Rockets",
+    "salary": 9000000,
+    "source": "https://fr.wikipedia.org/wiki/Charles_Barkley#Salaires"
+  },
+  "mitch-richmond": {
+    "season": 2000,
+    "team": "Washington Wizards",
+    "salary": 10000000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "chris-webber": {
+    "season": 2000,
+    "team": "Sacramento Kings",
+    "salary": 11000000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "kareem-abdul-jabbar": {
+    "season": 1989,
+    "team": "Los Angeles Lakers",
+    "salary": 3000000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries89.txt"
+  },
+  "glen-rice": {
+    "season": 2000,
+    "team": "Los Angeles Lakers",
+    "salary": 7000000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "chauncey-billups": {
+    "season": 2000,
+    "team": "Orlando Magic",
+    "salary": 3100080,
+    "source": "https://fr.wikipedia.org/wiki/Chauncey_Billups#Salaires",
+    "note": "1999/2000 aus Denver nach Orlando getradet; Gehaltsquelle führt Orlando."
+  },
+  "patrick-ewing": {
+    "season": 1998,
+    "team": "New York Knicks",
+    "salary": 20500000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries98.txt",
+    "note": "1997/98 ist höher als 1995/96 (18.724.000 USD) und 1998/99 (18.500.000 USD)."
+  },
+  "allen-iverson": {
+    "season": 2000,
+    "team": "Philadelphia 76ers",
+    "salary": 9000000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "alonzo-mourning": {
+    "season": 2000,
+    "team": "Miami Heat",
+    "salary": 15004800,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "mike-bibby": {
+    "season": 2000,
+    "team": "Vancouver Grizzlies",
+    "salary": 3092400,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "jason-terry": {
+    "season": 2000,
+    "team": "Atlanta Hawks",
+    "salary": 1468920,
+    "source": "https://fr.wikipedia.org/wiki/Jason_Terry#Salaires"
+  },
+  "rashard-lewis": {
+    "season": 2000,
+    "team": "Seattle SuperSonics",
+    "salary": 385000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "reggie-miller": {
+    "season": 1997,
+    "team": "Indiana Pacers",
+    "salary": 11250000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BB%D0%BB%D0%B5%D1%80%2C_%D0%A0%D0%B5%D0%B4%D0%B6%D0%B8"
+  },
+  "stephon-marbury": {
+    "season": 2000,
+    "team": "New Jersey Nets",
+    "salary": 9000000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "chris-mullin": {
+    "season": 2000,
+    "team": "Indiana Pacers",
+    "salary": 4079100,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "penny-hardaway": {
+    "season": 2000,
+    "team": "Phoenix Suns",
+    "salary": 9000000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "clyde-drexler": {
+    "season": 1996,
+    "team": "Houston Rockets",
+    "salary": 9810000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries96.txt"
+  },
+  "marcus-camby": {
+    "season": 2000,
+    "team": "New York Knicks",
+    "salary": 5250000,
+    "source": "https://fr.wikipedia.org/wiki/Marcus_Camby#Salaires"
+  },
+  "isiah-thomas": {
+    "season": 1992,
+    "team": "Detroit Pistons",
+    "salary": 2960000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BC%D0%B0%D1%81%2C_%D0%90%D0%B9%D0%B7%D0%B5%D1%8F_(1961)"
+  },
+  "nick-van-exel": {
+    "season": 2000,
+    "team": "Denver Nuggets",
+    "salary": 8354614,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "kevin-johnson": {
+    "season": 1998,
+    "team": "Phoenix Suns",
+    "salary": 8000000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries98.txt"
+  },
+  "rasheed-wallace": {
+    "season": 2000,
+    "team": "Portland Trail Blazers",
+    "salary": 10800000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "dominique-wilkins": {
+    "season": 1993,
+    "team": "Atlanta Hawks",
+    "salary": 3500000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%A3%D0%B8%D0%BB%D0%BA%D0%B8%D0%BD%D1%81%2C_%D0%94%D0%BE%D0%BC%D0%B8%D0%BD%D0%B8%D0%BA",
+    "note": "Gleich hoher Wert auch 1993/94; bei Gleichstand frühere Saison gewählt. Nur NBA, keine Europaverträge."
+  },
+  "grant-hill": {
+    "season": 2000,
+    "team": "Detroit Pistons",
+    "salary": 6939000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "dikembe-mutombo": {
+    "season": 2000,
+    "team": "Atlanta Hawks",
+    "salary": 12820249,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "julius-erving": {
+    "season": 1986,
+    "team": "Philadelphia 76ers",
+    "salary": 1485000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%98%D1%80%D0%B2%D0%B8%D0%BD%D0%B3%2C_%D0%94%D0%B6%D1%83%D0%BB%D0%B8%D1%83%D1%81",
+    "note": "unsicher: nur 1984/85 und 1985/86 tabellarisch belegt; höchster gefundener Wert, Karriere-Maximum nicht vollständig abgesichert."
+  },
+  "ben-wallace": {
+    "season": 2000,
+    "team": "Orlando Magic",
+    "salary": 893750,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "moses-malone": {
+    "season": 1991,
+    "team": "Atlanta Hawks",
+    "salary": 2406000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%9C%D1%8D%D0%BB%D0%BE%D1%83%D0%BD%2C_%D0%9C%D0%BE%D0%B7%D0%B5%D1%81"
+  },
+  "alex-english": {
+    "season": 1990,
+    "team": "Denver Nuggets",
+    "salary": 2100000,
+    "source": "https://www.basketball-reference.com/players/e/englial01.html",
+    "note": "unsicher: höchster belegter Jahreswert; historische Gehaltsreihe ist nicht lückenlos."
+  },
+  "artis-gilmore": {
+    "season": 1988,
+    "team": "Boston Celtics",
+    "salary": 863000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%93%D0%B8%D0%BB%D0%BC%D0%BE%D1%80%2C_%D0%90%D1%80%D1%82%D0%B8%D1%81",
+    "note": "unsicher: lückenhafte Gehaltsreihe; größter belegter Wert. Saison auch bei Chicago, Gehaltsquelle führt Boston."
+  },
+  "antawn-jamison": {
+    "season": 2000,
+    "team": "Golden State Warriors",
+    "salary": 2503800,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "jalen-rose": {
+    "season": 2000,
+    "team": "Indiana Pacers",
+    "salary": 2437500,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "jermaine-oneal": {
+    "season": 2000,
+    "team": "Portland Trail Blazers",
+    "salary": 5075000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "detlef-schrempf": {
+    "season": 1995,
+    "team": "Seattle SuperSonics",
+    "salary": 5000000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%A8%D1%80%D0%B5%D0%BC%D0%BF%D1%84%2C_%D0%94%D0%B5%D1%82%D0%BB%D0%B5%D1%84",
+    "note": "Gleich hoher Wert auch 1995/96; bei Gleichstand frühere Saison gewählt."
+  },
+  "jerry-stackhouse": {
+    "season": 2000,
+    "team": "Detroit Pistons",
+    "salary": 4781250,
+    "source": "https://fr.wikipedia.org/wiki/Jerry_Stackhouse#Salaires"
+  },
+  "shawn-kemp": {
+    "season": 2000,
+    "team": "Cleveland Cavaliers",
+    "salary": 10780000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "latrell-sprewell": {
+    "season": 2000,
+    "team": "New York Knicks",
+    "salary": 9000000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "joe-dumars": {
+    "season": 1996,
+    "team": "Detroit Pistons",
+    "salary": 6881000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%94%D1%83%D0%BC%D0%B0%D1%80%D1%81%2C_%D0%94%D0%B6%D0%BE"
+  },
+  "vlade-divac": {
+    "season": 2000,
+    "team": "Sacramento Kings",
+    "salary": 8837774,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "ricky-davis": {
+    "season": 2000,
+    "team": "Charlotte Hornets",
+    "salary": 878160,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "george-gervin": {
+    "season": 1985,
+    "team": "San Antonio Spurs",
+    "salary": 831000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B2%D0%B8%D0%BD%2C_%D0%94%D0%B6%D0%BE%D1%80%D0%B4%D0%B6",
+    "note": "unsicher: Gehaltsreihe nur 1984/85 und 1985/86; größter belegter Wert, frühere Saisons nicht vollständig abgesichert."
+  },
+  "bill-walton": null,
+  "toni-kukoc": {
+    "season": 1999,
+    "team": "Chicago Bulls",
+    "salary": 4610000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%9A%D1%83%D0%BA%D0%BE%D1%87%2C_%D0%A2%D0%BE%D0%BD%D0%B8",
+    "note": "Nominaler Jahresbetrag 1998/99 vor der Kürzung durch den Lockout."
+  },
+  "arvydas-sabonis": {
+    "season": 2000,
+    "team": "Portland Trail Blazers",
+    "salary": 9818481,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "richard-hamilton": {
+    "season": 2000,
+    "team": "Washington Wizards",
+    "salary": 1836240,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "drazen-petrovic": {
+    "season": 1993,
+    "team": "New Jersey Nets",
+    "salary": 1615000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries93.txt"
+  },
+  "jim-jackson": {
+    "season": 1998,
+    "team": "Philadelphia 76ers",
+    "salary": 4600000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries98.txt",
+    "note": "1997/98 auch bei den Golden State Warriors; Gehaltsliste führt Philadelphia."
+  },
+  "bob-mcadoo": null,
+  "elvin-hayes": null,
+  "dennis-rodman": {
+    "season": 1997,
+    "team": "Chicago Bulls",
+    "salary": 9000000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries97.txt"
+  },
+  "bernard-king": {
+    "season": 1992,
+    "team": "Washington Bullets",
+    "salary": 2525000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries92.txt"
+  },
+  "rik-smits": {
+    "season": 2000,
+    "team": "Indiana Pacers",
+    "salary": 12250000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "oscar-robertson": null,
+  "rick-barry": null,
+  "walt-frazier": null,
+  "wes-unseld": null,
+  "david-thompson": null,
+  "john-havlicek": null,
+  "jerry-west": null,
+  "pete-maravich": null,
+  "bob-cousy": null,
+  "wilt-chamberlain": null,
+  "bill-russell": null,
+  "elgin-baylor": null,
+  "george-mikan": null,
+  "bob-pettit": null,
+  "willis-reed": null,
+  "robert-horry": {
+    "season": 1998,
+    "team": "Los Angeles Lakers",
+    "salary": 6000000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries98.txt"
+  },
+  "bruce-bowen": {
+    "season": 2000,
+    "team": "Chicago Bulls",
+    "salary": 510000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D1%83%D1%8D%D0%BD%2C_%D0%91%D1%80%D1%8E%D1%81",
+    "note": "unsicher: Quelle weist 510.000 USD bei Chicago aus; nach Freistellung weiterer Vertrag bei Miami, dessen zusätzliche Zahlung nicht beziffert ist."
+  },
+  "rick-fox": {
+    "season": 2000,
+    "team": "Los Angeles Lakers",
+    "salary": 3033000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "brian-shaw": {
+    "season": 1996,
+    "team": "Orlando Magic",
+    "salary": 4250000,
+    "source": "https://www.basketball-reference.com/tools/share.fcgi?id=RMJRP"
+  },
+  "luc-longley": {
+    "season": 2000,
+    "team": "Phoenix Suns",
+    "salary": 5175000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "bill-cartwright": {
+    "season": 1994,
+    "team": "Chicago Bulls",
+    "salary": 2400000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries94.txt"
+  },
+  "john-paxson": {
+    "season": 1992,
+    "team": "Chicago Bulls",
+    "salary": 1600000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries92.txt"
+  },
+  "steve-kerr": {
+    "season": 2000,
+    "team": "San Antonio Spurs",
+    "salary": 1968750,
+    "source": "https://fr.wikipedia.org/wiki/Steve_Kerr#Salaires"
+  },
+  "kurt-rambis": {
+    "season": 1993,
+    "team": "Phoenix Suns",
+    "salary": 1100000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries93.txt"
+  },
+  "dennis-johnson": {
+    "season": 1989,
+    "team": "Boston Celtics",
+    "salary": 835500,
+    "source": "https://ru.wikipedia.org/wiki/%D0%94%D0%B6%D0%BE%D0%BD%D1%81%D0%BE%D0%BD%2C_%D0%94%D0%B5%D0%BD%D0%BD%D0%B8%D1%81",
+    "note": "unsicher: größter belegter Wert; insbesondere 1989/90 und weitere frühere Saisons ohne genaue Gehaltsangabe."
+  },
+  "michael-cooper": {
+    "season": 1988,
+    "team": "Los Angeles Lakers",
+    "salary": 676500,
+    "source": "https://www.basketball-reference.com/players/c/coopemi01.html",
+    "note": "unsicher: größter belegter Wert; Gehaltsreihe lückenhaft, insbesondere 1988/89 und 1989/90."
+  },
+  "ac-green": null,
+  "horace-grant": {
+    "season": 1997,
+    "team": "Orlando Magic",
+    "salary": 14857000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%BD%D1%82%2C_%D0%A5%D0%BE%D1%80%D0%B0%D1%81"
+  },
+  "mario-elie": {
+    "season": 1998,
+    "team": "Houston Rockets",
+    "salary": 2430000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries98.txt"
+  },
+  "sam-cassell": {
+    "season": 2000,
+    "team": "Milwaukee Bucks",
+    "salary": 3500000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  },
+  "kenny-smith": {
+    "season": 1996,
+    "team": "Houston Rockets",
+    "salary": 2683000,
+    "source": "https://www.basketball-reference.com/players/s/smithke01.html"
+  },
+  "vernon-maxwell": {
+    "season": 1995,
+    "team": "Houston Rockets",
+    "salary": 1833000,
+    "source": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BA%D1%81%D0%B2%D0%B5%D0%BB%D0%BB%2C_%D0%92%D0%B5%D1%80%D0%BD%D0%BE%D0%BD"
+  },
+  "otis-thorpe": {
+    "season": 1997,
+    "team": "Detroit Pistons",
+    "salary": 7000000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries97.txt"
+  },
+  "antonio-mcdyess": {
+    "season": 2000,
+    "team": "Denver Nuggets",
+    "salary": 9900000,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries00.txt"
+  }
+}
