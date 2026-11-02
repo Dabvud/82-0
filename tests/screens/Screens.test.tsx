@@ -169,6 +169,22 @@ describe("ResultScreen", () => {
   });
 });
 
+describe("Dominanz-Tafel im Ergebnis", () => {
+  it("zeigt Teamstärke im Vergleich, Serie, Heim/Auswärts und Bilanz gegen die Top 10", () => {
+    const log: SeasonLog = { games: [
+      { game: 1, opp: FIXTURE_TEAMS[0].abbr, home: true, win: true },
+      { game: 2, opp: FIXTURE_TEAMS[1].abbr, home: false, win: true },
+    ], events: [], wins: 2, losses: 0, status: "done" };
+    render(<ResultScreen log={log} lineup={FIXTURE_POOL.slice(0, 5)} teams={FIXTURE_TEAMS} puzzleNo={null} now={new Date()} onAgain={() => {}} onHome={() => {}} />);
+    const board = screen.getByRole("region", { name: "So dominant war dein Team" });
+    for (const label of ["Teamstärke", "Offensive", "Defensive", "Längste Siegesserie", "Heim", "Auswärts", "Gegen die Top 10"]) {
+      expect(board).toHaveTextContent(label);
+    }
+    expect(board).toHaveTextContent("2 Siege");
+    expect(board).toHaveTextContent(/Bestes NBA-Team 2025\/26/);
+  });
+});
+
 describe("Niederlagen im Ticker", () => {
   it("nennt nach dem Vorspulen das Team der letzten Niederlage", () => {
     const lineup = FIXTURE_POOL.filter((p) => p.tier === 5).slice(0, 0);

@@ -350,3 +350,8 @@ p { margin: 0; }
 .losses { background: var(--panel); color: var(--ink); border-radius: 10px; padding: 10px 12px; }
 .losses h3 { font-size: 1rem; margin-bottom: 6px; color: var(--loss); }
 .losses ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 2px; font-size: 0.9rem; }
+
+/* ---------- Dominanz-Tafel ---------- */
+.dominance { display: grid; gap: 8px; }
+.dominance h3 { font-size: 1.05rem; }
+.dominance__note dd { font-size: 0.95rem; color: var(--ink-soft); }

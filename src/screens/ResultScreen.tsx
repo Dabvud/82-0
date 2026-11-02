@@ -3,6 +3,7 @@ import { Scoreboard } from "../components/Scoreboard";
 import { msUntilNextPuzzle } from "../game/daily";
 import { tierLabel } from "../game/season";
 import type { SeasonLog } from "../game/season";
+import { seasonStats } from "../game/season-stats";
 import { shareText } from "../game/share";
 import type { NbaTeam, Player } from "../game/types";
 import { shareResult } from "../share";
@@ -29,6 +30,9 @@ const SHARE_STATUS = { shared: "Geteilt.", copied: "In die Zwischenablage kopier
 export function ResultScreen({ log, lineup, teams = [], puzzleNo, now, onAgain, onHome }: Props) {
   const losses = log.games.filter((g) => !g.win);
   const teamName = (abbr: string) => teams.find((team) => team.abbr === abbr)?.name ?? abbr;
+  const stats = teams.length ? seasonStats(log, lineup, teams) : null;
+  const signed = (x: number) => (x >= 0 ? "+" : "−") + Math.abs(x).toLocaleString("de-DE", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const rec = (r: { wins: number; losses: number }) => r.wins + "-" + r.losses;
   const text = shareText(puzzleNo, log, lineup);
   const [status, setStatus] = useState<string | null>(null);
   const [clock, setClock] = useState(now);
@@ -42,6 +46,21 @@ export function ResultScreen({ log, lineup, teams = [], puzzleNo, now, onAgain, 
     <>
       <Scoreboard wins={log.wins} losses={log.losses} />
       <p className="verdict">{tierLabel(log.wins)}</p>
+      {stats && (
+        <section className="dominance" aria-labelledby="dominance-title">
+          <h3 id="dominance-title">So dominant war dein Team</h3>
+          <dl className="statlist">
+            <div><dt>Teamstärke (Net Rating)</dt><dd>{signed(stats.net)}</dd></div>
+            <div className="dominance__note"><dt>Bestes NBA-Team 2025/26</dt><dd>{stats.bestTeam.name} {signed(stats.bestTeam.net)}</dd></div>
+            <div><dt>Offensive</dt><dd>{signed(stats.off)}</dd></div>
+            <div><dt>Defensive</dt><dd>{signed(stats.def)}</dd></div>
+            <div><dt>Längste Siegesserie</dt><dd>{stats.longestStreak} Siege</dd></div>
+            <div><dt>Heim</dt><dd>{rec(stats.home)}</dd></div>
+            <div><dt>Auswärts</dt><dd>{rec(stats.away)}</dd></div>
+            <div><dt>Gegen die Top 10</dt><dd>{rec(stats.vsTop10)}</dd></div>
+          </dl>
+        </section>
+      )}
       {losses.length > 0 && (
         <section className="losses">
           <h3>Geschlagen von</h3>
