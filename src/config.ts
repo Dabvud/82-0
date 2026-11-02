@@ -12,6 +12,16 @@ export const CONFIG = {
     offersPerTier: 5,
     completionCandidatesPerPosition: 6,
   },
+  trade: {
+    salaryWindow: 0.15,
+    salaryWidenStep: 0.10,
+    salaryMaxWindow: 0.45,
+    valueWindow: 6,
+    injuredChance: 0.30,
+    injuryMin: 3,
+    injuryMax: 15,
+    offers: 3,
+  },
   team: {
     baseline: 50,
     shooterMin: 55,

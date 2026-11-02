@@ -2,6 +2,7 @@ import { CONFIG } from "../config";
 import { hash, makeRng } from "./rng";
 import { buildSchedule } from "./schedule";
 import { teamRating } from "./team";
+import { injuryGames, pickFiller } from "./trade";
 import type { NbaTeam, Player, TradeDecision } from "./types";
 
 export interface SeasonOptions {
@@ -19,7 +20,7 @@ export interface SeasonInput {
 
 export type SeasonEvent =
   | { kind: "deadline"; afterGame: 50 }
-  | { kind: "trade"; afterGame: 50; out: Player; in: Player; injuredGames: number | null; filler: Player | null }
+  | { kind: "trade"; afterGame: 50; out: Player; in: Player; injuredGames: number; filler: Player | null }
   | { kind: "injury-return"; afterGame: number; player: Player }
   | { kind: "bankrupt"; afterGame: number; out: Player; in: Player; reason: string };
 
@@ -46,10 +47,14 @@ export function playSeason(input: SeasonInput, teams: NbaTeam[]): SeasonLog {
   const outgoing = trade ? lineup.find((p) => p.id === trade.outId) : undefined;
   if (trade && !outgoing) throw new Error("Der abgegebene Spieler gehört nicht zum Kader.");
   const tradedLineup = trade ? lineup.map((p) => p.id === trade.outId ? trade.offer.player : p) : lineup;
+  const injuredGames = trade?.offer.injured ? injuryGames(seedKey, trade.outId, trade.offer.player.id) : 0;
+  const filler = injuredGames > 0 && outgoing ? pickFiller(lineup, outgoing, input.pool, seedKey) : null;
+  const fillerLineup = filler && trade ? lineup.map((p) => p.id === trade.outId ? filler : p) : lineup;
+  const returnAfterGame = CONFIG.sim.deadlineAfterGame + injuredGames;
 
-  // Task 10 erweitert hier die Kaderwahl um Ausfallzeit und Lückenfüller.
   function rosterForGame(game: number): Player[] {
-    return game > CONFIG.sim.deadlineAfterGame ? tradedLineup : lineup;
+    if (game <= CONFIG.sim.deadlineAfterGame) return lineup;
+    return game <= returnAfterGame ? fillerLineup : tradedLineup;
   }
 
   const log: SeasonLog = { games: [], events: [], wins: 0, losses: 0, status: "done" };
@@ -78,9 +83,12 @@ export function playSeason(input: SeasonInput, teams: NbaTeam[]): SeasonLog {
         log.events.push({
           kind: "trade", afterGame: CONFIG.sim.deadlineAfterGame,
           out: outgoing, in: trade.offer.player,
-          injuredGames: trade.offer.injured ? null : 0, filler: null,
+          injuredGames, filler,
         });
       }
+    }
+    if (trade && injuredGames > 0 && game.game === returnAfterGame && returnAfterGame < CONFIG.sim.seasonGames) {
+      log.events.push({ kind: "injury-return", afterGame: returnAfterGame, player: trade.offer.player });
     }
   }
   return log;

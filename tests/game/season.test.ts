@@ -88,12 +88,15 @@ describe("Saison-Engine", () => {
     ]);
   });
 
-  it("markiert einen verletzten Neuzugang mit unbekannter Ausfallzeit ohne erfundene Verletzungslogik", () => {
+  it("lässt einen verletzten Neuzugang 3–15 Spiele aussetzen und meldet seine Rückkehr", () => {
     const options = { deadline: true, bankruptcy: false };
     const result = playSeason(input({ options, trade: { outId: trade.outId, offer: { ...offer, injured: true } } }), FIXTURE_TEAMS);
-    expect(result.events).toContainEqual({ kind: "trade", afterGame: 50, out: lineup[0], in: incoming, injuredGames: null, filler: null });
-    expect(result.events.some((event) => event.kind === "injury-return")).toBe(false);
-    expect(result.games).toEqual(playSeason(input({ options, trade }), FIXTURE_TEAMS).games);
+    const event = result.events.find((e) => e.kind === "trade");
+    expect(event && event.kind === "trade" && event.injuredGames).toBeGreaterThanOrEqual(3);
+    expect(event && event.kind === "trade" && event.injuredGames).toBeLessThanOrEqual(15);
+    expect(event && event.kind === "trade" && event.filler).not.toBeNull();
+    const back = result.events.find((e) => e.kind === "injury-return");
+    expect(back?.afterGame).toBe(50 + (event?.kind === "trade" ? event.injuredGames : 0));
   });
 
   it.each(["pending", trade] as const)("ignoriert Trade-Entscheidungen bei ausgeschalteter Deadline (%s)", (decision) => {
