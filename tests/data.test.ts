@@ -1,5 +1,5 @@
 // @vitest-environment node
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { BUDGET, CAP_NOW, LUXURY_LINE, MIN_PRICE, PLAYERS, TEAMS } from "../src/data";
 import { CONFIG } from "../src/config";
@@ -84,6 +84,8 @@ describe("generierte Spieldaten", () => {
         "wilt-chamberlain",
       ]
     `);
+    // Der Build-Bericht liegt nur lokal (gitignored); auf GitHub zählt allein der Snapshot oben.
+    if (!existsSync(".superpowers/build-bericht.md")) return;
     const report = readFileSync(".superpowers/build-bericht.md", "utf8");
     const match = report.match(/## Spieler mit priceSource "tier"\s+```json\n([\s\S]*?)\n```/);
     expect(match).not.toBeNull();
