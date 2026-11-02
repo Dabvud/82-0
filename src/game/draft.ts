@@ -9,6 +9,55 @@ export interface DraftState {
   offers: Record<Tier, Player[]>;
   /** Pick-Anzahl, bei der die Matrix neu gezogen wurde (einmal pro Run), sonst null. */
   refreshedAt: number | null;
+  /** Aufstellung: Spieler-ID je Platz in der Reihenfolge G, G, F, F, C (null = frei). */
+  slots: (string | null)[];
+}
+
+export const SLOT_POSITIONS: Pos[] = ["G", "G", "F", "F", "C"];
+
+function fits(player: Player, slot: number): boolean {
+  return player.positions.includes(SLOT_POSITIONS[slot]);
+}
+
+/** Platz für einen neuen Pick: gewünschter Platz, sonst erster freier passender, sonst Neuordnung. */
+function placePick(slots: (string | null)[], picks: Player[], player: Player, slotIndex?: number): (string | null)[] {
+  if (slotIndex !== undefined) {
+    if (!Number.isInteger(slotIndex) || slotIndex < 0 || slotIndex >= SLOT_POSITIONS.length) throw new Error("Unbekannter Platz.");
+    if (slots[slotIndex] !== null) throw new Error("Dieser Platz ist schon belegt.");
+    if (!fits(player, slotIndex)) throw new Error("Der Spieler passt nicht auf diesen Platz.");
+    return slots.map((id, i) => (i === slotIndex ? player.id : id));
+  }
+  const free = slots.findIndex((id, i) => id === null && fits(player, i));
+  if (free >= 0) return slots.map((id, i) => (i === free ? player.id : id));
+  // Neu ordnen: jeder bleibt möglichst auf seinem Platz, nur wer muss, rückt um.
+  const assignment = assignSlots([...picks, player]);
+  if (!assignment) throw new Error("Für diesen Spieler ist kein Platz frei.");
+  const next: (string | null)[] = SLOT_POSITIONS.map(() => null);
+  const all = [...picks, player];
+  for (const p of all) {
+    const keep = slots.indexOf(p.id);
+    if (keep >= 0 && SLOT_POSITIONS[keep] === assignment[p.id] && next[keep] === null) next[keep] = p.id;
+  }
+  for (const p of all) {
+    if (next.includes(p.id)) continue;
+    const index = SLOT_POSITIONS.findIndex((pos, i) => pos === assignment[p.id] && next[i] === null);
+    next[index] = p.id;
+  }
+  return next;
+}
+
+/** Gewählten Spieler auf einen anderen Platz schieben; ist der belegt, tauschen beide (wenn beide passen). */
+export function moveSlot(state: DraftState, from: number, to: number): DraftState {
+  const byId = (id: string | null) => (id === null ? null : state.picks.find((p) => p.id === id) ?? null);
+  const moving = byId(state.slots[from] ?? null);
+  if (!moving) throw new Error("Auf diesem Platz steht niemand.");
+  if (from === to) return state;
+  const other = byId(state.slots[to] ?? null);
+  if (!fits(moving, to) || (other && !fits(other, from))) throw new Error("Der Spieler passt nicht auf diesen Platz.");
+  const slots = [...state.slots];
+  slots[to] = moving.id;
+  slots[from] = other ? other.id : null;
+  return { ...state, slots };
 }
 
 const tiers: Tier[] = [1, 2, 3, 4, 5];
@@ -124,10 +173,11 @@ function withRescue(offers: Record<Tier, Player[]>, picks: Player[], pool: Playe
 }
 
 export function startDraft(pool: Player[], seed: string, budget: number): DraftState {
-  return { picks: [], round: 1, offers: drawOffers(pool, [], seed, budget), refreshedAt: null };
+  return { picks: [], round: 1, offers: drawOffers(pool, [], seed, budget), refreshedAt: null,
+    slots: SLOT_POSITIONS.map(() => null) };
 }
 
-export function pickPlayer(state: DraftState, p: Player, pool: Player[], _seed: string, budget: number): DraftState {
+export function pickPlayer(state: DraftState, p: Player, pool: Player[], _seed: string, budget: number, slotIndex?: number): DraftState {
   if (state.picks.length >= CONFIG.playersPerTeam) throw new Error("Der Draft ist bereits vollständig.");
   // Der Pool ist maßgeblich; vom Aufrufer veränderte Kartenpreise werden nicht übernommen.
   const player = pool.find((candidate) => candidate.id === p.id);
@@ -135,8 +185,10 @@ export function pickPlayer(state: DraftState, p: Player, pool: Player[], _seed: 
     throw new Error("Dieser Spieler wird gerade nicht angeboten.");
   }
   if (!isAffordable(player, state.picks, pool, budget)) throw new Error("Dieser Spieler passt nicht ins verbleibende Budget oder in die Aufstellung.");
+  const slots = placePick(state.slots, state.picks, player, slotIndex);
   const picks = [...state.picks, player];
   return {
+    slots,
     picks,
     round: Math.min(picks.length + 1, CONFIG.playersPerTeam),
     // Die Matrix bleibt stehen: nur der gewählte Spieler verschwindet.

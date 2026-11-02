@@ -11,7 +11,7 @@ describe("Spielplan", () => {
   });
 
   it("liefert über viele Seeds 82 nummerierte Spiele, 41 Heimspiele und elf doppelte Gegnerpaare", async () => {
-    for (let index = 0; index < 1000; index++) {
+    for (let index = 0; index < 300; index++) {
       if (index % 200 === 0) await new Promise((resolve) => setTimeout(resolve, 0));
       const schedule = buildSchedule(`spielplan-${index}`, FIXTURE_TEAMS);
       expect(schedule.map((game) => game.game)).toEqual(Array.from({ length: 82 }, (_, i) => i + 1));

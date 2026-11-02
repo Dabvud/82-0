@@ -1,6 +1,6 @@
 import { CONFIG } from "./config";
 import { berlinDate, isCalendarDate } from "./game/daily";
-import { pickPlayer, refreshOffers, startDraft } from "./game/draft";
+import { pickPlayer, refreshOffers, SLOT_POSITIONS, startDraft } from "./game/draft";
 import { newSession, seedKeyFor } from "./game/session";
 import type { Session } from "./game/session";
 import { emptyStats } from "./game/stats";
@@ -52,7 +52,7 @@ export function saveDaily(session: Session): void {
     ? { outId: session.trade.outId, inId: session.trade.offer.player.id, injured: session.trade.offer.injured }
     : session.trade;
   write(KEYS.daily, { mode: session.mode, date: session.date, runSeed: session.runSeed,
-    picks: session.draft.picks.map(player => player.id), refreshedAt: session.draft.refreshedAt, phase: session.phase, trade });
+    picks: session.draft.picks.map(player => player.id), refreshedAt: session.draft.refreshedAt, slots: session.draft.slots, phase: session.phase, trade });
 }
 
 export function loadDaily(now: Date, pool: Player[], budget: number): Session | null {
@@ -72,6 +72,17 @@ export function loadDaily(now: Date, pool: Player[], budget: number): Session | 
       draft = pickPlayer(draft, player, pool, value.runSeed as string, budget);
     });
     if (refreshedAt === value.picks.length) draft = refreshOffers(draft, pool, value.runSeed as string, budget);
+    // Selbst gewählte Aufstellung übernehmen, wenn sie genau die Picks auf passenden Plätzen enthält.
+    if (value.slots !== undefined) {
+      const slots = value.slots;
+      const ids = draft.picks.map(p => p.id);
+      if (!Array.isArray(slots) || slots.length !== SLOT_POSITIONS.length
+        || slots.some((id: unknown, i: number) => id !== null && (typeof id !== "string" || !ids.includes(id)
+          || !draft.picks.find(p => p.id === id)!.positions.includes(SLOT_POSITIONS[i])))
+        || slots.filter((id: unknown) => id !== null).length !== ids.length
+        || new Set(slots.filter((id: unknown) => id !== null)).size !== ids.length) return null;
+      draft = { ...draft, slots: slots as (string | null)[] };
+    }
     const phase = value.phase as Session["phase"];
     if (phase !== "draft" && draft.picks.length !== CONFIG.playersPerTeam) return null;
     const session: Session = { mode: "daily", date: value.date, runSeed: value.runSeed, draft, phase, trade: undefined };

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { drawOffers, isAffordable, minCostToComplete, pickPlayer, refreshOffers, startDraft } from "../../src/game/draft";
+import { drawOffers, isAffordable, minCostToComplete, moveSlot, pickPlayer, refreshOffers, startDraft } from "../../src/game/draft";
 import { assignSlots, canAdd } from "../../src/game/slots";
 import { hash, makeRng, pick, shuffle } from "../../src/game/rng";
 import type { Player, Pos, Tier } from "../../src/game/types";
@@ -210,4 +210,45 @@ describe("Draft-Massentests", () => {
     }
     console.info(`${strategy}: 5 000 Drafts, 25 000 Picks, 0 Sackgassen; Höchstpreis ${maxCost} / ${FIXTURE_BUDGET}`);
   }, 120_000);
+});
+
+describe("Aufstellung auf den Plätzen G G F F C", () => {
+  const base = (picks: Player[] = []) => ({ picks, round: picks.length + 1, offers: { 1: [], 2: [], 3: [], 4: [], 5: [] }, refreshedAt: null, slots: [null, null, null, null, null] as (string | null)[] });
+  const gf = player("gf", ["G", "F"], 1_000_000, 5);
+  const fc = player("fc", ["F", "C"], 1_000_000, 5);
+  const g1 = player("g1", ["G"], 1_000_000, 5);
+  const g2 = player("g2", ["G"], 1_000_000, 5);
+  const c1 = player("c1", ["C"], 1_000_000, 5);
+  const pool = [gf, fc, g1, g2, c1];
+  const offered = (players: Player[]) => ({ 1: [], 2: [], 3: [], 4: [], 5: players });
+
+  it("setzt einen Pick ohne Platzangabe auf den ersten freien passenden Platz", () => {
+    const state = pickPlayer({ ...base(), offers: offered(pool) }, fc, pool, "s", FIXTURE_BUDGET);
+    expect(state.slots).toEqual([null, null, "fc", null, null]);
+  });
+
+  it("setzt einen Pick auf den gewünschten Platz und lehnt unpassende oder belegte Plätze ab", () => {
+    const state = pickPlayer({ ...base(), offers: offered(pool) }, fc, pool, "s", FIXTURE_BUDGET, 4);
+    expect(state.slots).toEqual([null, null, null, null, "fc"]);
+    expect(() => pickPlayer({ ...base(), offers: offered(pool) }, g1, pool, "s", FIXTURE_BUDGET, 4)).toThrow(/Platz/);
+    expect(() => pickPlayer(state, c1, pool, "s", FIXTURE_BUDGET, 4)).toThrow(/Platz/);
+  });
+
+  it("schiebt einen F/C vom F- auf den C-Platz und tauscht, wenn beide passen", () => {
+    let state = pickPlayer({ ...base(), offers: offered(pool) }, fc, pool, "s", FIXTURE_BUDGET, 2);
+    state = moveSlot(state, 2, 4);
+    expect(state.slots).toEqual([null, null, null, null, "fc"]);
+    state = pickPlayer(state, gf, pool, "s", FIXTURE_BUDGET, 2);
+    expect(() => moveSlot(state, 2, 4)).toThrow(/passt/);
+    state = moveSlot(state, 2, 0);
+    expect(state.slots).toEqual(["gf", null, null, null, "fc"]);
+  });
+
+  it("ordnet bei Bedarf automatisch um, damit ein passender Pick einen Platz findet", () => {
+    let state = pickPlayer({ ...base(), offers: offered(pool) }, gf, pool, "s", FIXTURE_BUDGET, 0);
+    state = pickPlayer(state, g1, pool, "s", FIXTURE_BUDGET, 1);
+    state = pickPlayer(state, g2, pool, "s", FIXTURE_BUDGET);
+    expect(state.slots.filter(Boolean).sort()).toEqual(["g1", "g2", "gf"]);
+    expect(state.slots[2] === "gf" || state.slots[3] === "gf").toBe(true);
+  });
 });

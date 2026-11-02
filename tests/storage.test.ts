@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { isAffordable, pickPlayer, refreshOffers } from "../src/game/draft";
+import { isAffordable, moveSlot, pickPlayer, refreshOffers } from "../src/game/draft";
 import { newSession, seedKeyFor } from "../src/game/session";
 import type { Session } from "../src/game/session";
 import { playSeason } from "../src/game/season";
@@ -31,7 +31,7 @@ describe("Tagesrätsel-Speicher", () => {
     saveDaily(session);
     const raw = JSON.parse(localStorage.getItem(dailyKey)!);
     expect(raw).toEqual({ mode: "daily", date: "2026-11-02", runSeed: session.runSeed,
-      picks: session.draft.picks.map(p => p.id), refreshedAt: null, phase: "deadline", trade: "pending" });
+      picks: session.draft.picks.map(p => p.id), refreshedAt: null, slots: session.draft.slots, phase: "deadline", trade: "pending" });
     const restored = loadDaily(now, FIXTURE_POOL, FIXTURE_BUDGET)!;
     expect(restored).toEqual(session);
     expect(season(restored)).toEqual(season(session));
@@ -49,6 +49,20 @@ describe("Tagesrätsel-Speicher", () => {
     const loaded = loadDaily(now, FIXTURE_POOL, FIXTURE_BUDGET)!;
     expect(loaded).toEqual(session);
     expect(loaded.draft.refreshedAt).toBe(1);
+  });
+
+  it("erhält die selbst gewählte Aufstellung und verwirft unpassende", () => {
+    const session = drafted();
+    const before = session.draft.slots;
+    const from = before.findIndex((id) => id !== null);
+    const target = before.findIndex((id, i) => i !== from && id !== null);
+    let moved = session;
+    try { moved = { ...session, draft: moveSlot(session.draft, from, target) }; } catch { moved = session; }
+    saveDaily(moved);
+    expect(loadDaily(now, FIXTURE_POOL, FIXTURE_BUDGET)!.draft.slots).toEqual(moved.draft.slots);
+    const raw = JSON.parse(localStorage.getItem(dailyKey)!);
+    localStorage.setItem(dailyKey, JSON.stringify({ ...raw, slots: ["x", null, null, null, null] }));
+    expect(loadDaily(now, FIXTURE_POOL, FIXTURE_BUDGET)).toBeNull();
   });
 
   it("erhält nach jedem Pick Angebote und Reihenfolge", () => {

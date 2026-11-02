@@ -40,6 +40,21 @@ describe("DraftScreen", () => {
     expect(onPick).toHaveBeenCalledWith(card);
   });
 
+  it("verpflichtet per Ziehen einer Kachel direkt auf den Zielplatz", () => {
+    const session = newSession("free", new Date("2026-11-02T10:00:00Z"), data.pool, data.budget);
+    const onPick = vi.fn();
+    render(<DraftScreen session={session} data={data} settings={settings} onPick={onPick} onExit={() => {}} onRefresh={() => {}} onMove={() => {}} />);
+    const card = Object.values(session.draft.offers).flat().find((p) => p.positions.includes("C") && isAffordable(p, [], data.pool, data.budget))!;
+    const slot = screen.getByRole("button", { name: /^C: frei/ });
+    vi.spyOn(document, "elementFromPoint").mockReturnValue(slot);
+    const tile = screen.getByRole("button", { name: new RegExp(card.name) });
+    fireEvent.pointerDown(tile, { pointerType: "mouse", clientX: 5, clientY: 300, button: 0 });
+    fireEvent.pointerMove(window, { pointerType: "mouse", clientX: 5, clientY: 50 });
+    fireEvent.pointerUp(window, { pointerType: "mouse", clientX: 5, clientY: 50 });
+    expect(onPick).toHaveBeenCalledWith(card, 4);
+    vi.restoreAllMocks();
+  });
+
   it("bietet das Neuziehen genau einmal an", () => {
     const session = newSession("free", new Date("2026-11-02T10:00:00Z"), data.pool, data.budget);
     const onRefresh = vi.fn();

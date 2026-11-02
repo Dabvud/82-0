@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import type { GameData, Settings } from "./app-data";
 import InstallHelp from "./components/InstallHelp";
 import { puzzleNumber } from "./game/daily";
-import { pickPlayer, refreshOffers } from "./game/draft";
+import { moveSlot, pickPlayer, refreshOffers } from "./game/draft";
 import { playSeason } from "./game/season";
 import type { SeasonLog } from "./game/season";
 import { newSession, seedKeyFor } from "./game/session";
@@ -66,10 +66,15 @@ export default function App({ data }: { data: GameData }) {
     setView("game");
   }
 
-  function pick(player: Player) {
+  function pick(player: Player, slot?: number) {
     if (!session) return;
-    const draft = pickPlayer(session.draft, player, data.pool, session.runSeed, data.budget);
+    const draft = pickPlayer(session.draft, player, data.pool, session.runSeed, data.budget, slot);
     update({ ...session, draft, phase: draft.picks.length === 5 ? "squad" : "draft" });
+  }
+
+  function move(from: number, to: number) {
+    if (!session) return;
+    update({ ...session, draft: moveSlot(session.draft, from, to) });
   }
 
   function refresh() {
@@ -110,9 +115,9 @@ export default function App({ data }: { data: GameData }) {
   } else if (view === "game" && session) {
     const lineup = session.draft.picks;
     if (session.phase === "draft") {
-      content = <DraftScreen session={session} data={data} settings={settings} onPick={pick} onExit={home} onRefresh={refresh} />;
+      content = <DraftScreen session={session} data={data} settings={settings} onPick={pick} onExit={home} onRefresh={refresh} onMove={move} />;
     } else if (session.phase === "squad") {
-      content = <SquadScreen lineup={lineup} data={data} settings={settings} onStart={startSeason} />;
+      content = <SquadScreen lineup={lineup} slots={session.draft.slots} data={data} settings={settings} onStart={startSeason} onMove={move} />;
     } else if (session.phase === "season" || session.phase === "deadline") {
       content = <TickerScreen key={session.runSeed} lineup={lineup} seedKey={seedKeyFor(session)} data={data} settings={settings}
         initialDecision={session.trade === "pending" ? undefined : session.trade ?? undefined}

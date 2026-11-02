@@ -324,3 +324,21 @@ p { margin: 0; }
 .tile--locked .tile__price { color: var(--loss); }
 .matrix__hint { font-size: 0.78rem; }
 .sheet .card { border: 0; padding: 0; background: transparent; }
+
+/* ---------- Plätze als Knöpfe (Umstellen per Tippen/Ziehen) ---------- */
+.slot { padding: 0; }
+.slot__btn {
+  display: block; width: 100%; min-width: 0; height: 100%;
+  background: transparent; color: inherit; border: 0; border-radius: 8px; padding: 4px 6px;
+  font: inherit; text-align: center; touch-action: manipulation;
+}
+.slot__btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.slot__btn--picked { outline: 2px solid var(--led); outline-offset: -2px; }
+.slot--filled { background: #2a2418; }
+.slot--filled .slot__name { color: var(--ink); font-weight: 600; }
+.tile { touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+.drag-ghost {
+  position: fixed; z-index: 30; pointer-events: none; transform: translate(-50%, -120%);
+  background: var(--led); color: #1d1404; font-family: var(--font-cond); font-weight: 700;
+  padding: 6px 10px; border-radius: 8px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4); white-space: nowrap;
+}
